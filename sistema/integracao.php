@@ -1,0 +1,1 @@
+<script>window.location.href='../integracao/index.php'</script>

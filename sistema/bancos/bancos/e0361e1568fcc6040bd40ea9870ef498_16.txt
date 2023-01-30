@@ -1,0 +1,1 @@
+replace into periodos (codigo,id,descricao,data_inicial,data_final,alteracao,integracao) values ('N_CN_16','16','Primeiro','2010-01-04','2010-12-31','2013-03-16 14:08:08','1')

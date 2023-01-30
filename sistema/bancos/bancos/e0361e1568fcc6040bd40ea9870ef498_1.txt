@@ -1,0 +1,1 @@
+replace into permissoes (codigo,id,usuario,tipo,codigo_tipo,data_inicial,data_final,integracao) values ('N_CN_1','1','2','turma','5361','2015-03-14','2015-03-14','1')

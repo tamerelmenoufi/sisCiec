@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0257)https://adtech.nflximg.net/adtech_iframe_target_03.html?data=%7B%22is_member%22%3A%22current%22%2C%22membership_status%22%3A%22NON_REGISTERED_MEMBER%22%2C%22session%22%3A%22149822716654357040%22%2C%22country%22%3A%22BR%22%2C%22referrer%22%3A%22payment%22%7D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <script>
+            // *********************
+            // SETUP - DO NOT REMOVE
+            // *********************
+
+            /**
+             * This runs at load time and sets up your globals for the data passed in and the
+             * method to call once everything is done.
+             * Under normal circumstances you shouldn't have to change this code.
+             * - All of the data passed from the parent window will be available via `window.data`
+             * - The method to call when everything is done will be `window.complete()`
+             */
+            (function(){
+                var pairs = window.location.search.slice(1).split('&');
+                var keyVal, i;
+                window.data = {};
+                for(i = 0; i<pairs.length; i++){
+                    keyVal = pairs[i].split('=');
+                    if(keyVal && keyVal[0] && keyVal[0] === 'data' && keyVal[1]){
+                        window.data = JSON.parse(decodeURIComponent(keyVal[1])) || {};
+                    }
+                }
+
+                window.complete = function(){
+                    if(window.parent && window !== window.parent && window.parent.postMessage){
+                        window.parent.postMessage({sender: window.name}, '*');
+                    }
+                };
+            })();
+
+            /**
+             * This runs at load time to fire a pixel so we can track drop-offs in the BrightTag load process.
+             * This instrumentation will allow us to compare data-loss through the process due to page abandonment.
+             */
+            (function(){
+                var method = "POST";
+                var url = "https://www.netflix.com/ichnaea/log"
+                var async = true;
+                var postData = JSON.stringify({ "events": [ {
+                    "name":"adVendorSync",
+                    "data": {
+                        "ad_vendor_sync_type": "netflix",
+                        "referrer": window.data.referrer
+                    }
+                } ] });
+
+                var request = new XMLHttpRequest()
+                request.withCredentials = true;
+                request.onload = function () {
+                    var status = request.status; // HTTP response status, e.g., 200 for "200 OK"
+                    var data = request.responseText; // Returned data, e.g., an HTML document.
+                };
+
+                request.open(method, url, async);
+                request.setRequestHeader("Content-Type", "application/json");
+                request.setRequestHeader("X-Netflix.ichnaea.request.type", "IchnaeaRequest");
+
+                // Actually sends the request to the server.
+                request.send(postData);
+            })();
+
+            // The referrer page is added to this to make a fully qualified target for bright tag.
+            var REFERRER_BASE = 'netflix.com/bt/';
+            window.data.referrer = window.data.referrer ? REFERRER_BASE + window.data.referrer : 'not_set';
+
+            // Build up additional params, excluding referrer.
+            var additionalParams = '';
+            for(var key in window.data){
+                if(window.data.hasOwnProperty(key)){
+                    additionalParams = additionalParams + '&' + encodeURIComponent(key) + '=' + encodeURIComponent(window.data[key]);
+                }
+            }
+
+            var brightTagUrl = '//s.thebrighttag.com/tag?site=voKfK9l&mode=iframe' +  additionalParams;
+            iframe = '<iframe src="' + brightTagUrl + '" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
+            document.write(iframe);
+        </script></head><body><iframe src="./tag.html" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    
+    
+    
+
+</body></html>

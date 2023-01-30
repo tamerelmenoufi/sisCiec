@@ -1,0 +1,1 @@
+replace into turmas (codigo,id,codigo_turma,codigo_escola,codigo_curso,codigo_disciplina,codigo_professor,data_inicio,data_final,data_exame,turno,hora_inicio,hora_final,alteracao,integracao) values ('N_CN_7','7','','N_CN_4','N_CN_2','N_CN_4','N_CN_4','2007-01-22','2007-01-27','2007-01-27','matutino','08:00:00','09:30:00','0000-00-00 00:00:00','1')

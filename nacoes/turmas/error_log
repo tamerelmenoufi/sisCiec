@@ -1,0 +1,4 @@
+[21-Nov-2015 11:51:30 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home/wmsuplet/public_html/wm/includes/connect.inc.php on line 16
+[21-Nov-2015 11:51:30 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/wmsuplet/public_html/wm/turmas/turmas.php on line 90
+[21-Nov-2015 11:51:30 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/wmsuplet/public_html/wm/turmas/turmas.php on line 93
+[21-Nov-2015 11:51:30 UTC] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, boolean given in /home/wmsuplet/public_html/wm/turmas/turmas.php on line 169

@@ -1,0 +1,8 @@
+{
+    "SERVICES": {
+        "RETORNO": {
+            "SUCESSO": "false",
+            "DESCRICAO": "password invalido"
+        }
+    }
+}
