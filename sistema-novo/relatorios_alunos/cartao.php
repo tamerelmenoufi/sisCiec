@@ -157,7 +157,7 @@ for($i=$len;$i<11;$i++){
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wpp 99303-9416</span><br>
+                          </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wpp: 99303-9416</span><br>
                     </tr>
                 </table></td>
               </tr>
@@ -376,7 +376,7 @@ $sqlm = "select a.*,
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <td><div align="center"><span class="arial16">Wpp: 99303-9416<br>
+                          </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wpp: 99303-9416</span><br>
                     </tr>
                 </table></td>
               </tr>
