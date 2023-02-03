@@ -157,7 +157,7 @@ for($i=$len;$i<11;$i++){
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3236-4048</span></div></td>
+                      <td><div align="center"><span class="arial16">Wpp: 99303-9416<br>
                     </tr>
                 </table></td>
               </tr>
@@ -338,9 +338,9 @@ $sqlm = "select a.*,
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
   a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                                 b) Taxa / prazo de entrega<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 10,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 20,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 40,00 - data estabelecida pelo coordenador.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pelo coordenador.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
@@ -376,7 +376,7 @@ $sqlm = "select a.*,
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3236-4048</span></div></td>
+                          <td><div align="center"><span class="arial16">Wpp: 99303-9416<br>
                     </tr>
                 </table></td>
               </tr>
@@ -556,9 +556,9 @@ $sqlm = "select a.*,
                       Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 10,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 20,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 40,00 - data estabelecida pelo coordenador.</p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pelo coordenador.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
