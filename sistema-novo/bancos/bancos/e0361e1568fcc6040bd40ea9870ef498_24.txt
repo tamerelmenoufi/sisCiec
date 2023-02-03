@@ -1,0 +1,1 @@
+replace into professor_disciplina (codigo,id,codigo_curso,codigo_professor,codigo_disciplina,alteracao,integracao) values ('N_CN_24','24','N_CN_1','N_CN_6','N_CN_3','0000-00-00 00:00:00','1')

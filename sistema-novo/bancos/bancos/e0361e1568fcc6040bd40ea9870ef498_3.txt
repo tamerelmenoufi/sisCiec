@@ -1,0 +1,1 @@
+replace into cadastro_escola (codigo,id,descricao,op,alteracao,integracao) values ('N_CN_3','3','Colégio Objetivo do Amazonas/Manaus - AM','0','2013-11-12 19:39:28','1')
