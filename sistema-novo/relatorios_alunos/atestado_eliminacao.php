@@ -101,7 +101,7 @@ border: solid 1px #000000;
 	text-decoration: none;
 }
 </style>
-<title>Atestado de eliminação de disciplinas</title>
+<title>Atestado de eliminaï¿½ï¿½o de disciplinas</title>
 </head>
 
 <body>
@@ -112,8 +112,8 @@ border: solid 1px #000000;
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
-Manaus – Amazonas </h4>
+Autorizado pela <?=$conf[resolucao]?> 
+Manaus ï¿½ Amazonas </h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
 <span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
@@ -213,17 +213,17 @@ Sem pend&ecirc;ncia de disciplinas
 	<tr>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
-			Milhomem Center, Av. Djalma Batista, nº 98A<br>
+			Milhomem Center, Av. Djalma Batista, nï¿½ 98A<br>
              3023-1242 / 3346-0191 / 3236-4048
         </td>
     	<td align="center" class="arial10">
-			Shopping São José<br>
-			2º Piso em frente ao DETRAN<br>
+			Shopping Sï¿½o Josï¿½<br>
+			2ï¿½ Piso em frente ao DETRAN<br>
             3342-3327
         </td>
     	<td align="center" class="arial10">
-			Parque das Nações<br>
-			R. Angola, nº 21. Quadra 23<br>
+			Parque das Naï¿½ï¿½es<br>
+			R. Angola, nï¿½ 21. Quadra 23<br>
             3654-2283 / 99434-6959
       </td>
     </tr>
