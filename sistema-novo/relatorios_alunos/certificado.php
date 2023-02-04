@@ -151,7 +151,7 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="85"></td>
+                  <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="75"></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
 	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS – EJA </span><br>
