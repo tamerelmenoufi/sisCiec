@@ -151,7 +151,7 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.jpg" width="97" height="110"></td>
+                  <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="85"></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
 	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS – EJA </span><br>
@@ -165,7 +165,7 @@ white-space:nowrap;
           </tr>
           <tr>
             <td>&nbsp;</td>
-            
+
           </tr>
           <tr>
             <td><div class="dauphin"> Certificado </div></td>
@@ -278,7 +278,7 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="45" align="left" />CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
 		EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
 		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
@@ -464,7 +464,7 @@ white-space:nowrap;
                 <tr>
                   <td colspan="4" align="center">
                       <div align="center">
-                        <span class="times12"><img src="../img/logo_ciec.jpg" width="45" align="left" />
+                        <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
                             CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
                             EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
 			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
