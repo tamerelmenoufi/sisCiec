@@ -28,11 +28,6 @@ if($_POST[observacao]){
       $linha2 = "ORG&Atilde;O/UF: ".$dados->rg_orgao;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
-  }elseif($dados->certidao_nascimento){
-      $linha1 = "CERT. NASC.: ".$dados->certidao_nascimento;
-      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;
-      $linha3 = "CIDADE: ".$dados->cidade;
-      $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
       $linha1 = "DOC. RNE: ".$dados->rne;
       $linha2 = "Nacionalidade: ".$dados->nacionalidade;
@@ -43,6 +38,11 @@ if($_POST[observacao]){
       $linha2 = "Nascionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
+  }elseif($dados->certidao_nascimento){
+      $linha1 = "CERT. NASC.: ".$dados->certidao_nascimento;
+      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;
+      $linha3 = "CIDADE: ".$dados->cidade;
+      $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }
 
 
