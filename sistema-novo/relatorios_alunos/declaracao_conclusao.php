@@ -43,15 +43,16 @@ if($_POST[observacao]){
 
 
 	if($dados->rg){
-	  $linha1 = " natural de ".$dados->cidade.", Unidade Federada ".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg.", Org&atilde;o Expedidor ".$dados->rg_orgao;
-	}elseif($dados->certidao_nascimento){
-	  $linha1 = " natural de ".$dados->cidade.", Unidade Federada ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Floha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;   
+	  $linha1 = " natural de ".$dados->cidade."/".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
+	
 	}elseif($dados->rne){
 		  $linha1 = "nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
 	}elseif($dados->passaporte){
 		  $linha1 = "nacionalidade ".$dados->nacionalidade.", portador(a) do Passaporte n&ordm; ".$dados->passaporte;
-	}
-
+	
+}elseif($dados->certidao_nascimento){
+	$linha1 = " natural de ".$dados->cidade.", Unidade Federada ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Floha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;   
+}
 
     if(!mysql_num_rows($result)){
      $retorno = true;
@@ -136,9 +137,9 @@ Manaus – Amazonas </h4>
 <span style="margin-left:95px;">Declaramos para os devidos fins que  
   <?=$dados->nome?>
 , <strong> </strong><?=$linha1?>, nascido(a) no dia <?=trim(data_ext($dados->data_nascimento,''))?>, concluiu, em 
-              <?=trim(data_ext($dados->data_exame,''))?>, o Exame da Educação de Jovens e Adultos- EJA, n&iacute;vel de 
+              <?=trim(data_ext($dados->data_exame,''))?>, os Exame da Educação de Jovens e Adultos- EJA, n&iacute;vel de 
 <?=$dados->descricao?>, 
-nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, obtendo os seguintes resultados:
+nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, estando apto a prosseguir seus estudos
 <br>
 <table style="margin:10px;" width="100%" class="borda_tabela" cellpadding="5" cellspacing="0">
 	<tr>
