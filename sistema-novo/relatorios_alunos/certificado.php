@@ -156,7 +156,7 @@ white-space:nowrap;
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
 	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS – EJA </span><br>
 	      <span class="times12">
-		 Av. Djalma Batista, nº 98 A, salas 200/2001/2002/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 		Amparado pela <?=$conf[resolucao]?> <br>
               Manaus-Amazonas </span></div></td>
                 </tr>
@@ -279,7 +279,7 @@ white-space:nowrap;
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
               <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="45" align="left" />CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
 		EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
-		Av. Djalma Batista, nº 98 A, salas 200/2001/2002/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
                 <?=$conf[resolucao]?>
               </div></td>
@@ -466,7 +466,7 @@ white-space:nowrap;
                         <span class="times12"><img src="../img/logo_ciec.jpg" width="45" align="left" />
                             CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
                             EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
-			    Av. Djalma Batista, nº 98 A, salas 200/2001/2002/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 			    Amparado pela <?=$conf[resolucao]?>
                       </div>
                   </td>
