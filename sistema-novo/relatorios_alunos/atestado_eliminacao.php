@@ -130,7 +130,7 @@ Manaus/Amazonas </h4>
 	  <?=(($dados->nacionalidade == 'brasileira')?'RG':'RNE')?> <?=$dados->rg?>, 
 	prestou o Exame Supletivo do <span class="times20">
       <?=$dados->descricao?>, 
-    </span> nos termos do Artigos 37 e 38, seus parágrafos e alíneas, da Lei n&ordm;9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas -CEE/AM, e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
+    </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n&ordm;9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas -CEE/AM, e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
 </table>
 </p>
