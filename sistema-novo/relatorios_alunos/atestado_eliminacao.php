@@ -7,20 +7,20 @@ include("../includes/data_ext.inc.php");
 
 
 if($_POST[guardar_documento]){
-	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[curso]."', data='".date("Y-m-d")."', tipo='atestado_eliminacao', observacao='".$_POST[observacao]."'");	
+	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[curso]."', data='".date("Y-m-d")."', tipo='atestado_eliminacao', observacao='".$_POST[observacao]."'");
 }
 
 if($_POST[observacao]){
 	$observacoes = str_replace("\n","<br>",$_POST[observacao]);
 }
 
-	$query = "select a.*,b.descricao,d.data_exame from cadastro_aluno a " 
+	$query = "select a.*,b.descricao,d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
 		   . " where a.codigo = '$cod' and b.codigo='$curso' order by c.data_exame desc limit 0,1";
 	$result = mysql_query($query);
-	
+
 	$dados = mysql_fetch_object($result);
 
   if($dados->rg){
@@ -30,7 +30,7 @@ if($_POST[observacao]){
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->certidao_nascimento){
       $linha1 = "CERT. NASC.: ".$dados->certidao_nascimento;
-      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;     
+      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
@@ -40,13 +40,13 @@ if($_POST[observacao]){
       $linha4 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
-      $linha2 = "Nascionalidade: ".$dados->nacionalidade;    
+      $linha2 = "Nascionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
   }
 
-	
-	
+
+
 ?>
 
 
@@ -113,7 +113,7 @@ border: solid 1px #000000;
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> 
+Autorizado pela <?=$conf[resolucao]?>
 Manaus/Amazonas </h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
@@ -123,13 +123,13 @@ Manaus/Amazonas </h4>
   <tr>
     <td><p class="times16" align="justify">Atestamos que <span class="times20">
       <?=trim($dados->nome)?>,
-      </span> natural de 
+      </span> natural de
       <?=$dados->cidade?>,
-       nascido(a) em 
+       nascido(a) em
       <?=data_ext($dados->data_nascimento,false)?>,
-	  <?=(($dados->nacionalidade == 'brasileira')?'RG':'RNE')?> <?=$dados->rg?>, 
+	  <?=$linha1?>,
 	prestou o Exame Supletivo do <span class="times20">
-      <?=$dados->descricao?>, 
+      <?=$dados->descricao?>,
     </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n&ordm;9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas -CEE/AM, e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
 </table>
@@ -145,7 +145,7 @@ Manaus/Amazonas </h4>
         <td align="center" valign="middle" class="borda1x"><div align="center" class="times16"><strong>DATA</strong></div></td>
       </tr>
 	<?php
-	
+
 	  $query = "select b.codigo as cod_disciplina,concat(b.descricao,' ',a.observacao) as descricao, a.situacao,a.nota,a.data_exame from matricula a
 	            left join cadastro_disciplinas b on a.codigo_disciplina=b.codigo
 				left join turmas c on a.codigo_turma=c.codigo
@@ -154,9 +154,9 @@ Manaus/Amazonas </h4>
 	  $result = mysql_query($query);
 	  $array_disciplinas_concluidas = false;
 	  while($dados = mysql_fetch_object($result)){
-	  
+
 	  	$array_disciplinas_concluidas[] = $dados->cod_disciplina;
-	  
+
 	?>
       <tr>
         <td align="center" valign="middle" class="borda1x"><div align="center" class="times16"><?=$dados->descricao?></div></td>
@@ -173,26 +173,26 @@ Manaus/Amazonas </h4>
 <p>&nbsp;</p>
 <p align="center" class="times10">&nbsp;
 <?php
-	
+
 	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("', '",$array_disciplinas_concluidas)."')" : false);
 	//echo $query;
 	$result = mysql_query($query);
 	$array_disciplinas = false;
 	while($d = mysql_fetch_object($result)){
-		$array_disciplinas[] = $d->descricao;	
+		$array_disciplinas[] = $d->descricao;
 	}
-	
+
 	//echo "count: ".count($array_disciplinas);
-	
+
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
 <font color="#FF0000"><b>
 Disciplinas pendentes (
 <?php
 	echo @implode(", ",$array_disciplinas);
-	
+
 ?>
-) 
+)
 <?php
 }else{
 ?>
