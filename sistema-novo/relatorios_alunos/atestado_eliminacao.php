@@ -125,9 +125,10 @@ Manaus/Amazonas </h4>
       <?=trim($dados->nome)?>,
       </span> natural de 
       <?=$dados->cidade?>,
-       Unidade Federada 
-      <?=$dados->estado?>, nascido(a) em 
-      <?=data_ext($dados->data_nascimento,false)?>, prestou o Exame Supletivo do <span class="times20">
+       nascido(a) em 
+      <?=data_ext($dados->data_nascimento,false)?>,
+	  RG n°  <?=$dados->rg?>, 
+	prestou o Exame Supletivo do <span class="times20">
       <?=$dados->descricao?>, 
     </span> nos termos do Artigo 38 da Lei Federal n&ordm; 9.394/96 e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
