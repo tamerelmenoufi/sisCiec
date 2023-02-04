@@ -48,7 +48,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
   $validar_curso = strtolower($dados->descricao);
 
   if($dados->rg){    
-    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade.", ".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg.", ".$dados->rg_orgao;
+    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade."/".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
  
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
