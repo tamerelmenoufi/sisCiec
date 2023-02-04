@@ -110,6 +110,7 @@ border: solid 1px #000000;
 <br>
 <br>
 
+
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
 Autorizado pela <?=$conf[resolucao]?> 
