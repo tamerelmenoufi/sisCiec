@@ -114,7 +114,7 @@ border: solid 1px #000000;
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
 Autorizado pela <?=$conf[resolucao]?> 
-Manaus ï¿½ Amazonas </h4>
+Manaus/Amazonas </h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
 <span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
@@ -218,13 +218,13 @@ Sem pend&ecirc;ncia de disciplinas
              3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
-			Shopping Sï¿½o Josï¿½<br>
+			Shopping São José<br>
 			2ï¿½ Piso em frente a Marisa<br>
             3342-3327
         </td>
     	<td align="center" class="arial10">
-			Parque das Naï¿½ï¿½es<br>
-			R. Angola, nï¿½ 21. Quadra 23<br>
+			Parque das Nações<br>
+			R. Angola, n° 21. Quadra 23<br>
             3654-2283 / 99434-6959
       </td>
     </tr>
