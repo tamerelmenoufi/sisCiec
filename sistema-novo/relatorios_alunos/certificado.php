@@ -180,9 +180,9 @@ white-space:nowrap;
               <b><?=trim($dados->nome)?></b>/<?=$linha1?>,
                nascido(a) no dia 
               <?=trim(data_ext($dados->data_nascimento,''))?>,
-               tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA realizado em 
+               tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em 
               <?=trim(data_ext($dados->data_exame,''))?>,
-               concluiu o 
+              o 
               <?=trim($dados->descricao)?>,
                conforme prescreve a legisla&ccedil;&atilde;o em vigor.</td>
           </tr>
