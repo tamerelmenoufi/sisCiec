@@ -214,12 +214,12 @@ Sem pend&ecirc;ncia de disciplinas
 	<tr>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
-			Milhomem Center, Av. Djalma Batista, nï¿½ 98A<br>
+			Milhomem Center, Av. Djalma Batista, n° 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
-			2ï¿½ Piso em frente a Marisa<br>
+			2° Piso em frente a Marisa<br>
             3342-3327
         </td>
     	<td align="center" class="arial10">
