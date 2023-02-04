@@ -261,7 +261,7 @@ white-space:nowrap;
       </tr>
       <tr>
         <td width="20"><img src="../img/canto4_borda_certificado.gif" width="29" height="29"></td>
-        <td background="../img/canto6_borda_certificado.gif"><img src="../img/canto6_borda_certificado.gif" width="100%" height="29"></td>
+        <td background="../img/canto6_borda_certificado.gif" style="margin-bottom:-10px"><img src="../img/canto6_borda_certificado.gif" width="100%" height="29"></td>
         <td width="20"><img src="../img/canto3_borda_certificado.gif" width="29" height="29"></td>
       </tr>
     </table>
