@@ -14,7 +14,7 @@ mysql_select_db( "cieceja_cnery" ) or die("Erro no banco ".mysql_error());
 //echo "<BR><BR><BR>BANCO DA HORA:".$_SESSION['cook_banco']."<BR><BR><BR>";
 
 $conf[resolucao]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.<br>';
-$conf[r]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.;
+$conf[r]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.';
 
 $conf[Unidade] = 'N_CN_';
 
