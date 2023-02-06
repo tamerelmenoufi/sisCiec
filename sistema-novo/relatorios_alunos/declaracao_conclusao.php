@@ -139,7 +139,7 @@ Manaus – Amazonas </h4>
 , <strong> </strong><?=$linha1?>, nascido(a) no dia <?=trim(data_ext($dados->data_nascimento,''))?>, concluiu, em 
               <?=trim(data_ext($dados->data_exame,''))?>, os Exame da Educação de Jovens e Adultos- EJA, n&iacute;vel de 
 <?=$dados->descricao?>, 
-nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, estando apto a prosseguir seus estudos
+nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, estando apto a prosseguir seus estudos.
 <br>
 <table style="margin:10px;" width="100%" class="borda_tabela" cellpadding="5" cellspacing="0">
 	<tr>
