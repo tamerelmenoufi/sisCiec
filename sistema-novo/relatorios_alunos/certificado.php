@@ -347,7 +347,7 @@ white-space:nowrap;
 
 
         <td width="104"><div align="center" class="times12"><?=$data_exame?></div></td>
-        <td width="72" class="times12" align="center"><?=$escola?> </td>
+        <td width="72" class="times12" align="center">AM<?//=$escola?> </td>
         <td width="413"><div align="center" class="times12"><?//=number_format($nota,1,',',false)?></div></td>
       </tr>
 	<?php
