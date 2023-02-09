@@ -101,7 +101,7 @@ border: solid 1px #000000;
 	text-decoration: none;
 }
 </style>
-<title>Atestado de eliminaï¿½ï¿½o de disciplinas</title>
+<title>Atestado de eliminação de disciplinas</title>
 </head>
 
 <body>
