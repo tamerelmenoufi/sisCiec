@@ -119,7 +119,7 @@ if($_POST[observacao]){
 </style>
 <html>
 <head>
-<title>DECLARA«√O DE MATRÌCULA</title>
+<title>DECLARA«√O DE MATRÕCULA</title>
 </head>
 
 <body>
