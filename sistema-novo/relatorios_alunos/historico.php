@@ -126,7 +126,7 @@ border-bottom: solid 0px #000000;
 </head>
 
 <body>
-<fieldset style="width:20cm;  border:#000000 5px solid"><br>
+<fieldset style="width:20cm;  border:#000000 5px solid;background:url(../img/ciecbgcinza.png) repeat  top ;background-size:100%" ><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 
@@ -212,7 +212,7 @@ Manaus – Amazonas </h4>
   <tr>
     <td >
 	
-	<table width="100%" style="background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%"  border="0" cellspacing="0" cellpadding="2">
+	<table width="100%"   border="0" cellspacing="0" cellpadding="2">
       <tr>
         <td align="center" class="borda1"><div align="center" class="times12"><strong>ESCOLA</strong></div></td>
         <td align="center" class="borda1"><div align="center" class="times12"><strong>CURSO</strong></div></td>
