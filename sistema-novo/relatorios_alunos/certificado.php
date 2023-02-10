@@ -145,7 +145,8 @@ white-space:nowrap;
       </tr>
       <tr>
         <td><img src="../img/canto5_borda_certificado.gif" width="29" height="610"></td>
-        <td><table width="900"  border="0" cellspacing="0" cellpadding="0">
+        <td><table style="background:url(../img/ciecbg.png) no-repeat  center;background-size:100%;"
+         width="900"  border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
                 <tr>
