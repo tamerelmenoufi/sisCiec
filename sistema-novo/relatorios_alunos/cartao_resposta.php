@@ -188,7 +188,7 @@ $dados->cod_mat = $z.$dados->cod_mat;
           <tr>
             <td height="214" colspan="3"><table width="100%"  border="0" cellspacing="0" cellpadding="10" >
               <tr>
-                <td><table width="100%"  border="0" cellspacing="2" cellpadding="0">
+                <td><table width="100%"  border="0" cellspacing="2" cellpadding="0" style=";background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%">
                   <tr class="arial121">
                     <td><div align="right">01</div></td>
                     <td width="20" height="20" align="center" valign="middle" class="borda11"><div align="center">A</div></td>
