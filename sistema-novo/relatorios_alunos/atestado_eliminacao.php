@@ -106,7 +106,7 @@ border: solid 1px #000000;
 
 <body>
 
-<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid">
+<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%">
 <br>
 <br>
 
