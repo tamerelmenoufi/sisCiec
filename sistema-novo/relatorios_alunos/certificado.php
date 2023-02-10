@@ -272,7 +272,9 @@ white-space:nowrap;
 	<?php //aqui entra a quebra de página ?>
         <p>&nbsp;</p>
     
-    <table width="100%" cellspacing="0" cellpadding="0" class="borda1">
+    <div style="background:url(../img/ciecbg.png) no-repeat  center;background-size:100%;">
+    
+        <table width="100%" cellspacing="0" cellpadding="0" class="borda1">
 	  <tr>
         <td height="35" colspan="4" align="center" valign="top" class="times12"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -456,6 +458,8 @@ white-space:nowrap;
     <?php
     }
 	?>
+
+  </div>
     
     <table width="100%" cellspacing="0" cellpadding="0">
 	  <tr>
