@@ -112,7 +112,7 @@ border-bottom: solid 0px #000000;
 </head>
 
 <body>
-<fieldset style="width:20cm; padding-left:10px; height:29.7cm; border:#000000 5px solid"><br>
+<fieldset style="width:20cm; padding-left:10px; height:29.7cm; border:#000000 5px solid ;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%"><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
@@ -170,11 +170,11 @@ Manaus – Amazonas </h4>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
 			Milhomem Center, Av. Djalma Batista, nº 98A<br>
-             3023-1242 / 3346-0191 / 3236-4048
+             3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
-			2º Piso em frente ao DETRAN<br>
+			2º Piso em frente a Marisa<br>
             3342-3327
         </td>
     	<td align="center" class="arial10">
