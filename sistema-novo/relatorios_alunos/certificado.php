@@ -650,21 +650,21 @@ Observações
        </div>
        
        
-    	<div style="margin-top:5px;text-align:right;padding:4px"><?=data()?>.</div>
+    	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px"><?=data()?>.</div>
    
       <table class="">
     <tr>
-      <td width="320"  >Secretário(a) </th>
+    
+    <td width="350" style="border-top:1px #000 solid;text-align:center">Secretário(a)  
+    </td>
+   
+    <td width="380"  ></th>
+
+    <td width="350" style="border-top:1px #000 solid;text-align:center">Diretor(a) 
+    </td>
+
     </tr>
  
-    <tr>
-      <td width="320"></td>
-     
-    </tr>
-    <tr>
-     
-      <td width="320">Diretor(a)</td>
-    </tr>
     
 </table>
 
