@@ -655,6 +655,7 @@ Observações
 
 
       <div class="container" >
+           <div class="row" >
         <div class="col-md-3" >
        <div style="border-top:1px solid #000;text-align:center;padding-right:25px;padding-left:25px">Secretário(a)</div>
 
@@ -666,7 +667,9 @@ Observações
 
        </div>
 </div>
+</div>
 
 
+<!---final--->
 </div>
   
