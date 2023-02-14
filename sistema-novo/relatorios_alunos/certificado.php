@@ -579,6 +579,21 @@ white-space:nowrap;
 	<?php
 		}
 	?>
+
+
+      <tr>
+        <td width="150" height="25" class="times12">Total de Pontos  </td>
+                <td width="104" class="times12"><div align="center" class="times12">86,5</div></td>
+        <td width="413" class="times12" align="center"></td>
+      
+      </tr>
+      <tr>
+        <td width="150" height="25" class="times12">Coeficiente </td>
+                <td width="104" class="times12"><div align="center" class="times12">7,20</div></td>
+        <td width="413" class="times12" align="center"></td>
+      
+      </tr>
+
     </table>
     </td>
     </tr>
