@@ -614,11 +614,7 @@ white-space:nowrap;
     </table>
     </td>
     </tr>
-     
-<div style="padding:10px;border-bottom: 1px solid #000; border-top:1px solid #000;
-text-align:center;font-weight:bold">
-Observações
-</div>
+   
 
    <tr>
     	<td align="right">&nbsp;</td>
@@ -627,5 +623,10 @@ Observações
     	<td align="right"><?=data()?></td>
     </tr>
     </table>
+
+    <div style="padding:10px;border-bottom: 1px solid #000; border-top:1px solid #000;
+text-align:center;font-weight:bold">
+Observações
+</div>
   </div>
 
