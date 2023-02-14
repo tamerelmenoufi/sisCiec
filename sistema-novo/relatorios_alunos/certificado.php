@@ -649,9 +649,9 @@ Observações
   Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
        </div>
        
-       <tr style="margin-top:5px">
-    	<td align="right"><?=data()?></td>
-    </tr>
+       
+    	<div style="margin-top:10px;text-align:center"><?=data()?></div>
+   
 
 
 
