@@ -615,17 +615,26 @@ white-space:nowrap;
     </td>
     </tr>
    
-
-   <tr>
-    	<td align="right">&nbsp;</td>
-    </tr>
-    
     </table>
 
     <div style="padding:10px;border-bottom: 1px solid #000; border-top:1px solid #000;
-text-align:center;font-weight:bold">
+text-align:center;font-weight:bold;margin-top:5px">
 Observações
 </div>
+
+<p style="">
+  Amapro Legal: Amparo pela Lei Federal n. 9394/96, de 20 de dezembro de 1996. Resolução CNE/CEB n.° 01/2000
+  </p>
+  <div style="border-bottom: 1px solid #000; border-top:1px solid #000">
+  
+  <p><b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
+  Resolução n° 38/05, de 26.04.2005/ Resolução 96,06 de 19.09.2006/
+
+  </p>
+  </div>
+
+
+
   </div>
 
 
