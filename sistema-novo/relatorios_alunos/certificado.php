@@ -622,19 +622,41 @@ text-align:center;font-weight:bold;margin-top:5px">
 Observações
 </div>
 
-<p style="font-size:12px">
+        <div style="font-size:12px;padding:5px">
   Amparo Legal: Amparo pela Lei Federal n. 9394/96, de 20 de dezembro de 1996. Resolução CNE/CEB n.° 01/2000
-  </p>
-  <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:12px;padding:5px">
+       </div>
   
-   <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
+    <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:12px;padding:5px">
+     <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
   Resolução n° 38/05, de 26.04.2005/ Resolução 96,06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 19/2011, de 20.12.2011/ REsolução 213, de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
+    </div>
+    
+    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
+       </div>
 
+    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  <b>
+    Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina. 
+  </b>
+    </div>
 
-  </div>
-
-</div>
-  <tr>
+    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  Regimento aprovado pelo CEE/AM.
+       </div>
+    
+       <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
+       </div>
+       
+       <tr style="margin-top:5px">
     	<td align="right"><?=data()?></td>
     </tr>
 
+
+
+
+
+
+</div>
+  
