@@ -174,11 +174,11 @@ if($data and $data!= 'undefined'){
     	<td align="center" class="arial10">
 			Djalma Batista<br>
 			Milhomem Center, Av. Djalma Batista, nº 98A<br>
-             3023-1242 / 3346-0191 / 3236-4048
+             3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
-			2º Piso em frente ao DETRAN<br>
+			2º Piso em frente a Marisa<br>
             3342-3327
         </td>
     	<td align="center" class="arial10">
