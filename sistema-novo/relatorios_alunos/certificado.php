@@ -583,13 +583,13 @@ white-space:nowrap;
 
       <tr>
         <td width="150" height="25" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold"><div align="center"  class="times12">86,5</div></td>
+                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12">86,5</div></td>
         <td width="413" class="times12" align="center" style="border: solid 1px #000;border-left:0px;border-bottom:0px"></td>
       
       </tr>
       <tr>
         <td width="150" height="25" class="times12" style="font-weight:bold">Coeficiente </td>
-                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold"><div align="center" class="times12">7,20</div></td>
+                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12">7,20</div></td>
         <td width="413" class="times12" align="center" style="border: solid 1px #000;border-left:0px;border-bottom:0px"></td>
       
       </tr>
