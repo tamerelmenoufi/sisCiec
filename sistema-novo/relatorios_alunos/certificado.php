@@ -650,12 +650,22 @@ Observações
        </div>
        
        
-    	<div style="margin-top:10px;text-align:center"><?=data()?></div>
+    	<div style="margin-top:5px;text-align:right;padding:4px"><?=data()?>.</div>
    
 
 
+      <div class="container" >
+        <div class="col-md-3" >
+       <div style="border-top:1px solid #000;text-align:center;padding-right:25px;padding-left:25px">Secretário(a)</div>
 
+       </div>
+       
+       <div class="col-md-4" ></div>
+       
+       <div class="col-md-3" >
 
+       </div>
+</div>
 
 
 </div>
