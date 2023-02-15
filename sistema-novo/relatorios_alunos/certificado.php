@@ -571,6 +571,7 @@ white-space:nowrap;
            <td width="72" class="times12" align="center">Aprovado</td>
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
            <td width="413" class="times12" align="center"><?=$escola?> </td>
+           <td width="413" class="times12" align="center"> </td>
      
         <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
         
