@@ -672,9 +672,9 @@ Observações
 <p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
 
-  <div style="border-top: 2px dotted #000;border-bottom: 1px solid #000">
+
+  <div style="border-top:1px dotted #000;border-bottom: 1px solid #000;padding:1px">
 </div>
   <div>&nbsp;</div>
 
