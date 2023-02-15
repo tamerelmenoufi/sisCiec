@@ -481,16 +481,16 @@ white-space:nowrap;
                       </div>
                   </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td colspan="4">&nbsp;</td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td colspan="4" height="35" align="center" valign="middle" class="times12">HIST&Oacute;RICO ESCOLAR - EJA</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td colspan="4">&nbsp;</td>
-                </tr>
-                <tr style="font-size:12px;font-weight:bold">
+                </tr> -->
+                <tr style="font-size:10px; font-weight:bold">
                     <td width="12%"  class="times12">Nome:</td>
                   <td width="32%" class="corpo"><?=$dados->nome?></td>
                   <td width="18%" class="times12">Data de Nascimento:</td>
