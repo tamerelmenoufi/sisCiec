@@ -517,7 +517,7 @@ white-space:nowrap;
         <td height="35" colspan="6" align="center" valign="top" class="times12">
 	    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="borda1">
           <tr>
-            <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
+            <td height="17" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Média Final por disciplina</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data De Conclusão</strong></td>
@@ -542,7 +542,7 @@ white-space:nowrap;
 
 	?>
             <tr>
-        <td width="320" height="25" class="times12"><?=$disciplina?> </td>
+        <td width="320" height="17" class="times12"><?=$disciplina?> </td>
         <?php
 
 		  $compdata = false;
