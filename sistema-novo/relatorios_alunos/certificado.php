@@ -659,7 +659,7 @@ Observações
 
   <div style="border-top:1px dotted #000;border-bottom: 1px solid #000;padding:1px">
 </div>
-  <div>&nbsp;</div>
+ 
 
  <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
  Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
