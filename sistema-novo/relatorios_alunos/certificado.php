@@ -674,8 +674,11 @@ Observações
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 
-
- <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  <div style="border-top: 1px dotted #000;border-bottom: 1px solid #000">
+ 
+       </div>
+  <p>&nbsp;</p>
+ <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
   Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
        </div>
        
