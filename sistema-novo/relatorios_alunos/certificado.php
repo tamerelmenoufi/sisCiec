@@ -669,6 +669,16 @@ Observações
 </table>
 
 
+<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+ <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+  Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
+       </div>
+       
 
 <!---final--->
 </div>
