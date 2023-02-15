@@ -674,12 +674,13 @@ Observações
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 
-  <div style="border-top: 1px dotted #000;border-bottom: 1px solid #000">
- 
-       </div>
-  <p>&nbsp;</p>
+  <div style="border-top: 2px dotted #000;border-bottom: 1px solid #000">
+</div>
+  <div>&nbsp;</div>
+
  <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
-  Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
+ Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
+ e-mail:wm.supletivo@gmail.com - C.N.P.J.07.615.520/0003-10
        </div>
        
 
