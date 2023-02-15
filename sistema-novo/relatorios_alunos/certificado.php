@@ -472,7 +472,7 @@ white-space:nowrap;
                 </tr>
                 <tr>
                   <td colspan="4" align="center">
-                      <div align="center" style="font-size:12px">
+                      <div align="center" style="font-size:10px;margin-top:25">
                         <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
                             CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
                             EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
@@ -582,13 +582,13 @@ white-space:nowrap;
 
 
       <tr>
-        <td width="150" height="25" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
+        <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
         <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12">86,5</div></td>
         <td width="413" class="times12" align="center" colspan="3" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
       </tr>
 
       <tr>
-        <td width="150" height="25" class="times12" style="font-weight:bold">Coeficiente </td>
+        <td width="150" height="17" class="times12" style="font-weight:bold">Coeficiente </td>
         <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12">7,20</div></td>
         <td width="413" class="times12" align="center" colspan="3"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
