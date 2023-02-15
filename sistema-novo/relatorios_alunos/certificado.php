@@ -524,6 +524,7 @@ white-space:nowrap;
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data De Conclusão</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Escola</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong></strong></td>
           </tr>
 	<?php
 	
