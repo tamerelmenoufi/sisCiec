@@ -492,25 +492,23 @@ white-space:nowrap;
                 </tr> -->
                 <tr style="font-size:10px; font-weight:bold">
                     <td width="12%"  class="times12">Nome:</td>
-                  <td width="32%" class="corpo"><?=$dados->nome?></td>
-                  <td width="18%" class="times12">Data de Nascimento:</td>
-                  <td width="38%" class="corpo"><?=data_formata($dados->data_nascimento)?></td>
+                  <td width="32%" class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->nome?></td>
+                  <td width="18%" class="times12" style="font-size:10px; font-weight:bold">Data de Nascimento:</td>
+                  <td width="38%" class="corpo" style="font-size:10px; font-weight:bold"><?=data_formata($dados->data_nascimento)?></td>
               <tr>
                 <tr style="font-size:12px;font-weight:bold">
                     <td class="times12">RG:</td>
-                    <td class="corpo"><?=$dados->rg?></td>
-                    <td class="times12">&Oacute;rg&atilde;o Expedidor:</td>
-                    <td class="corpo"><?=$dados->rg_orgao?></td>
+                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->rg?></td>
+                    <td class="times12" style="font-size:10px; font-weight:bold">&Oacute;rg&atilde;o Expedidor:</td>
+                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->rg_orgao?></td>
                 <tr>
                 <tr style="font-size:12px;font-weight:bold">
                     <td class="times12">N&iacute;vel de ensino:</td>
-                    <td class="corpo"><?=$dados->descricao?></td>
-                    <td class="times12">Modalidade:</td>
+                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->descricao?></td>
+                    <td class="times12" >Modalidade:</td>
                     <td class="corpo">Educa&ccedil;&atilde;o de Jovens e Adultos/EJA</td>
                 <tr>
-                <tr>
-                  <td colspan="4">&nbsp;</td>
-                </tr>
+                <div style="padding:3px"></div>
             </table>
         </td>
         </tr>
@@ -602,40 +600,40 @@ white-space:nowrap;
 
     </table>
 
-    <div style="padding:10px;border-bottom: 1px solid #000; border-top:1px solid #000;
+    <div style="padding:3px;border-bottom: 1px solid #000; border-top:1px solid #000;
 text-align:center;font-weight:bold;margin-top:5px">
 Observações
 </div>
 
-        <div style="font-size:12px;padding:5px">
+        <div style="font-size:10px;padding:3px">
   Amparo Legal: Amparo pela Lei Federal n. 9394/96, de 20 de dezembro de 1996. Resolução CNE/CEB n.° 01/2000
        </div>
 
-    <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:12px;padding:5px">
+    <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:3px">
      <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
   Resolução n° 38/05, de 26.04.2005/ Resolução 96,06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 19/2011, de 20.12.2011/ REsolução 213, de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
 
-    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+    <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
 
-    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+    <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   <b>
     Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
   </b>
     </div>
 
-    <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+    <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   Regimento aprovado pelo CEE/AM.
        </div>
 
-       <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
+       <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
        </div>
 
 
-    	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:35px;"><?=data()?>.</div>
+    	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
       <table class="">
     <tr>
