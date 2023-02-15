@@ -392,7 +392,7 @@ white-space:nowrap;
        <?php
         if($validar_curso == 'ensino médio'){
         ?>
-        <div id="carimbo">
+        <div id="carimbo" style="font-size:12px">
         <span>CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS-<br />
 		CIEC SUL - UNIDADE DESCENTRALIZADA<br /></span>
 		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</div>
@@ -472,7 +472,7 @@ white-space:nowrap;
                 </tr>
                 <tr>
                   <td colspan="4" align="center">
-                      <div align="center">
+                      <div align="center" style="font-size:12px">
                         <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
                             CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
                             EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
@@ -490,19 +490,19 @@ white-space:nowrap;
                 <tr>
                   <td colspan="4">&nbsp;</td>
                 </tr>
-                <tr>
-                    <td width="12%" class="times12">Nome:</td>
+                <tr style="font-size:12px;font-weight:bold">
+                    <td width="12%"  class="times12">Nome:</td>
                   <td width="32%" class="corpo"><?=$dados->nome?></td>
                   <td width="18%" class="times12">Data de Nascimento:</td>
                   <td width="38%" class="corpo"><?=data_formata($dados->data_nascimento)?></td>
               <tr>
-                <tr>
+                <tr style="font-size:12px;font-weight:bold">
                     <td class="times12">RG:</td>
                     <td class="corpo"><?=$dados->rg?></td>
                     <td class="times12">&Oacute;rg&atilde;o Expedidor:</td>
                     <td class="corpo"><?=$dados->rg_orgao?></td>
                 <tr>
-                <tr>
+                <tr style="font-size:12px;font-weight:bold">
                     <td class="times12">N&iacute;vel de ensino:</td>
                     <td class="corpo"><?=$dados->descricao?></td>
                     <td class="times12">Modalidade:</td>
@@ -520,12 +520,10 @@ white-space:nowrap;
 	    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="borda1">
           <tr>
             <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>C.H.</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Resultado</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Origem</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Média Final por disciplina</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data De Conclusão</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Escola</strong></td>
           </tr>
 	<?php
 	
@@ -569,12 +567,14 @@ white-space:nowrap;
 
 		   
         ?>
-        <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
-        <td width="413" class="times12" align="center"><?=$escola?> </td>
-        <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
-        <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
-        <td width="72" class="times12" align="center">Aprovado</td>
-        <td width="72" class="times12" align="center"><?=(($carga_horaria) ? 'Curso' : 'Exame')?></td>
+           <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
+           <td width="72" class="times12" align="center">Aprovado</td>
+           <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
+           <td width="413" class="times12" align="center"><?=$escola?> </td>
+     
+        <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
+        
+        <!--<td width="72" class="times12" align="center"><?//=(($carga_horaria) ? 'Curso' : 'Exame')?></td>-->
       </tr>
 	<?php
 		}
