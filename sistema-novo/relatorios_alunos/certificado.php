@@ -7,10 +7,10 @@ include("../includes/data_ext.inc.php");
 
 			     $query = "select unidade,livro,folha,data,ordem,observacao from certificados where codigo_curso='$curso' and codigo_aluno='$cod'";
 				 $result = mysql_query($query);
-				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao) = mysql_fetch_row($result);			  
+				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao) = mysql_fetch_row($result);
 
 
-  function verifica_certificacao($disciplina,$cod,$curso){ 
+  function verifica_certificacao($disciplina,$cod,$curso){
 	  $query = "select codigo_disciplina from matricula where codigo_aluno='$cod' and codigo_curso='$curso' and situacao='AP'";
 	  $result = mysql_query($query);
 	  while($dados = mysql_fetch_object($result)){
@@ -21,7 +21,7 @@ include("../includes/data_ext.inc.php");
 	  return $retorno;
    }
 
-if(!$fec){ // condição para forçar a emissão do certificado  
+if(!$fec){ // condição para forçar a emissão do certificado
    $query = "select codigo from cadastro_disciplinas where codigo_curso='$curso'";
    $result = mysql_query($query);
     while($dados = mysql_fetch_object($result)){
@@ -37,7 +37,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
    }
 }// fim do fec
 
-	$query = "select a.*,b.descricao,d.data_exame from cadastro_aluno a " 
+	$query = "select a.*,b.descricao,d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
@@ -47,16 +47,16 @@ if(!$fec){ // condição para forçar a emissão do certificado
 
   $validar_curso = strtolower($dados->descricao);
 
-  if($dados->rg){    
+  if($dados->rg){
     $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade."/".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
- 
+
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
-      
+
   }elseif($dados->passaporte){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) do Passaporte n&ordm; ".$dados->passaporte;
    }elseif($dados->certidao_nascimento){
-    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade.", ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Folha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;   
+    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade.", ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Folha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;
    }
 
 ?>
@@ -177,13 +177,13 @@ white-space:nowrap;
             <td class="dauphin16">&nbsp;</td>
           </tr>
           <tr>
-            <td class="dauphin16" style="white-space:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Certificamos que 
+            <td class="dauphin16" style="white-space:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Certificamos que
               <b><?=trim($dados->nome)?></b>/<?=$linha1?>,
-               nascido(a) no dia 
+               nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
-               tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em 
+               tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em
               <?=trim(data_ext($dados->data_exame,''))?>,
-              o 
+              o
               <?=trim($dados->descricao)?>,
                conforme prescreve a legisla&ccedil;&atilde;o em vigor.</td>
           </tr>
@@ -238,7 +238,7 @@ white-space:nowrap;
 <?php
 	if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concludente no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>	
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concludente no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>
 <?php
 	}
 ?>
@@ -266,14 +266,14 @@ white-space:nowrap;
         <td width="20"><img src="../img/canto3_borda_certificado.gif" width="29" height="29"></td>
       </tr>
     </table>
-    
+
 
 <br><br>
 	<?php //aqui entra a quebra de página ?>
         <p>&nbsp;</p>
-    
+
     <div style="background:url(../img/ciecbg.png) no-repeat  center;background-size:90%;">
-    
+
         <table width="100%" cellspacing="0" cellpadding="0" class="borda1">
 	  <tr>
         <td height="35" colspan="4" align="center" valign="top" class="times12"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -295,7 +295,7 @@ white-space:nowrap;
 	  <tr>
         <td height="35" colspan="4" align="center" valign="top" class="times12" style="border-bottom: 1px solid #000000;">Componentes Curriculares</td>
 	    </tr>
-	
+
       <tr>
         <td height="35" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
         <td align="center" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
@@ -303,11 +303,11 @@ white-space:nowrap;
         <td align="center" style="border-bottom: 1px solid #000000;"><strong>Registros e Observações</strong></td>
       </tr>
 	<?php
-	
+
 	     //$query = "select codigo,descricao from cadastro_disciplinas where codigo_curso='$curso'";
 		 //$result = mysql_query($query);
 		 //while($dados = mysql_fetch_object($result)){
-		 
+
 		 	$sql = " select a.exibe_dia, a.exibe_mes, a.exibe_ano, a.data_exame,a.nota,c.descricao,concat(d.descricao,' ',a.observacao) as disc from matricula a "
 			      ." left join turmas b on a.codigo_turma=b.codigo "
 				  ." left join cadastro_escola c on c.codigo=a.codigo_escola "
@@ -316,16 +316,16 @@ white-space:nowrap;
 			$sql_r = mysql_query($sql);
                         $qb = 0;
 			while(list($exibe_dia,$exibe_mes,$exibe_ano,$data_exame,$nota,$escola,$disciplina)=mysql_fetch_row($sql_r)){
-			
-			
-		 	
+
+
+
 	?>
             <tr>
         <td width="320" height="25" class="times12"><?=$disciplina?> </td>
         <?php
-          
+
 		  $compdata = false;
-		  
+
 
                    if(!$exibe_dia and !$exibe_mes and !$exibe_ano ){
 
@@ -343,10 +343,10 @@ white-space:nowrap;
 
 		   $data_exame = @implode("/",$compdata);
 
-		   
+
         ?>
 
-		
+
 
 
         <td width="104"><div align="center" class="times12"><?=$data_exame?></div></td>
@@ -357,7 +357,7 @@ white-space:nowrap;
           $qb++;
 		}
 	?>
-    </table>  
+    </table>
     (*) UNIDADE DESCENTRALIZADA
 
 
@@ -387,8 +387,8 @@ white-space:nowrap;
 			#carimbo {font-family:Arial, Helvetica, sans-serif; widows:400px; text-align:center}
 			#carimbo span { color:#999; font-size:12px; font-weight:bold; }
 			#carimbo div { color:#999; font-size:11px; font-weight:normal; margin-top:10px; }
-			
-		</style> 
+
+		</style>
        <?php
         if($validar_curso == 'ensino médio'){
         ?>
@@ -424,12 +424,12 @@ white-space:nowrap;
 
           </td>
       </tr>
-    </table>    
+    </table>
     </td>
   </tr>
 </table>
 
-	<?php //aqui entra a 2º quebra de página 
+	<?php //aqui entra a 2º quebra de página
 	if ($dados->descricao == 'Ensino Fundamental'){
 	?>
 	<p>&nbsp;</p>
@@ -460,9 +460,9 @@ white-space:nowrap;
 	?>
 
   </div>
-    
+
   <div style="background:url(../img/ciecbg.png) no-repeat  center;background-size:90%;">
-    
+
     <table width="100%" cellspacing="0" cellpadding="0">
 	  <tr>
         <td height="35" colspan="6" align="center" valign="top" class="times12">
@@ -514,7 +514,7 @@ white-space:nowrap;
             </table>
         </td>
         </tr>
-	  
+
       <tr>
         <td height="35" colspan="6" align="center" valign="top" class="times12">
 	    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="borda1">
@@ -524,14 +524,14 @@ white-space:nowrap;
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data De Conclusão</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Escola</strong></td>
-            
+
           </tr>
 	<?php
-	
+
 	     //$query = "select codigo,descricao from cadastro_disciplinas where codigo_curso='$curso'";
 		 //$result = mysql_query($query);
 		 //while($dados = mysql_fetch_object($result)){
-		 
+
 		 	$sql = " select a.exibe_dia, a.exibe_mes, a.exibe_ano, a.data_exame,a.nota,a.carga_horaria,c.descricao,concat(d.descricao,' ',a.observacao) as disc from matricula a "
 			      ." left join turmas b on a.codigo_turma=b.codigo "
 				  ." left join cadastro_escola c on c.codigo=a.codigo_escola "
@@ -539,16 +539,16 @@ white-space:nowrap;
 				  ." where  a.situacao='AP' and a.codigo_aluno='$cod' and a.codigo_curso='$curso' and a.codigo_turma=b.codigo order by d.ordem";
 			$sql_r = mysql_query($sql);
 			while(list($exibe_dia,$exibe_mes,$exibe_ano,$data_exame,$nota,$carga_horaria,$escola,$disciplina)=mysql_fetch_row($sql_r)){
-			
-			
-		 	
+
+
+
 	?>
             <tr>
         <td width="320" height="25" class="times12"><?=$disciplina?> </td>
         <?php
-          
+
 		  $compdata = false;
-		  
+
 
                    if(!$exibe_dia and !$exibe_mes and !$exibe_ano ){
 
@@ -566,16 +566,16 @@ white-space:nowrap;
 
 		   $data_exame = @implode("/",$compdata);
 
-		   
+
         ?>
            <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
            <td width="72" class="times12" align="center">Aprovado</td>
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
            <td width="413" class="times12" align="center"><?=$escola?> </td>
-           
-     
+
+
         <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
-        
+
         <!--<td width="72" class="times12" align="center"><?//=(($carga_horaria) ? 'Curso' : 'Exame')?></td>-->
       </tr>
 	<?php
@@ -585,38 +585,21 @@ white-space:nowrap;
 
       <tr>
         <td width="150" height="25" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12">86,5</div></td>
-        <td width="413" class="times12" align="center" style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
+        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12">86,5</div></td>
+        <td width="413" class="times12" align="center" colspan="3" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
       </tr>
 
       <tr>
         <td width="150" height="25" class="times12" style="font-weight:bold">Coeficiente </td>
-                <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12">7,20</div></td>
-        <td width="413" class="times12" align="center" 
+        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12">7,20</div></td>
+        <td width="413" class="times12" align="center" colspan="3"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="72" class="times12" align="center" 
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-      
       </tr>
 
     </table>
     </td>
     </tr>
-   
+
     </table>
 
     <div style="padding:10px;border-bottom: 1px solid #000; border-top:1px solid #000;
@@ -627,47 +610,47 @@ Observações
         <div style="font-size:12px;padding:5px">
   Amparo Legal: Amparo pela Lei Federal n. 9394/96, de 20 de dezembro de 1996. Resolução CNE/CEB n.° 01/2000
        </div>
-  
+
     <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:12px;padding:5px">
      <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
   Resolução n° 38/05, de 26.04.2005/ Resolução 96,06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 19/2011, de 20.12.2011/ REsolução 213, de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
-    
+
     <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
   Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
 
     <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
   <b>
-    Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina. 
+    Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
   </b>
     </div>
 
     <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
   Regimento aprovado pelo CEE/AM.
        </div>
-    
+
        <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;">
   Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
        </div>
-       
-       
+
+
     	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:35px;"><?=data()?>.</div>
-   
+
       <table class="">
     <tr>
     <td width="170"  ></th>
-    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretário(a)  
+    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretário(a)
     </td>
-   
+
     <td width="170"  ></th>
 
-    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Diretor(a) 
+    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Diretor(a)
     </td>
     <td width="170"  ></th>
     </tr>
- 
-    
+
+
 </table>
 
 
@@ -684,8 +667,8 @@ Observações
  Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
  e-mail:wm.supletivo@gmail.com - C.N.P.J.07.615.520/0003-10
        </div>
-       
+
 
 <!---final--->
 </div>
-  
+
