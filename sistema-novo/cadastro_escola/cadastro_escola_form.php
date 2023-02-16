@@ -10,7 +10,7 @@ function validar(){
 
 //validar campo descricao
 if(!document.all.f.descricao.value){
-alert('Campo descricao ï¿½ obrigatï¿½rio!');
+alert('Campo descricao é obrigatório!');
 document.all.f.descricao.focus();
 return false;
 }
@@ -78,12 +78,14 @@ if($op == 'editar'){
   $query  = " select ";
   $query .= "cadastro_escola.codigo,";
   $query .= "cadastro_escola.descricao, ";
+  $query .= "cadastro_escola.unidade_federada, ";
   $query .= "cadastro_escola.op ";
   $query .= " from cadastro_escola where cadastro_escola.codigo='$cod'";
   $result = mysql_query($query);
   list(
                    $codigo,
                    $descricao,
+                   $unidade_federada,
                    $opc
        ) = mysql_fetch_row($result);
   $botoes  = "<input type='hidden' name='codigo' value='$codigo'>";
@@ -107,11 +109,14 @@ echo "<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "Descricao:<td>";
 echo "<input type='text' name='descricao' id='descricao' value='$descricao' size='' maxlength='' class='form_text'>";
 echo "<tr class='bg_form'><td align='right' class='titulo_campo'>";
+echo "Unidade Federada:<td>";
+echo "<input type='text' name='unidade_federada' id='unidade_federada' value='$unidade_federada' size='' maxlength='' class='form_text'>";
+echo "<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "Selecionado:<td>";
 if($opc == 1){ $checked = 'checked'; }else{ $checked=false; }
 echo "<input type='checkbox' name='opc' id='opc' value='1' class='form_checkbox' $checked><br>";
 echo "<tr class='bg_form'><td colspan='2' align='center'>";
-echo $botoes; 
+echo $botoes;
 echo "              </table>";
 echo "     </table>";
 echo "     </table>";
