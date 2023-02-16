@@ -10,7 +10,7 @@ function validar(){
 
 //validar campo descricao
 if(!document.all.f.descricao.value){
-alert('Campo descricao é obrigatório!');
+alert('Campo descricao é obrigatério!');
 document.all.f.descricao.focus();
 return false;
 }
@@ -125,5 +125,4 @@ echo "     </table>";
 echo "     </table>";
 include("../includes/rodape.inc.php");
 echo "		      </form> ";
-//atualizações
 ?>

@@ -37,7 +37,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
    }
 }// fim do fec
 
-	$query = "select a.*,b.descricao,d.data_exame from cadastro_aluno a "
+	$query = "select a.*,b.descricao, b.unidade_federada, d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
@@ -157,7 +157,7 @@ white-space:nowrap;
                   <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="75"></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
-	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS – EJA </span><br>
+	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS ? EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 		Amparado pela <?=$conf[resolucao]?> <br>
@@ -308,14 +308,14 @@ white-space:nowrap;
 		 //$result = mysql_query($query);
 		 //while($dados = mysql_fetch_object($result)){
 
-		 	$sql = " select a.exibe_dia, a.exibe_mes, a.exibe_ano, a.data_exame,a.nota,c.descricao,concat(d.descricao,' ',a.observacao) as disc from matricula a "
+		 	$sql = " select a.exibe_dia, a.exibe_mes, a.exibe_ano, a.data_exame,a.nota,c.descricao, c.unidade_federada, concat(d.descricao,' ',a.observacao) as disc from matricula a "
 			      ." left join turmas b on a.codigo_turma=b.codigo "
 				  ." left join cadastro_escola c on c.codigo=a.codigo_escola "
 				  ." left join cadastro_disciplinas d on a.codigo_disciplina=d.codigo "
 				  ." where  a.situacao='AP' and a.codigo_aluno='$cod' and a.codigo_curso='$curso' and a.codigo_turma=b.codigo order by d.ordem";
 			$sql_r = mysql_query($sql);
                         $qb = 0;
-			while(list($exibe_dia,$exibe_mes,$exibe_ano,$data_exame,$nota,$escola,$disciplina)=mysql_fetch_row($sql_r)){
+			while(list($exibe_dia,$exibe_mes,$exibe_ano,$data_exame,$nota,$escola, $unidade_federada, $disciplina)=mysql_fetch_row($sql_r)){
 
 
 
@@ -350,7 +350,7 @@ white-space:nowrap;
 
 
         <td width="104"><div align="center" class="times12"><?=$data_exame?></div></td>
-        <td width="72" class="times12" align="center">AM<?=$unidade_federada?> </td>
+        <td width="72" class="times12" align="center"><?=$unidade_federada?> </td>
         <td width="413"><div align="center" class="times12"><?//=number_format($nota,1,',',false)?></div></td>
       </tr>
 	<?php
@@ -659,7 +659,7 @@ Observações
 
   <div style="border-top:1px dotted #000;border-bottom: 1px solid #000;padding:1px">
 </div>
- 
+
 
  <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
  Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
@@ -669,4 +669,3 @@ Observações
 
 <!---final--->
 </div>
-
