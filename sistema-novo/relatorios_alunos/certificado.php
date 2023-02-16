@@ -536,8 +536,11 @@ white-space:nowrap;
 				  ." left join cadastro_disciplinas d on a.codigo_disciplina=d.codigo "
 				  ." where  a.situacao='AP' and a.codigo_aluno='$cod' and a.codigo_curso='$curso' and a.codigo_turma=b.codigo order by d.ordem";
 			$sql_r = mysql_query($sql);
+      $total_pontos = 0;
+      $quantidade_pontos = 0;
 			while(list($exibe_dia,$exibe_mes,$exibe_ano,$data_exame,$nota,$carga_horaria,$escola,$disciplina)=mysql_fetch_row($sql_r)){
-
+      $total_pontos = $total_pontos + $nota;
+      $quantidade_pontos++;
 
 
 	?>
@@ -583,13 +586,13 @@ white-space:nowrap;
 
       <tr>
         <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12">86,5</div></td>
+        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
         <td width="413" class="times12" align="center" colspan="3" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
       </tr>
 
       <tr>
         <td width="150" height="17" class="times12" style="font-weight:bold">Coeficiente </td>
-        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12">7,20</div></td>
+        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
         <td width="413" class="times12" align="center" colspan="3"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
       </tr>
