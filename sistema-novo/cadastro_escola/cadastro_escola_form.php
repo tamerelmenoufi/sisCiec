@@ -39,9 +39,11 @@ if (isset($inserir)){
   }
 $query = " insert into cadastro_escola ( ";
 $query .= " descricao,";
+$query .= " unidade_federada,";
 $query .= " op";
 $query .= " ) values (";
 $query .= " '$descricao',";
+$query .= " '$unidade_federada',";
 $query .= " '$opc'";
 $query .= " )";
 $result = mysql_query($query);
@@ -60,6 +62,7 @@ elseif(isset($alterar)){
 
 $query = " update cadastro_escola set";
 $query .= " descricao='$descricao',";
+$query .= " unidade_federada='$unidade_federada',";
 $query .= " op='$opc'";
 $query .= " where codigo = '$codigo'";
 mysql_query($query);
