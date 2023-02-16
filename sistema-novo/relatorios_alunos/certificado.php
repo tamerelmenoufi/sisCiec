@@ -37,7 +37,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
    }
 }// fim do fec
 
-	$query = "select a.*,b.descricao, b.unidade_federada, d.data_exame from cadastro_aluno a "
+	$query = "select a.*,b.descricao, d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
