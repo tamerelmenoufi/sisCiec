@@ -6,13 +6,13 @@ include("../includes/estilos.inc.php");
 include("../includes/topo.inc.php");
 include("../includes/funcoes_js.inc.php");
 
-			function getmicrotime(){ 
-			list($sec, $usec) = explode(" ",microtime()); 
-			return ($sec + $usec); 
-			} 
-			$time_start = getmicrotime(); 
+			function getmicrotime(){
+			list($sec, $usec) = explode(" ",microtime());
+			return ($sec + $usec);
+			}
+			$time_start = getmicrotime();
 
-			$arquivo = "$PHP_SELF"; 
+			$arquivo = "$PHP_SELF";
 			$maxpag = 10;
 			$maxlnk = 10;
 			if ($id == ''){$param = 0;} else {
@@ -31,12 +31,13 @@ $query .= " where codigo = '$cod'";
 mysql_query($query);
 logs('cadastro_escola','delete',$cod,$query);
 echo "<script>window.location.href='cadastro_escola.php?id=$id'</script>";
- } 
+ }
 
 //novo
 $query1  = " select ";
 $query1 .= "cadastro_escola.codigo,";
 $query1 .= "cadastro_escola.descricao, ";
+$query1 .= "cadastro_escola.unidade_federada, ";
 $query1 .= "cadastro_escola.op";
 $query1 .= " from cadastro_escola";
 $query1 .= " $complemento";
@@ -60,12 +61,13 @@ echo " <a href='cadastro_escola_form.php?op=novo' class='paginacao'><img src='..
 echo "Nova escola</a>";
 
 echo "</table>";
-if ($totreg){	
+if ($totreg){
 echo "<table width='100%'  border='0' cellpadding='0' cellspacing='0' class='borda_tabela'>";
 echo "<td align='left' valign='top'>";
 echo "<table width='100%' border='0' cellpadding='2' cellspacing='2'>";
 echo "<tr class='titulo_tabelas'>";
 echo "<td>Descricao";
+echo "<td>UF";
 echo "<td>Selecionado";
 echo "<td width='35'>Acao";
 echo "</tr>";
@@ -74,17 +76,19 @@ $cnt = 0;
 while (list(
                  $codigo,
                  $descricao,
+                 $unidade_federada,
                  $opc
                 ) = mysql_fetch_row($result)){ $contador ++;
 if($cnt%2 == 0){ echo "<tr class='tr_linha1'>"; }else{echo "<tr class='tr_linha2'>";}  $cnt++;
 echo "<td class='titulo_f'>$descricao";
+echo "<td class='titulo_f'>$unidade_federada";
 if($opc == '1'){ $opc='padrao';}else{$opc="&nbsp;";}
 echo "<td class='titulo_f'>$opc";
 echo "<td width='35'><a href=cadastro_escola_form.php?cod=$codigo&op=editar&id=$id><img src='../img/drafts.gif'  border='0' alt='Editar' width='15' height='16'></a>";
 echo "	<a href=\"javascript:confirma_delete('$codigo','$id');\">";
 echo "<img src='../img/trash.gif' alt='Excluir' border='0' width='16' height='16'></a></td>";
   } $reg_final = $param + $contador;
-if ($totreg){	
+if ($totreg){
 echo "</table>";
 echo "</td>";
 echo "</table>";
@@ -99,7 +103,7 @@ echo "</table>";
 			$reg_inicial = $param + 1;
 			$pg_anterior = $pg_atual - 1;
 			$pg_proxima = $pg_atual + 1;
-			$time_end = getmicrotime(); 
+			$time_end = getmicrotime();
 			$time = $time_end - $time_start;
 			echo "<tr><td height='10' valign='top'>";
 
