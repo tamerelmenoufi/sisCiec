@@ -11,7 +11,7 @@
 			</td>
 
 			<td width="33%" height="100" align="center" valign="middle">
-				<a href='./sistema-novo/' style="opacity:0; padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none;">Novo</a>
+				<a href='./sistema-novo/' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none;">SISTEMA NOVA VERSÃO</a>
 			</td> 
 
 			<td width="33%" height="100" align="center" valign="middle">
