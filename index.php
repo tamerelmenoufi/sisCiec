@@ -17,7 +17,6 @@
 			<td width="33%" height="100" align="center" valign="middle">
 				<a href='./nacoes/' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none;">PARQUE DAS NAÇÕES</a>
 			</td>
-
 		</tr>
 
 	</table>
