@@ -48,7 +48,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
   $validar_curso = strtolower($dados->descricao);
 
   if($dados->rg){
-    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade."/".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
+    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade.",".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
@@ -154,13 +154,15 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="75"></td>
+                  <td width="73"><img src="../img/logo_ciec.gif" width="150" ></td>
                   <td>
-                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
-	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS ? EJA </span><br>
+                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC </span><br>
+	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 		Amparado pela <?=$conf[resolucao]?> <br>
+    Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               Manaus-Amazonas </span></div></td>
                 </tr>
               </table>
@@ -238,7 +240,7 @@ white-space:nowrap;
 <?php
 	if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concludente no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>
 <?php
 	}
 ?>
