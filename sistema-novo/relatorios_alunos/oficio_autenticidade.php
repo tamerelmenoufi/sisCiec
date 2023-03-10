@@ -135,7 +135,7 @@ Manaus - Amazonas </h4>
 
 <div style="border:#009 solid 0px; width:100%; min-height:600px;">
 <p align="justify" class="times30">
-<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, do <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n.ï¿½ <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
+<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, do <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n° <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
 <?php
 	if($validar_curso == 'ensino mï¿½dio'){
 ?>
