@@ -172,7 +172,7 @@ Manaus - Amazonas </h4>
 	<tr>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
-			Ed. Milhomem Center, Av. Djalma Batista, nï¿½ 98A<br>
+			Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
