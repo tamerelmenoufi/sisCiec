@@ -677,7 +677,7 @@ Observações
 </div>
 
 
- <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
+ <div style="font-size:12px;padding:5px;text-align:center">
  Fone: (55)(92) 3346-0191/ Whattsapp (55)(92) 99303-9416 - Manaus - Am - Brasil <br>
  e-mail:wm.supletivo@gmail.com - C.N.P.J.07.615.520/0003-10
        </div>
