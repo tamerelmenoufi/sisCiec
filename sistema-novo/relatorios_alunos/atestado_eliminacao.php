@@ -24,12 +24,12 @@ if($_POST[observacao]){
 	$dados = mysql_fetch_object($result);
 
   if($dados->rg){
-      $linha1 = "RG ".$dados->rg;
+      $linha1 = "RG ".$dados->rg." ".$dados->rg_orgao;
       $linha2 = "ORG&Atilde;O/UF: ".$dados->rg_orgao;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
-      $linha1 = "RNE: ".$dados->rne;
+      $linha1 = "RNE ".$dados->rne;
       $linha2 = "Nacionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
