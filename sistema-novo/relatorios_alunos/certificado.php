@@ -439,13 +439,13 @@ white-space:nowrap;
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
     <?php
     }else if($qb <= 8){
     ?>
 	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+  <p>&nbsp;</p>
 	<p>&nbsp;</p>
 	
 	
