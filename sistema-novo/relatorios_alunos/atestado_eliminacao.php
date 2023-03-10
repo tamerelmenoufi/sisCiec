@@ -132,7 +132,7 @@ Manaus/Amazonas </h4>
 	  <?=$linha1?>,
 	prestou o Exame de Educação de Jovens e Adultos -EJA, do <span class="times20">
       <?=$dados->descricao?>,
-    </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n&ordm;9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas -CEE/AM, e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
+    </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n° 9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
 </table>
 </p>
@@ -176,7 +176,7 @@ Manaus/Amazonas </h4>
 <p align="center" class="times10">&nbsp;
 <?php
 
-	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("', '",$array_disciplinas_concluidas)."')" : false);
+	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("','",$array_disciplinas_concluidas)."')" : false);
 	//echo $query;
 	$result = mysql_query($query);
 	$array_disciplinas = false;
