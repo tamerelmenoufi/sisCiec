@@ -332,7 +332,7 @@ $sqlm = "select a.*,
                             - entrada na depend&ecirc;ncia da escola utilizando shorts, camiseta,chinelos, mini-blusa, bermudas e mini-saia.<br>
                             - a perman&ecirc;ncias de crian&ccedil;as, acompanhantes ou familiares em sala de aula.<br>
                             <br>
-                            <b style="font-size:12px">Assinatura</b>: ..................................................................................................................... <br>
+                            <b style="font-size:12px">Assinatura</b>: .................................................................................................................................... <br>
                         </div></td>
                       <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
@@ -360,7 +360,7 @@ $sqlm = "select a.*,
             <td class="style3">&nbsp;</td>
           </tr>
           <tr>
-            <td class="style3">......................................................................................................................................................................................................................................</td>
+            <td class="style3">.....................................................................................................................................................................................................................................................</td>
           </tr>
           <tr>
             <td>&nbsp;</td>
