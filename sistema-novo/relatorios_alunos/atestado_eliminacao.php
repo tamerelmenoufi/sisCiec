@@ -106,7 +106,7 @@ border: solid 1px #000000;
 
 <body>
 
-<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%">
+<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid">
 <br>
 <br>
 
@@ -221,7 +221,7 @@ Sem pend&ecirc;ncia de disciplinas
     	<td align="center" class="arial10">
 			Shopping São José<br>
 			2° Piso em frente a Marisa<br>
-            3342-3327
+            3342-3327/ 99984-8881
         </td>
     	<td align="center" class="arial10">
 			Parque das Nações<br>
