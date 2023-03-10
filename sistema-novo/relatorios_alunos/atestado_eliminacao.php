@@ -113,11 +113,13 @@ border: solid 1px #000000;
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?>
+Amparado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
 Manaus/Amazonas </h4>
 <p align="center">&nbsp; </p>
-<p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
-<span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
+<p align="justify"  style="width:85%; margin-left:80px; border:0px solid #000000"> class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
+<span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p>&nbsp; </p>
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
