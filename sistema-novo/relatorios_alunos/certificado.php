@@ -48,7 +48,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
   $validar_curso = strtolower($dados->descricao);
 
   if($dados->rg){
-    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade.",".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
+    $linha1 = "<!--nacionalidade ".$dados->nacionalidade.", --> natural de ".$dados->cidade."/".$dados->estado.", portador(a) da Carteira de Identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
@@ -160,7 +160,7 @@ white-space:nowrap;
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-		Amparado pela <?=$conf[resolucao]?> <br>
+		Amparado pela <?=$conf[resolucao]?> 
     Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
     Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               Manaus-Amazonas </span></div></td>
@@ -180,7 +180,7 @@ white-space:nowrap;
           </tr>
           <tr>
             <td class="dauphin16" style="white-space:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Certificamos que
-              <b><?=trim($dados->nome)?></b>/<?=$linha1?>,
+              <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
                tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em
@@ -285,11 +285,13 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
-		EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
                 <?=$conf[resolucao]?>
+                Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+      Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               </div></td>
             </tr>
         </table></td>
@@ -360,8 +362,7 @@ white-space:nowrap;
 		}
 	?>
     </table>
-    (*) UNIDADE DESCENTRALIZADA
-
+   
 
         <?php
 			if(trim($observacao)){
@@ -395,7 +396,7 @@ white-space:nowrap;
         if($validar_curso == 'ensino médio'){
         ?>
         <div id="carimbo" style="font-size:12px">
-        <span>CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS-<br />
+        <span>CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC<br />
 		CIEC SUL - UNIDADE DESCENTRALIZADA<br /></span>
 		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</div>
 		<div>do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,</div>
