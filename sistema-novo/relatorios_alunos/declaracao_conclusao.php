@@ -88,7 +88,7 @@ if($_POST[observacao]){
 
 .times16 {
 	font-family: arial;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: none;
 	text-decoration: none;
 }
