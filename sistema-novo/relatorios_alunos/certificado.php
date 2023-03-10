@@ -285,7 +285,7 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
 		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
@@ -447,9 +447,7 @@ white-space:nowrap;
     ?>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
 	
 
     <?php
@@ -475,7 +473,7 @@ white-space:nowrap;
                 <tr>
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
-                        <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
+                        <span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />
                             CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
                             EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
