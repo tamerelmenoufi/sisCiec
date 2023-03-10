@@ -332,7 +332,7 @@ $sqlm = "select a.*,
                             - entrada na depend&ecirc;ncia da escola utilizando shorts, camiseta,chinelos, mini-blusa, bermudas e mini-saia.<br>
                             - a perman&ecirc;ncias de crian&ccedil;as, acompanhantes ou familiares em sala de aula.<br>
                             <br>
-                              <strong>Assinatura</strong>: ......................................................................................................................... <br>
+                            <b style="font-size:12px">Assinatura</b>: ..................................................................................................................... <br>
                         </div></td>
                       <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
@@ -550,10 +550,10 @@ $sqlm = "select a.*,
                       - entrada na depend&ecirc;ncia da escola utilizando shorts, camiseta,chinelos, mini-blusa, bermudas e mini-saia.<br>
                       - a perman&ecirc;ncias de crian&ccedil;as, acompanhantes ou familiares em sala de aula.<br>
                       <br>
-                      <b style="font-size:13px">Assinatura</b>: .................................................................................................................... <br>
+                      <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
                     <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
-                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
+                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
