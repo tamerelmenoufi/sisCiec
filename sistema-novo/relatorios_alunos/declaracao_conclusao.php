@@ -123,7 +123,7 @@ if($_POST[observacao]){
 </head>
 
 <body>
-<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%"><br>
+<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;"><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 
