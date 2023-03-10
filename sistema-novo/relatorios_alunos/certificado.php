@@ -477,10 +477,12 @@ white-space:nowrap;
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
                         <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
-                            CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
-                            EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
+                            CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+                            EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 			    Amparado pela <?=$conf[resolucao]?>
+          Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
                       </div>
                   </td>
                 </tr>
@@ -509,7 +511,7 @@ white-space:nowrap;
                     <td class="times12">N&iacute;vel de ensino:</td>
                     <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educa&ccedil;&atilde;o de Jovens e Adultos/EJA</td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA | <b>Etapa Única</b></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
