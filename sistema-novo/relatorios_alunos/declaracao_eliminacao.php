@@ -280,7 +280,7 @@ Disciplinas pendentes (
 <?php
 	echo @implode(", ",$array_disciplinas);
 ?>
-) 
+ ) 
 <?php
 }else{
 ?>
