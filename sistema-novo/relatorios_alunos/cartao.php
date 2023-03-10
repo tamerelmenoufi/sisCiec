@@ -366,7 +366,7 @@ $sqlm = "select a.*,
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td><table width="700" style="background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:90%;" cellpadding="0" cellspacing="0" class="borda_tabela">
+            <td><table width="700" style="" cellpadding="0" cellspacing="0" class="borda_tabela">
               <tr>
                 <td height="50" colspan="5" class="borda_tabela"><table width="700" height="19"  border="0" cellpadding="0" cellspacing="0">
                     <tr>
