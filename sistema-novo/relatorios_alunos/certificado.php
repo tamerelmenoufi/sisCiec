@@ -154,7 +154,7 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.gif" width="150" ></td>
+                  <td width="73"><img src="../img/logo_ciec.gif" width="120" ></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC </span><br>
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
@@ -526,10 +526,10 @@ white-space:nowrap;
             <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>C.H.</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Resultado</strong></td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Origem</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Resultado</strong></td>
           </tr>
           </tr>
 	<?php
@@ -580,10 +580,10 @@ white-space:nowrap;
            
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
         <td width="413" class="times12" align="center"><?=$escola?> </td>
-        <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
         <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
-        <td width="72" class="times12" align="center">Aprovado</td>
         <td width="72" class="times12" align="center"><?=(($carga_horaria) ? 'Curso' : 'Exame')?></td>
+        <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
+        <td width="72" class="times12" align="center">Aprovado</td>
 
         <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
 
