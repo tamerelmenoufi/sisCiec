@@ -139,7 +139,7 @@ Manaus – Amazonas </h4>
 <span style="margin-left:95px;">Declaramos para os devidos fins que  
   <?=$dados->nome?>
 , <strong> </strong><?=$linha1?>, nascido(a) no dia <?=trim(data_ext($dados->data_nascimento,''))?>, concluiu, em 
-              <?=trim(data_ext($dados->data_exame,''))?>, os Exame da Educação de Jovens e Adultos- EJA, n&iacute;vel de 
+              <?=trim(data_ext($dados->data_exame,''))?>, os Exames da Educação de Jovens e Adultos- EJA, do 
 <?=$dados->descricao?>, 
 nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, estando apto a prosseguir seus estudos.
 <br>
