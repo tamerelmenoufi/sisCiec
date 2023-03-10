@@ -450,8 +450,7 @@ white-space:nowrap;
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
 
     <?php
     }else if($qb <= 11){
@@ -652,6 +651,8 @@ Observações
 
     	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
+      <p>&nbsp;</p>
+	<p>&nbsp;</p>
       <table class="">
     <tr>
     <td width="170"  ></th>
@@ -674,12 +675,12 @@ Observações
 	<p>&nbsp;</p> -->
 
 
-  <div style="border-top:1px dotted #000;border-bottom: 1px solid #000;padding:1px">
+  <div style="border-bottom: 1px solid #000;padding:1px">
 </div>
 
 
  <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
- Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
+ Fone: (55)(92) 3346-0191/ Whattsapp (55)(92) 99303-9416 - Manaus - Am - Brasil <br>
  e-mail:wm.supletivo@gmail.com - C.N.P.J.07.615.520/0003-10
        </div>
 
