@@ -107,7 +107,7 @@ border-bottom: solid 0px #000000;
 </style>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>OFï¿½CIO DE AUTENTICIDADE
+<title>OFÍCIO DE AUTENTICIDADE
 </title>
 </head>
 
@@ -135,7 +135,7 @@ Manaus - Amazonas </h4>
 
 <div style="border:#009 solid 0px; width:100%; min-height:600px;">
 <p align="justify" class="times30">
-<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, Nï¿½vel de <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n.ï¿½ <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
+<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, do <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n.ï¿½ <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
 <?php
 	if($validar_curso == 'ensino mï¿½dio'){
 ?>
