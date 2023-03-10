@@ -311,10 +311,10 @@ Disciplinas pendentes curso <?=$_CursoNome[$val]?> (
 <?php
 }else{
 ?>
-<font style="text-align:center" color="#006600"><b>
+<p style="text-align:center" color="#006600"><b>
 Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?> 
 
-</b></font><font color="#006600"><b>
+</b></p><font color="#006600"><b>
 <?php
 }
 ?>
