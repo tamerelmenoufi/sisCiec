@@ -676,7 +676,7 @@ echo "\n		</script>\n";
 
 echo "\n<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "\nBloquear Matr&iacute;cula:<td>";
-echo "<input type='checkbox' name='obs_bloqueio' value='1' ".(($obs_bloqueio) ? 'checked' : false).">Marquar para bloquear";
+echo "<input type='checkbox' name='obs_bloqueio' value='1' ".(($obs_bloqueio) ? 'checked' : false).">Marcar para bloquear";
 
 echo "\n<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "\nObserva&ccedil;&atilde;oes:<td>";
