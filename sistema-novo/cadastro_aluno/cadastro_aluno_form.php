@@ -30,7 +30,7 @@ alert('Campo nome é obrigatório!');
 document.all.f.nome.focus();
 return false;
 }
-return true; 
+return true;
 }
     function notas(valor,nome){
 	  if(!valor){
@@ -49,7 +49,7 @@ return true;
 <script language="javascript">
 
   function validar_matricula(CodCurso,Idade){
-  
+
   //validar campo curso
   if(!document.all.f.codigo_curso.value){
   alert('Campo Curso é obrigatório!');
@@ -78,8 +78,8 @@ return true;
 				return false;
 		 }
   }
-  
-  
+
+
 	<?php
 		$query = "select * from cadastro_cursos";
 		$result = mysql_query($query);
@@ -88,21 +88,21 @@ return true;
 			echo "\t\tif(Idade < $d->idade){\n";
 			echo "\t\t\talert(\"Idade Inferior a permitida para este curso.\\n\\nAcesso Negado!\");\n";
 			echo "\t\t\treturn false;\n";
-			echo "\t\t}\n";		
-			echo "\t}\n";		
+			echo "\t\t}\n";
+			echo "\t}\n";
 		}
 	?>
-  
-  
+
+
   return true;
   }
-  
+
 function confirm_excluir(di,st){
 
 <?php
    //mysql_connect("ciec-db","cieceja","S3nh@sb@nc0") or die("Erro na conex�o ".mysql_error());
    //mysql_select_db( "cieceja_cnery" ) or die("Erro no banco ".mysql_error());
-   list($sen) = mysql_fetch_row(mysql_query("select senha from usuarios where login='admincnery'"));   
+   list($sen) = mysql_fetch_row(mysql_query("select senha from usuarios where login='admincnery'"));
 
 ?>
 
@@ -113,7 +113,7 @@ if(st == 'MT'){
   }else{
     return false;
   }
- 
+
 
 }else{
 
@@ -128,7 +128,7 @@ if(st == 'MT'){
   }else{
     return false;
   }
- 
+
 
  }else if(t != 'undefined'){ alert("codigo incorreto, voce nao tem permissao!"); }
 
@@ -138,8 +138,8 @@ if(st == 'MT'){
 return false;
 
 
-}  
-  
+}
+
 
 
 function desvincular(di){
@@ -149,7 +149,7 @@ function desvincular(di){
     return false;
   }
 return false;
-}  
+}
 
 
 
@@ -164,16 +164,16 @@ return false;
 		if(op.value){ window.location.href='<?=$PHP_SELF?>?codigo_escola='+op.value+'&op=<?=$op?>&cod=<?=$cod?>&id=<?=$id?>#opinst'; }
 		else{ window.location.href='<?=$PHP_SELF?>?codigo_escola=&op=<?=$op?>&cod=<?=$cod?>&id=<?=$id?>#opinst'; }
 	}
-	
-	
+
+
 	function consulta_unidades(uni,nome,pai,mae,rg,cpf){
       var w = window.open("./consulta_unidade.php?unidade=" + uni + "&nome="+nome+"&pai="+pai+"&mae="+mae+"&rg="+rg+"&cpf="+cpf,"unidade","width=800, height=600, scrollbars=1");
 	  w.focus();
 	  return false;
-			
+
 	}
-  
-    
+
+
 </script>
 
 
@@ -190,7 +190,7 @@ if($_GET[desv]){
 $data_nascimento = $dia_nascimento.'-'.$mes_nascimento.'-'.$ano_nascimento;
 
 if (isset($inserir)){
-	
+
 	if($foto and $foto != 'none'){
 		$foto_name	=	$_FILES["foto"]["name"];
 		$ext = explode(".",$foto_name);
@@ -204,9 +204,9 @@ if (isset($inserir)){
 	else {
 		$imagem[foto] = "";
 	}
-	
-	
-	
+
+
+
 $query = " insert into cadastro_aluno ( ";
 $query .= " foto,";
 $query .= " cci,";
@@ -227,6 +227,7 @@ $query .= " email,";
 $query .= " data_nascimento,";
 $query .= " nacionalidade,";
 $query .= " rne,";
+$query .= " rnm,";
 $query .= " passaporte,";
 $query .= " cidade,";
 $query .= " estado,";
@@ -253,6 +254,7 @@ $query .= " '$email',";
 $query .= " '".data_formata($data_nascimento)."',";
 $query .= " '".(($nacionalidade == 'brasileira')?$nacionalidade:(($nacionalidade_qual)?$nacionalidade_qual:'estrangeira'))."',";
 $query .= " '$rne',";
+$query .= " '$rnm',";
 $query .= " '$passaporte',";
 $query .= " '$cidade',";
 $query .= " '$estado',";
@@ -269,7 +271,7 @@ echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&cod=".$conf
 //*/
 }
 elseif(isset($alterar)){
-	
+
 	if($foto and $foto != 'none'){
 		$foto_name	=	$_FILES["foto"]["name"];
 		$ext = explode(".",$foto_name);
@@ -287,8 +289,8 @@ elseif(isset($alterar)){
 	}
 	else {
 		$imagem[foto] = $foto_atual;
-	}		
-		
+	}
+
 $query = " update cadastro_aluno set";
 $query .= " foto='".$imagem[foto]."',";
 $query .= " cci='$cci',";
@@ -309,6 +311,7 @@ $query .= " email='$email',";
 $query .= " data_nascimento='".data_formata($data_nascimento)."',";
 $query .= " nacionalidade='".(($nacionalidade == 'brasileira')?$nacionalidade:(($nacionalidade_qual)?$nacionalidade_qual:'estrangeira'))."',";
 $query .= " rne='$rne',";
+$query .= " rnm='$rnm',";
 $query .= " passaporte='$passaporte',";
 $query .= " cidade='$cidade',";
 $query .= " estado='$estado',";
@@ -322,7 +325,7 @@ echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&cod=$codigo
 
 
 }elseif(isset($inserir_docs)){
-	
+
 	if($doc and $doc != 'none'){
 		$doc_name	=	$_FILES["doc"]["name"];
 		$ext = explode(".",$doc_name);
@@ -332,16 +335,16 @@ echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&cod=$codigo
 		$doc_temp	=	$_FILES["doc"]["tmp_name"];
 		copy($doc_temp,$xdoc);
 		$documento[doc] = "$xdoc";
-	
+
 	echo $query = "insert into documentos set cod_aluno='$codigo', nome='$nome_doc', doc='".$documento[doc]."'";
 	mysql_query($query);
 	logs('docs','insert',mysql_insert_id(),$query);
-	
+
 	}
 
 	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&cod=$codigo&op=editar'</script>";
-	
-	
+
+
 }
 
 
@@ -372,6 +375,7 @@ $query .= "cadastro_aluno.sms, ";
 $query .= "cadastro_aluno.email, ";
 $query .= "cadastro_aluno.data_nascimento, ";
 $query .= "cadastro_aluno.rne, ";
+$query .= "cadastro_aluno.rnm, ";
 $query .= "cadastro_aluno.passaporte, ";
 $query .= "cadastro_aluno.cidade, ";
 $query .= "cadastro_aluno.estado, ";
@@ -400,6 +404,7 @@ list(
                  $email,
                  $data_nascimento,
                  $rne,
+                 $rnm,
                  $passaporte,
 				 $cidade,
 				 $estado,
@@ -452,16 +457,16 @@ $query = "insert into matricula set
 
 //echo $query; exit;
 
-$result = mysql_query($query);	
+$result = mysql_query($query);
 
 $cod = mysql_insert_id();
-logs('matricula','insert',$cod,$query);		
+logs('matricula','insert',$cod,$query);
 
 
 list($dis_vinc) = mysql_fetch_row(mysql_query("select codigo from turmas where codigo_turma='".$codigo_turma."'"));
 if($dis_vinc){
 	$dv = mysql_fetch_object(mysql_query("select * from turmas where codigo='$dis_vinc'"));
-	
+
 			$query = "insert into matricula set
 								codigo_matricula = '".$conf[Unidade]."$cod',
 								codigo_escola = '$dv->codigo_escola',
@@ -476,48 +481,48 @@ if($dis_vinc){
 								exibe_mes='".(($exibe_mes) ? '1' : '0')."',
 								exibe_ano='".(($exibe_ano) ? '1' : '0')."',
 								observacao='$obs'";
-			$result = mysql_query($query);	
-			
+			$result = mysql_query($query);
+
 			$cod = mysql_insert_id();
-			logs('matricula','insert',$cod,$query);		
-	
+			logs('matricula','insert',$cod,$query);
+
 	}
 
-		
+
 echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=editar&cod=$codigo_aluno#fim'</script>";
 }
 
 
 
-for($i=0;$i<count($_POST[publicar_mat]);$i++){  
-	
+for($i=0;$i<count($_POST[publicar_mat]);$i++){
+
 	if(isset($_POST[publicar][$_POST[publicar_mat][$i]])){
 	$query = "update matricula set publicado = '1' where codigo='".$_POST[publicar_mat][$i]."'";
-	$result = mysql_query($query);	
-	logs('matricula','update',$_POST[publicar_mat][$i],$query);				
-	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>"; 
+	$result = mysql_query($query);
+	logs('matricula','update',$_POST[publicar_mat][$i],$query);
+	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>";
 	}
 }
 
 
-for($i=0;$i<count($_POST[despublicar_mat]);$i++){  
-	
+for($i=0;$i<count($_POST[despublicar_mat]);$i++){
+
 	if(isset($_POST[despublicar][$_POST[despublicar_mat][$i]])){
 	$query = "update matricula set publicado = '0' where codigo='".$_POST[despublicar_mat][$i]."'";
-	$result = mysql_query($query);	
-	logs('matricula','update',$_POST[despublicar_mat][$i],$query);				
-	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>"; 
+	$result = mysql_query($query);
+	logs('matricula','update',$_POST[despublicar_mat][$i],$query);
+	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>";
 	}
 }
 
 
-for($i=0;$i<count($_POST[excluir_mat]);$i++){  
-	
+for($i=0;$i<count($_POST[excluir_mat]);$i++){
+
 	if(isset($_POST[excluir][$_POST[excluir_mat][$i]])){
 	$query = "delete from matricula where codigo='".$_POST[excluir_mat][$i]."'";
-	$result = mysql_query($query);	
-	logs('matricula','update',$_POST[excluir_mat][$i],$query);				
-	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>"; 
+	$result = mysql_query($query);
+	logs('matricula','update',$_POST[excluir_mat][$i],$query);
+	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>";
 	}
 }
 
@@ -526,9 +531,9 @@ for($i=0;$i<count($_POST[salvar_mat]);$i++){
 
 	if(isset($_POST[salvar][$_POST[salvar_mat][$i]])){
 	$query = "update matricula set nota='".$_POST[nota][$_POST[salvar_mat][$i]]."', frequencia='".$_POST[frequencia][$_POST[salvar_mat][$i]]."', situacao='".$_POST[situacao][$_POST[salvar_mat][$i]]."' where codigo='".$_POST[salvar_mat][$i]."'";
-	$result = mysql_query($query);	
-	logs('matricula','update',$_POST[salvar_mat][$i],$query);				
-	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>"; 
+	$result = mysql_query($query);
+	logs('matricula','update',$_POST[salvar_mat][$i],$query);
+	echo "\n<script>window.location.href='cadastro_aluno_form.php?id=$id&op=$op&cod=$cod#fim'</script>";
 	}
 }
 
@@ -570,7 +575,7 @@ if(is_file($foto)){
 	echo "<input type='hidden' name='foto_atual' value='$foto'>";
 	}
 echo "<input type='file' name='foto' value=''>";
-	
+
 
 echo "\n<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "\nCCI:<td>";
@@ -658,6 +663,10 @@ echo "\nRNE:<td>";
 echo "\n<input type='text' name='rne' id='rne' value='$rne' size='' maxlength='' class='form_text'>";
 
 echo "\n<tr class='bg_form'><td align='right' class='titulo_campo'>";
+echo "\nRNM:<td>";
+echo "\n<input type='text' name='rnm' id='rnm' value='$rnm' size='' maxlength='' class='form_text'>";
+
+echo "\n<tr class='bg_form'><td align='right' class='titulo_campo'>";
 echo "\nPassaporte:<td>";
 echo "\n<input type='text' name='passaporte' id='passaporte' value='$passaporte' size='' maxlength='' class='form_text'>";
 
@@ -696,13 +705,13 @@ $r = mysql_query($sql);
     echo "<table>";
 while($rd = mysql_fetch_object($r)){
 
-	echo "<tr><td>".$rd->nome."<td><a href='".$rd->doc."' target='_blank'><img src='../img/drafts.gif' width='15' height='15' border='0'></a>";	
+	echo "<tr><td>".$rd->nome."<td><a href='".$rd->doc."' target='_blank'><img src='../img/drafts.gif' width='15' height='15' border='0'></a>";
 	echo "	<a href=\"javascript:confirma_delete_docs($rd->codigo,'$cod');\">";
 	echo "<img src='../img/trash.gif' alt='Excluir' border='0' width='16' height='16'></a></td>";
 }
     echo "</table>";
 echo "\n<tr class='bg_form'><td colspan='2' align='center'>";
-echo $botoes; 
+echo $botoes;
 echo "\n              </table>";
 echo "\n     </table>";
 echo "\n     </table>";
@@ -721,16 +730,16 @@ echo "\n                <tr> ";
 echo "\n                  <td colspan='2' class='titulos_modelos'>Matr&iacute;cula";
 
 if(trim($obs_bloqueio)){
-	
+
 echo "\n                <tr> ";
 echo "\n                  <td colspan='2'>";
 
-	echo "<font size='5' color='red'>Verifique o campo observa&ccedil;&otilde;es antes de prosseguir!</font>"; 
+	echo "<font size='5' color='red'>Verifique o campo observa&ccedil;&otilde;es antes de prosseguir!</font>";
 	echo "  </table>";
 	echo "  </table>";
 	include("../includes/rodape.inc.php");
 	exit;
-	
+
 	}
 
 
@@ -747,10 +756,10 @@ echo "<a name='opinst'></a>";
 
 $sql = "select codigo,descricao,op from cadastro_escola order by descricao";
 $sql_result = mysql_query($sql);
-echo "\n<select name='codigo_escola' id='codigo_escola' class='form_select' onchange='javascript:InstOp(this)'>"; 
+echo "\n<select name='codigo_escola' id='codigo_escola' class='form_select' onchange='javascript:InstOp(this)'>";
 echo "\n<option value=''>:: Selecione ::";
 while(list($a,$b,$c)=mysql_fetch_row($sql_result)){
-   if($c == '1' and !$codigo_escola){$selected = 'selected'; $codigo_escola=$conf[codigo_curso]; }  
+   if($c == '1' and !$codigo_escola){$selected = 'selected'; $codigo_escola=$conf[codigo_curso]; }
    elseif($a == $codigo_escola) {$selected = 'selected';}else{$selected='';}
 echo "\n<option value='$a' $selected>$b";
 }
@@ -774,14 +783,14 @@ include("outras.php");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-	function getmicrotime(){ 
+	function getmicrotime(){
 
-			list($sec, $usec) = explode(" ",microtime()); 
-			return ($sec + $usec); 
+			list($sec, $usec) = explode(" ",microtime());
+			return ($sec + $usec);
 			}
 
-			$time_start = getmicrotime(); 
-			$arquivo = "$PHP_SELF?op=$op&cod=$cod"; 
+			$time_start = getmicrotime();
+			$arquivo = "$PHP_SELF?op=$op&cod=$cod";
 			$maxpag = 10;
 			$maxlnk = 10;
 		if ($id == ''){
@@ -793,11 +802,11 @@ include("outras.php");
 			$param = $passo2;
 		}
 
-$sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.carga_horaria,c.frequencia,c.situacao,c.codigo_escola as codEscola, c.data_exame as dataexame, concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso,f.descricao as escola, c.publicado from turmas a 
+$sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.carga_horaria,c.frequencia,c.situacao,c.codigo_escola as codEscola, c.data_exame as dataexame, concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso,f.descricao as escola, c.publicado from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
-		left join cadastro_cursos e on a.codigo_curso=e.codigo 
+		left join cadastro_cursos e on a.codigo_curso=e.codigo
 		left join cadastro_escola f on c.codigo_escola=f.codigo
 		where c.codigo_aluno='$cod' order by e.descricao,d.descricao,a.data_inicio desc,a.codigo";
 //$sql_result = mysql_query($sql);
@@ -960,7 +969,7 @@ echo "\n     </table>";
 			$reg_inicial = $param + 1;
 			$pg_anterior = $pg_atual - 1;
 			$pg_proxima = $pg_atual + 1;
-			$time_end = getmicrotime(); 
+			$time_end = getmicrotime();
 			$time = $time_end - $time_start;
 			echo "<tr><td height='10' valign='top'>";
 
