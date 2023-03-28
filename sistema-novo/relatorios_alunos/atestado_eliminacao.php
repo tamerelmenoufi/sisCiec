@@ -29,10 +29,15 @@ if($_POST[observacao]){
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
-      $linha1 = "RNE ".$dados->rne;
-      $linha2 = "Nacionalidade: ".$dados->nacionalidade;
-      $linha3 = false;
-      $linha4 = false;
+	$linha1 = "RNE ".$dados->rne;
+	$linha2 = "Nacionalidade: ".$dados->nacionalidade;
+	$linha3 = false;
+	$linha4 = false;
+  }elseif($dados->rnm){
+	$linha1 = "RNM ".$dados->rnm;
+	$linha2 = "Nacionalidade: ".$dados->nacionalidade;
+	$linha3 = false;
+	$linha4 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
       $linha2 = "Nascionalidade: ".$dados->nacionalidade;
@@ -123,7 +128,7 @@ Manaus/Amazonas </h4>
 <p>&nbsp; </p>
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><p class="times16" align="justify" 
+    <td><p class="times16" align="justify"
 	style="width:100%; margin-left:10px; border:0px solid #000000">
 	 <span class="times20" style="margin-left:95px;" >Atestamos que
       <?=trim($dados->nome)?>,
