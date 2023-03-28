@@ -332,7 +332,7 @@ $sqlm = "select a.*,
                             - entrada na depend&ecirc;ncia da escola utilizando shorts, camiseta,chinelos, mini-blusa, bermudas e mini-saia.<br>
                             - a perman&ecirc;ncias de crian&ccedil;as, acompanhantes ou familiares em sala de aula.<br>
                             <br>
-                              <strong>Assinatura</strong>: ......................................................................................................................... <br>
+                            <b style="font-size:12px">Assinatura</b>: .................................................................................................................................... <br>
                         </div></td>
                       <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
@@ -347,7 +347,7 @@ $sqlm = "select a.*,
 </td>
                     </tr>
                     <tr>
-                      <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
+                      <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
                       </span>OBS: Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova</td>
                       <td class="arial12 borda_left">&nbsp;</td>
                     </tr>
@@ -360,13 +360,13 @@ $sqlm = "select a.*,
             <td class="style3">&nbsp;</td>
           </tr>
           <tr>
-            <td class="style3">......................................................................................................................................................................................................................................</td>
+            <td class="style3">.....................................................................................................................................................................................................................................................</td>
           </tr>
           <tr>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td><table width="700" style="background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:90%;" cellpadding="0" cellspacing="0" class="borda_tabela">
+            <td><table width="700" style="" cellpadding="0" cellspacing="0" class="borda_tabela">
               <tr>
                 <td height="50" colspan="5" class="borda_tabela"><table width="700" height="19"  border="0" cellpadding="0" cellspacing="0">
                     <tr>
@@ -376,7 +376,7 @@ $sqlm = "select a.*,
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <span class="arial16">&nbsp;&nbsp;Wpp: 99303-9416</span><br>
+                          <span class="arial16">&nbsp;&nbsp;WhatsApp: 99303-9416</span><br>
                     </tr>
                 </table></td>
               </tr>
@@ -539,7 +539,7 @@ $sqlm = "select a.*,
                   <tr>
                     <td width="68%" class="borda_right" valign="top"><div align="justify" class="arial11" style="font-size:9px"> <span class="arial16">Instru&ccedil;&otilde;es: </span><span class="style1">IDADE M&Iacute;NIMA EXIGIDA - 15 anos Ens. Fund. / 18 anos Ens. M&eacute;dio</span><span class="arial16">.<br>
                         </span><strong>1</strong>. Comparecer ao local do exame na hora marcada. Ap&oacute;s esta s&oacute; com a autoriza&ccedil;&atilde;o pr&eacute;via.<br>
-                        <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>documentos de identidade original</strong>. <strong><br>
+                        <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>DOCUMENTOS DE IDENTIDADE ORIGINAL</strong>. <strong><br>
                           3</strong>. Durante o exame &eacute; proibido o uso de aparelho celular. <strong><br>
                             4</strong>. Ser&aacute; automaticamente eliminado o candidato que deixar de comparecer ao exame. <strong><br>
                               5</strong>. N&atilde;o informamos notas por telefone.<br>
@@ -550,10 +550,10 @@ $sqlm = "select a.*,
                       - entrada na depend&ecirc;ncia da escola utilizando shorts, camiseta,chinelos, mini-blusa, bermudas e mini-saia.<br>
                       - a perman&ecirc;ncias de crian&ccedil;as, acompanhantes ou familiares em sala de aula.<br>
                       <br>
-                      <strong>Assinatura</strong>: ......................................................................................................................... <br>
+                      <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
                     <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
-                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
+                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
@@ -565,7 +565,7 @@ $sqlm = "select a.*,
 </td>
                   </tr>
                   <tr>
-                    <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
+                    <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
                       </span>OBS: Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova</td>
                     <td class="arial12 borda_left">&nbsp;</td>
                   </tr>

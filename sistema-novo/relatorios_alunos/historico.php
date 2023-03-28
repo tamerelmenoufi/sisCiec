@@ -126,13 +126,15 @@ border-bottom: solid 0px #000000;
 </head>
 
 <body>
-<fieldset style="width:20cm;  border:#000000 5px solid;background:url(../img/ciecbgcinza.png) repeat  top ;background-size:100%" ><br>
+<fieldset style="width:20cm;  border:#000000 5px solid;" ><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
-Manaus – Amazonas </h4>
+Autorizado pela <?=$conf[resolucao]?> 
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
+Manaus - Amazonas </h4>
 <p align="center"><span class="times26">ESPELHO</span><br>
 </p>
 <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -309,7 +311,7 @@ Disciplinas pendentes curso <?=$_CursoNome[$val]?> (
 <?php
 }else{
 ?>
-<font color="#006600"><b>
+<font style="text-align:center" color="#006600"><b>
 Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?> 
 
 </b></font><font color="#006600"><b>
@@ -338,13 +340,13 @@ Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?>
   <tr>
       <td align="center" class="arial10">
       Djalma Batista<br>
-      Milhomem Center, Av. Djalma Batista, nº 98A<br>
+      Ed. Milhomem Center, Av. Djalma Batista, nº 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
       <td align="center" class="arial10">
       Shopping São José<br>
       2º Piso em frente a Marisa<br>
-            3342-3327
+            3342-3327/ 99984-8881
         </td>
       <td align="center" class="arial10">
       Parque das Nações<br>

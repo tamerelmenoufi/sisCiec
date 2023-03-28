@@ -133,15 +133,17 @@ border-bottom: solid 0px #000000;
 </head>
 
 <body>
-<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%"><br>
+<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;"><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
+Autorizado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
 Manaus – Amazonas </h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times30"><span class="times16">DECLARA&Ccedil;&Atilde;O DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
-<span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
+<span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p align="center"><span class="times16"><br>
 </span><span class="times16">DECLARAMOS PARA OS DEVIDOS FINS QUE </span></p>
 <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -209,9 +211,8 @@ Manaus – Amazonas </h4>
 <br>
 <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td class="times18" align="justify"><p class="times16">PRESTOU EXAME SUPLETIVO EM N&Iacute;VEL DE <span class="times16"><span class="times25">
-      <?=$dados->descricao?>
-    </span></span>, TENDO OBTIDO AS SEGUINTES NOTAS DE APROVA&Ccedil;&Atilde;O DE ACORDO A LEGISLA&Ccedil;&Atilde;O VIGENTE: </p></td>
+    <td class="times18" align="justify"><p class="times16">PRESTOU EXAME SUPLETIVO DO <span class="times16"><span class="times25">
+      <?=$dados->descricao?></span></span>, TENDO OBTIDO AS SEGUINTES NOTAS DE APROVA&Ccedil;&Atilde;O DE ACORDO A LEGISLA&Ccedil;&Atilde;O VIGENTE: </p></td>
   </tr>
 </table>
 <br>
@@ -252,7 +253,7 @@ Manaus – Amazonas </h4>
         </div></td>
       </tr>
       <?php
-		}
+		}array_disciplinas
 	?>
     </table></td>
   </tr>
@@ -274,11 +275,10 @@ Manaus – Amazonas </h4>
 	
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
-<font color="#FF0000"><b>
+<font style="color:#FF0000;font-size:15px"><b>
 Disciplinas pendentes (
 <?php
 	echo @implode(", ",$array_disciplinas);
-	
 ?>
 ) 
 <?php
@@ -305,13 +305,13 @@ Sem pend&ecirc;ncia de disciplinas
   <tr>
       <td align="center" class="arial10">
       Djalma Batista<br>
-      Milhomem Center, Av. Djalma Batista, nº 98A<br>
+      Ed. Milhomem Center, Av. Djalma Batista, nº 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
       <td align="center" class="arial10">
       Shopping São José<br>
       2º Piso em frente a Marisa<br>
-            3342-3327
+            3342-3327/ 99984-8881
         </td>
       <td align="center" class="arial10">
       Parque das Nações<br>

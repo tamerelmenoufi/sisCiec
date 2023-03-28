@@ -24,12 +24,12 @@ if($_POST[observacao]){
 	$dados = mysql_fetch_object($result);
 
   if($dados->rg){
-      $linha1 = "RG: ".$dados->rg;
+      $linha1 = "RG ".$dados->rg;
       $linha2 = "ORG&Atilde;O/UF: ".$dados->rg_orgao;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
-      $linha1 = "RNE: ".$dados->rne;
+      $linha1 = "RNE ".$dados->rne;
       $linha2 = "Nacionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
@@ -106,14 +106,16 @@ border: solid 1px #000000;
 
 <body>
 
-<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%">
+<fieldset style="width:20cm; height:29.7cm; border:#000000 5px solid">
 <br>
 <br>
 
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?>
+Amparado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
 Manaus/Amazonas </h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
@@ -121,7 +123,9 @@ Manaus/Amazonas </h4>
 <p>&nbsp; </p>
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><p class="times16" align="justify">Atestamos que <span class="times20">
+    <td><p class="times16" align="justify" 
+	style="width:100%; margin-left:10px; border:0px solid #000000">
+	 <span class="times20" style="margin-left:95px;" >Atestamos que
       <?=trim($dados->nome)?>,
       </span> natural de
       <?=$dados->cidade?>,
@@ -130,7 +134,7 @@ Manaus/Amazonas </h4>
 	  <?=$linha1?>,
 	prestou o Exame de Educação de Jovens e Adultos -EJA, do <span class="times20">
       <?=$dados->descricao?>,
-    </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n&ordm;9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas -CEE/AM, e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
+    </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n° 9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
 </table>
 </p>
@@ -174,7 +178,7 @@ Manaus/Amazonas </h4>
 <p align="center" class="times10">&nbsp;
 <?php
 
-	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("', '",$array_disciplinas_concluidas)."')" : false);
+	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("','",$array_disciplinas_concluidas)."')" : false);
 	//echo $query;
 	$result = mysql_query($query);
 	$array_disciplinas = false;
@@ -186,10 +190,10 @@ Manaus/Amazonas </h4>
 
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
-<font color="#FF0000"><b>
+<font style="color:#FF0000;font-size:15px"><b>
 Disciplinas pendentes (
 <?php
-	echo @implode(", ",$array_disciplinas);
+	echo @implode(",",$array_disciplinas);
 
 ?>
 )
@@ -215,13 +219,13 @@ Sem pend&ecirc;ncia de disciplinas
 	<tr>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
-			Milhomem Center, Av. Djalma Batista, n° 98A<br>
+			Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
 			2° Piso em frente a Marisa<br>
-            3342-3327
+            3342-3327/ 99984-8881
         </td>
     	<td align="center" class="arial10">
 			Parque das Nações<br>

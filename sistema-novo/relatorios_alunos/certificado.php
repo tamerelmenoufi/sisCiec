@@ -154,13 +154,15 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.jpg" width="112" height="75"></td>
+                  <td width="73"><img src="../img/logo_ciec.gif" width="120" ></td>
                   <td>
-                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
-	      EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS ? EJA </span><br>
+                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC </span><br>
+	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-		Amparado pela <?=$conf[resolucao]?> <br>
+		Amparado pela <?=$conf[resolucao]?> 
+    Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               Manaus-Amazonas </span></div></td>
                 </tr>
               </table>
@@ -178,7 +180,7 @@ white-space:nowrap;
           </tr>
           <tr>
             <td class="dauphin16" style="white-space:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Certificamos que
-              <b><?=trim($dados->nome)?></b>/<?=$linha1?>,
+              <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
                tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em
@@ -238,7 +240,7 @@ white-space:nowrap;
 <?php
 	if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concludente no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.</div>
 <?php
 	}
 ?>
@@ -283,11 +285,13 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
-		EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
                 <?=$conf[resolucao]?>
+                Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+      Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               </div></td>
             </tr>
         </table></td>
@@ -358,8 +362,7 @@ white-space:nowrap;
 		}
 	?>
     </table>
-    (*) UNIDADE DESCENTRALIZADA
-
+   
 
         <?php
 			if(trim($observacao)){
@@ -393,7 +396,7 @@ white-space:nowrap;
         if($validar_curso == 'ensino médio'){
         ?>
         <div id="carimbo" style="font-size:12px">
-        <span>CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS-<br />
+        <span>CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC<br />
 		CIEC SUL - UNIDADE DESCENTRALIZADA<br /></span>
 		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</div>
 		<div>do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,</div>
@@ -436,19 +439,16 @@ white-space:nowrap;
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
     <?php
     }else if($qb <= 8){
     ?>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
+  <p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
+	
 
     <?php
     }else if($qb <= 11){
@@ -473,11 +473,13 @@ white-space:nowrap;
                 <tr>
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
-                        <span class="times12"><img src="../img/logo_ciec.jpg" width="75" align="left" />
-                            CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC <br />
-                            EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS &ndash; EJA </span><br />
+                        <span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />
+                            CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+                            EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 			    Amparado pela <?=$conf[resolucao]?>
+          Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
                       </div>
                   </td>
                 </tr>
@@ -506,7 +508,7 @@ white-space:nowrap;
                     <td class="times12">N&iacute;vel de ensino:</td>
                     <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educa&ccedil;&atilde;o de Jovens e Adultos/EJA</td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA | <b>Etapa Única</b></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -517,12 +519,15 @@ white-space:nowrap;
         <td height="35" colspan="6" align="center" valign="top" class="times12">
 	    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="borda1">
           <tr>
-            <td height="17" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Média Final por disciplina</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data De Conclusão</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Escola</strong></td>
-
+          <tr>
+            <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>C.H.</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Origem</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Resultado</strong></td>
+          </tr>
           </tr>
 	<?php
 
@@ -569,11 +574,13 @@ white-space:nowrap;
 
 
         ?>
-           <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
-           <td width="72" class="times12" align="center">Aprovado</td>
+           
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
-           <td width="413" class="times12" align="center"><?=$escola?> </td>
-
+        <td width="413" class="times12" align="center"><?=$escola?> </td>
+        <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
+        <td width="72" class="times12" align="center"><?=(($carga_horaria) ? 'Curso' : 'Exame')?></td>
+        <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
+        <td width="72" class="times12" align="center">Aprovado</td>
 
         <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
 
@@ -586,15 +593,17 @@ white-space:nowrap;
 
       <tr>
         <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
-        <td width="413" class="times12" align="center" colspan="3" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
+        
+        <td width="413" class="times12" align="center" colspan="4" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
+        <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:bold;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
       </tr>
 
       <tr>
         <td width="150" height="17" class="times12" style="font-weight:bold">Coeficiente </td>
-        <td width="104" class="times12" style="border: solid 1px #000;font-weight:bold;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
-        <td width="413" class="times12" align="center" colspan="3"
+        
+        <td width="413" class="times12" align="center" colspan="4"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
+        <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:bold;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
       </tr>
 
     </table>
@@ -608,18 +617,19 @@ text-align:center;font-weight:bold;margin-top:5px">
 Observações
 </div>
 
-        <div style="font-size:10px;padding:3px">
-  Amparo Legal: Amparo pela Lei Federal n. 9394/96, de 20 de dezembro de 1996. Resolução CNE/CEB n.° 01/2000
-       </div>
 
     <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:3px">
      <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
-  Resolução n° 38/05, de 26.04.2005/ Resolução 96,06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 19/2011, de 20.12.2011/ REsolução 213, de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
+  Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
+       <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
+  Não há exigência de carga horária.
+       </div>
+
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   <b>
@@ -636,8 +646,11 @@ Observações
        </div>
 
 
+
     	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
+      <p>&nbsp;</p>
+	<p>&nbsp;</p>
       <table class="">
     <tr>
     <td width="170"  ></th>
@@ -660,12 +673,12 @@ Observações
 	<p>&nbsp;</p> -->
 
 
-  <div style="border-top:1px dotted #000;border-bottom: 1px solid #000;padding:1px">
+  <div style="border-bottom: 1px solid #000;padding:1px">
 </div>
 
 
- <div style="font-size:12px;padding:5px;border-bottom: 1px solid #000;text-align:center">
- Fone: (55)(92) 3023-1242/ Whattsapp (55)(92) 99993-7796 - Manaus - Am - Brasil <br>
+ <div style="font-size:12px;padding:5px;text-align:center">
+ Fone: (55)(92) 3346-0191/ Whattsapp (55)(92) 99303-9416 - Manaus - Am - Brasil <br>
  e-mail:wm.supletivo@gmail.com - C.N.P.J.07.615.520/0003-10
        </div>
 

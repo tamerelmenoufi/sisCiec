@@ -112,12 +112,14 @@ border-bottom: solid 0px #000000;
 </head>
 
 <body>
-<fieldset style="width:20cm; padding-left:10px; height:29.7cm; border:#000000 5px solid ;background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:100%"><br>
+<fieldset style="width:20cm; padding-left:10px; height:29.7cm; border:#000000 5px solid ;"><br>
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
-Manaus – Amazonas </h4>
+Autorizado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
+Manaus - Amazonas </h4>
 <p align="center"><hr> </p>
 <p align="left" class="times30"><span class="times16">&Agrave;</span></p>
 <p align="left" class="times30"><?=$_SESSION[cook_instituicao]?></p>
@@ -133,11 +135,12 @@ Manaus – Amazonas </h4>
 
 <div style="border:#009 solid 0px; width:100%; min-height:600px;">
 <p align="justify" class="times30">
-<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, Nível de <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n.º <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
+<span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, do <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n° <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
 <?php
-	if($validar_curso == 'ensino médio'){
+	if($validar_curso == 'ensino mï¿½dio'){
 ?>
 ; e seu nome publicado na Rela&ccedil;&atilde;o de Alunos Concludentes da EJA, no Di&aacute;rio Oficial do Estado do Amazonas, edi&ccedil;&atilde;o de <?=data_ext($_SESSION[cook_data_oficio],'')?>, Caderno de Publica&ccedil;&otilde;es Diversas, p&aacute;gina <?=$_SESSION[cook_pagina_oficio]?>. 
+
 
 <?php
 	}else{
@@ -169,17 +172,17 @@ Manaus – Amazonas </h4>
 	<tr>
     	<td align="center" class="arial10">
 			Djalma Batista<br>
-			Milhomem Center, Av. Djalma Batista, nº 98A<br>
+			Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>
              3023-1242 / 3346-0191 / 99303-9416
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
-			2º Piso em frente a Marisa<br>
-            3342-3327
+			2° Piso em frente a Marisa<br>
+            3342-3327/ 99984-8881
         </td>
     	<td align="center" class="arial10">
 			Parque das Nações<br>
-			R. Angola, nº 21. Quadra 23<br>
+			R. Angola, n° 21. Quadra 23<br>
             3654-2283 / 99434-6959
       </td>
     </tr>
