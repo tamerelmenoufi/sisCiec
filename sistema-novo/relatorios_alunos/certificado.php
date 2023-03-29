@@ -160,7 +160,7 @@ white-space:nowrap;
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-		Amparado pela <?=$conf[resolucao]?> 
+		Amparado pela <?=$conf[resolucao]?>
     Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
     Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               Manaus-Amazonas </span></div></td>
@@ -362,7 +362,7 @@ white-space:nowrap;
 		}
 	?>
     </table>
-   
+
 
         <?php
 			if(trim($observacao)){
@@ -420,6 +420,13 @@ white-space:nowrap;
                 <?=data_formata($data_doc)?>
                   </span><br />
                 No. <?=$unidade?>.<?=$livro?>.<?=$folha?>.<?=$ordem?>
+                <?php
+                if($complemento){
+                ?>
+                <br><?=$complemento?>
+                <?php
+                }
+                ?>
               </div></td>
             </tr>
           </table>
@@ -439,7 +446,7 @@ white-space:nowrap;
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	
+
     <?php
     }else if($qb <= 8){
     ?>
@@ -447,8 +454,8 @@ white-space:nowrap;
 	<p>&nbsp;</p>
   <p>&nbsp;</p>
 	<p>&nbsp;</p>
-	
-	
+
+
 
     <?php
     }else if($qb <= 11){
@@ -574,7 +581,7 @@ white-space:nowrap;
 
 
         ?>
-           
+
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
         <td width="413" class="times12" align="center"><?=$escola?> </td>
         <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
@@ -593,14 +600,14 @@ white-space:nowrap;
 
       <tr>
         <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-        
+
         <td width="413" class="times12" align="center" colspan="4" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
         <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:bold;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
       </tr>
 
       <tr>
         <td width="150" height="17" class="times12" style="font-weight:bold">Coeficiente </td>
-        
+
         <td width="413" class="times12" align="center" colspan="4"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
         <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:bold;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
