@@ -7,7 +7,7 @@ include("../includes/data_ext.inc.php");
 
 			     $query = "select unidade,livro,folha,data,ordem,observacao from certificados where codigo_curso='$curso' and codigo_aluno='$cod'";
 				 $result = mysql_query($query);
-				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao) = mysql_fetch_row($result);
+				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao,$complemento) = mysql_fetch_row($result);
 
 
   function verifica_certificacao($disciplina,$cod,$curso){
