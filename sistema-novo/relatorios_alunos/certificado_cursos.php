@@ -2,13 +2,13 @@
 include("../includes/connect.inc.php");
 include("../includes/estilos.inc.php");
 ?>
-<STYLE TYPE="text/css"> 
+<STYLE TYPE="text/css">
 <?php
   $query = "select * from cadastro_cursos order by descricao";
   $result = mysql_query($query);
   $i=0;
   while($dados = mysql_fetch_object($result)){
-	 echo "#div_$dados->codigo {\n"; 
+	 echo "#div_$dados->codigo {\n";
      echo "position:relative;\n";
 	 echo "display:none;\n";
 	 echo "    }\n\n";
@@ -24,7 +24,7 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 }
-</STYLE> 
+</STYLE>
 
 
 <script language="javascript">
@@ -40,20 +40,20 @@ var menus = new Array()
   }
 ?>
 
-  function esconder(opc) { 
+  function esconder(opc) {
 
      eval("document.all"+"[\""+opc+"\"]"+".style.visibility"+"="+"\"hidden\""+";");
 	 eval("document.all"+"[\""+opc+"\"]"+".style.display=\"none\";");
 
-  } 
-    function mostrar(opc) { 
+  }
+    function mostrar(opc) {
         for(i=0;i<menus.length;i++){
 		     esconder(menus[i]);
 		}
-     eval("document.all"+"[\""+opc+"\"]"+".style.visibility"+"="+"\"visible\""+";"); 
+     eval("document.all"+"[\""+opc+"\"]"+".style.visibility"+"="+"\"visible\""+";");
 	 eval("document.all"+"[\""+opc+"\"]"+".style.display=\"block\";");
 
-  } 
+  }
 </SCRIPT>
 
 <script language="javascript">
@@ -69,7 +69,7 @@ var menus = new Array()
 
 
   if(isset($sb)){
-  
+
 	  //echo $segunda."<br>";
     //echo "<pre>";
     //print_r($_POST);
@@ -94,11 +94,11 @@ var menus = new Array()
           if($t){ $erro = 1; }
           else{
 	     if(mysql_num_rows($result)){
-		   $sql = "update certificados set unidade='".$_POST[unidade][$vt]."', livro='".$_POST[livro][$vt]."', folha='".$_POST[folha][$vt]."', data='".$_POST[data][$vt]."', ordem='".$_POST[ordem][$vt]."' , observacao='".$_POST[observacao][$vt]."'  where codigo='$codigo'";
+		   $sql = "update certificados set unidade='".$_POST[unidade][$vt]."', livro='".$_POST[livro][$vt]."', folha='".$_POST[folha][$vt]."', data='".$_POST[data][$vt]."', ordem='".$_POST[ordem][$vt]."' , observacao='".$_POST[observacao][$vt]."' , complemento='".$_POST[complemento][$vt]."'  where codigo='$codigo'";
 		   //echo $sql; exit;
 		   mysql_query($sql);
 		 }else{
-		   $sql = "insert into certificados (codigo_curso,codigo_aluno,unidade,livro,folha,data,ordem,observacao) values ('$vt','$cod','".$_POST[unidade][$vt]."','".$_POST[livro][$vt]."','".$_POST[folha][$vt]."','".$_POST[data][$vt]."','".$_POST[ordem][$vt]."','".$_POST[observacao][$vt]."')";
+		   $sql = "insert into certificados (codigo_curso,codigo_aluno,unidade,livro,folha,data,ordem,observacao,complemento) values ('$vt','$cod','".$_POST[unidade][$vt]."','".$_POST[livro][$vt]."','".$_POST[folha][$vt]."','".$_POST[data][$vt]."','".$_POST[ordem][$vt]."','".$_POST[observacao][$vt]."','".$_POST[complemento][$vt]."')";
 		   mysql_query($sql);
 		 }
 
@@ -131,7 +131,7 @@ echo "         <td  align='right'>&nbsp;";
 echo "      <tr><td colspan='6'  align='left'><table border='0'  cellpadding='0' cellspacing='0' width='100%'>";
 echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' cellpadding='10' width='100%' height='180' bgcolor='#DDDDDF'><tr><td valign='top'>";
 
-//AQUI COMEÇA O PROGRAMA 
+//AQUI COMEï¿½A O PROGRAMA
 
 	$query = "select * from cadastro_cursos order by descricao";
 	$result = mysql_query($query);
@@ -144,8 +144,8 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 		echo "</select>\n";
 		echo "<input type='hidden' name='cod' value='$cod'>\n";
 		echo "<input type='submit' name='sb' value='visualizar' onclick=\"return validar(document.all.f.curso.value)\">";
-		
-		
+
+
 	$query = "select nome,rg from cadastro_aluno where codigo='$cod'";
 	$result = mysql_query($query);
 	//echo $query;
@@ -153,15 +153,15 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 
 		echo "<br><br>Nome: <span class='campos_azul'>$nome</span><br>";
 		echo "RG:  <span class='campos_azul'>$rg</span><br>";
-	
+
 		  $query = "select * from cadastro_cursos order by descricao";
 		  $result = mysql_query($query);
 		  while($dados = mysql_fetch_object($result)){
 		echo "<div id='div_$dados->codigo'>\n";
 		echo " <span class='campos_azul'>$dados->descricao:</span><br>\n";
-		    $sql = "select codigo,livro,folha,data,ordem,observacao from certificados where codigo_aluno='$cod' and codigo_curso = '$dados->codigo'";
+		    $sql = "select codigo,livro,folha,data,ordem,observacao,complemento from certificados where codigo_aluno='$cod' and codigo_curso = '$dados->codigo'";
 			$sql_r = mysql_query($sql);
-			list($codigo,$livro,$folha,$data,$ordem,$observacao) = mysql_fetch_row($sql_r);
+			list($codigo,$livro,$folha,$data,$ordem,$observacao,$complemento) = mysql_fetch_row($sql_r);
 		echo "Unidade: <select name='unidade[$dados->codigo]'>
                                   <option value='01'>Unidade 01</option>
                                </select> \n";
@@ -169,13 +169,14 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 		echo "Folha: <input type='text' name='folha[$dados->codigo]' value='$folha' size='4'> \n";
 		echo "Data: <input type='text' name='data[$dados->codigo]' value='$data' size='11'> \n";
 		echo "Ordem: <input type='text' name='ordem[$dados->codigo]' value='$ordem' size='5'> \n";
+		echo "Complemento: <input type='text' name='complemento[$dados->codigo]' value='$complemento' size='25'> \n";
 		echo "<br>Observa&ccedil;&atilde;o:<br><input type='text' name='observacao[$dados->codigo]' value='$observacao' style='width:100%'><br> \n";
 		echo "<input type='hidden' name='codigo_curso[]' value='$dados->codigo'>\n";
 		echo "<input type='hidden' name='codigo[$dados->codigo]' value='$codigo'>\n";
 		echo "<input type='checkbox' name='segunda_via[$dados->codigo]' value='1'>Imprimir ";
 		echo "<select name='segunda[]'>";
 		for($i=2;$i<=10;$i++){
-		echo "<option value='".$i."a. Via'>".$i."</option>";	
+		echo "<option value='".$i."a. Via'>".$i."</option>";
 		}
 		echo "</select>";
 		echo " &ordf; Via<br>\n";
@@ -185,7 +186,7 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 
    echo "</form>";
 
-// AQUI TERMINA 
+// AQUI TERMINA
 echo "</td></table>";
 echo "</td></table>";
 echo "</table>";
