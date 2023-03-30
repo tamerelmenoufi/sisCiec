@@ -196,12 +196,10 @@ Manaus/Amazonas </b></h4>
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
 <font style="color:#FF0000;font-size:15px"><b>
-Disciplinas pendentes (
-<?php
-	echo @implode(",",$array_disciplinas);
+Disciplinas pendentes (<?php
+	echo @implode(",",trim($array_disciplinas));
 
-?>
-)
+?>)
 <?php
 }else{
 ?>
