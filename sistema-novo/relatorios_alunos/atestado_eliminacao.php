@@ -197,7 +197,7 @@ Manaus/Amazonas </b></h4>
 ?>
 <font style="color:#FF0000;font-size:15px"><b>
 Disciplinas pendentes (<?php
-	echo @implode(",",trim($array_disciplinas));
+	echo @implode(", ",trim($array_disciplinas));
 
 ?>)
 <?php
