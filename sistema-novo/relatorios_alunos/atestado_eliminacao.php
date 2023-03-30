@@ -123,8 +123,8 @@ Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
 Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
 Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
-<p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
-<span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
+<p align="center" class="times30"><span style="font-weight:bold" class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
+<span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p>&nbsp; </p>
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
@@ -137,7 +137,7 @@ Manaus/Amazonas </b></h4>
        nascido(a) em
       <?=data_ext($dados->data_nascimento,false)?>,
 	  <?=$linha1?>,
-	prestou o Exame de Educação de Jovens e Adultos -EJA, do <span class="times20">
+	prestou o Exame de Educação de Jovens e Adultos - EJA, do <span class="times20">
       <?=$dados->descricao?>,
     </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n° 9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
