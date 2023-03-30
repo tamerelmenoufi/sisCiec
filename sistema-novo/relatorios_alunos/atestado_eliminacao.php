@@ -126,7 +126,7 @@ Manaus/Amazonas </b></h4>
 <p align="center" class="times30"><span style="font-weight:bold" class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
 <span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p>&nbsp; </p>
-<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="90%" style="margin-left:0px" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><p class="times16" align="justify"
 	style="width:100%; margin-left:10px; border:0px solid #000000">
