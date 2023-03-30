@@ -130,7 +130,7 @@ Manaus/Amazonas </b></h4>
   <tr>
     <td><p class="times16" align="justify"
 	style="width:100%; margin-left:10px; border:0px solid #000000">
-	 <span class="times20" style="margin-left:95px;" ><b style="font-size:16px!important">Atestamos que</b>
+	 <span class="times20" style="margin-left:95px;" ><d style="font-size:16px!important">Atestamos que</d>
       <?=trim($dados->nome)?>,
       </span> natural de
       <?=$dados->cidade?>,
