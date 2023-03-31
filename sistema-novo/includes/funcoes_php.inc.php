@@ -24,16 +24,16 @@ function numero_ext($valor){
   if($valor == 8){ $retorno = 'oito'; }
   if($valor == 9){ $retorno = 'nove'; }
   if($valor == 10){ $retorno = 'dez'; }
-  
+
   return $retorno;
-  
+
 }
 
 function escreve_numero($valor){
    list($a,$b) = explode(",",$valor);
-   
+
    $retorno = ucwords(numero_ext($a))
-             . " virgula "
+             . " vírgula "
 			 . numero_ext($b);
 
    return $retorno;
@@ -45,7 +45,7 @@ function CalcularIdade($nascimento) {
 $hoje = date("d-m-Y"); //pega a data d ehoje
 $aniv = explode("-", $nascimento); //separa a data de nascimento em array, utilizando o símbolo de - como separador
 $atual = explode("-", $hoje); //separa a data de hoje em array
-  
+
 $idade = $atual[2] - $aniv[2];
 
 if($aniv[1] > $atual[1]) //verifica se o mês de nascimento é maior que o mês atual
@@ -62,7 +62,7 @@ return $idade; //retorna a idade da pessoa em anos
 
 function logs($tab,$opr,$reg,$com){
 	global $_SESSION;
-	
+
 	mysql_query ("insert into logs set ".
 			 	 " usuario = '".$_SESSION[cook_logado]."',".
 			 	 " tabela = '".$tab."',".
