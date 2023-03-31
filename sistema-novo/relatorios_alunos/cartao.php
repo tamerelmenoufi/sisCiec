@@ -163,7 +163,7 @@ for($i=$len;$i<11;$i++){
                               <td>3023-1242<br>3346-0191</td>
                             </tr>
                             <tr class="arial16">
-                              <td>Wpp:</td>
+                              <td>WhatsApp:</td>
                               <td>99303-9416</td>
                             </tr>
                           </table>
@@ -387,9 +387,21 @@ $sqlm = "select a.*,
                       <td width="166" align="center"><img src="../img/logo_pp.gif" /></td>
                       <td width="50" height="60"><div align="center" class="arial16">E</div></td>
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
-                      <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
-                          </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <span class="arial16">&nbsp;&nbsp;WhatsApp: 99303-9416</span><br>
+                      <td>
+                        <div align="center"><span class="arial16">Fone: 3023-1242<br>
+                        <table border="0">
+                            <tr class="arial16">
+                              <td>Fone:</td>
+                              <td>3023-1242<br>3346-0191</td>
+                            </tr>
+                            <tr class="arial16">
+                              <td>WhatsApp:</td>
+                              <td>99303-9416</td>
+                            </tr>
+                          </table>
+                          <!-- </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
+                          <span class="arial16">&nbsp;&nbsp;WhatsApp: 99303-9416</span><br> -->
+                        </div>
                     </tr>
                 </table></td>
               </tr>
