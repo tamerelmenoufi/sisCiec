@@ -50,8 +50,10 @@ include("../includes/data_ext.inc.php");
 <?php include("../includes/topoDoc.php"); ?>
 
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
-Manaus – Amazonas </h4>
+<b style="font-weight:100!important">Amparado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
+Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times25">DECLARA&Ccedil;&Atilde;O </p>
 <p align="center">
