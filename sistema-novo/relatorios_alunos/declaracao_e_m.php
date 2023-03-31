@@ -117,7 +117,7 @@ nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;
 if(count($array_disciplinas_concluidas_des)){
 ?>
 <p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:
 </p>
 <?php
 
