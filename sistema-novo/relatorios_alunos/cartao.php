@@ -147,7 +147,7 @@ for($i=$len;$i<11;$i++){
       <tr>
         <td ><table width="100%"  border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td><table width="700" cellpadding="0" cellspacing="0" class="borda_tabela" style="background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:90%;">
+            <td><table width="700" cellpadding="0" cellspacing="0" class="borda_tabela" style="background:url(../img/ciecbgcinza1.png) no-repeat  center;background-size:90%;">
               <tr>
                 <td height="50" colspan="5" class="borda_tabela"><table width="700" height="19"  border="0" cellpadding="0" cellspacing="0">
                     <tr>
