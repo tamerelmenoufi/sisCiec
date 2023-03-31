@@ -77,7 +77,7 @@ if($_POST[observacao]){
 </style>
 <html>
 <head>
-<title>DECLARAÇÃO DE MATRíCULA</title>
+<title>DECLARAÇÃO DE MATRÍCULA</title>
 </head>
 
 <body>
@@ -86,8 +86,10 @@ if($_POST[observacao]){
 <?php include("../includes/topoDoc.php"); ?>
 
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> <br>
-Manaus – Amazonas </h4>
+<b style="font-weight:100!important">Amparado pela <?=$conf[resolucao]?>
+Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
+Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times25">DECLARA&Ccedil;&Atilde;O </p>
 <p align="center">
@@ -114,13 +116,13 @@ nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;
 
 if(count($array_disciplinas_concluidas_des)){
 ?>
-O aluno concluiu as disciplinas abaixo relacionadas:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <?php
 	
 echo "&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
 
 ?>
-.
+
 <?php
 }
 
@@ -179,7 +181,7 @@ if($data and $data!= 'undefined'){
     	<td align="center" class="arial10">
 			Shopping São José<br>
 			2º Piso em frente a Marisa<br>
-            3342-3327
+            3342-3327 / 99984-8881
         </td>
     	<td align="center" class="arial10">
 			Parque das Nações<br>

@@ -24,12 +24,12 @@ if($_POST[observacao]){
 	$dados = mysql_fetch_object($result);
 
   if($dados->rg){
-      $linha1 = "RG ".$dados->rg;
+      $linha1 = "RG ".$dados->rg. " ".$dados->rg_orgao;
       $linha2 = "ORG&Atilde;O/UF: ".$dados->rg_orgao;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
-	$linha1 = "RNE ".$dados->rne;
+	$linha1 = "RNE ".$dados->rne ;
 	$linha2 = "Nacionalidade: ".$dados->nacionalidade;
 	$linha3 = false;
 	$linha4 = false;
@@ -118,26 +118,26 @@ border: solid 1px #000000;
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Amparado pela <?=$conf[resolucao]?>
+<b style="font-weight:100!important">Amparado pela <?=$conf[resolucao]?>
 Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
 Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-Manaus/Amazonas </h4>
+Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
-<p align="center" class="times30"><span class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
-<span class="times16">( N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
+<p align="center" class="times30"><span style="font-weight:bold" class="times20">ATESTADO DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
+<span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p>&nbsp; </p>
-<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="90%"  border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><p class="times16" align="justify"
-	style="width:100%; margin-left:10px; border:0px solid #000000">
-	 <span class="times20" style="margin-left:95px;" >Atestamos que
+	style="width:100%; border:0px solid #000000">
+	 <span class="times20" style="margin-left:95px;" ><d style="font-size:16px!important">Atestamos que</d>
       <?=trim($dados->nome)?>,
       </span> natural de
       <?=$dados->cidade?>,
        nascido(a) em
       <?=data_ext($dados->data_nascimento,false)?>,
 	  <?=$linha1?>,
-	prestou o Exame de Educação de Jovens e Adultos -EJA, do <span class="times20">
+	prestou o Exame de Educação de Jovens e Adultos - EJA, do <span class="times20">
       <?=$dados->descricao?>,
     </span> nos termos dos Artigos 37 e 38, seus parágrafos e alíneas, da Lei n° 9394, de 20 de dezembro de 1996, das Resoluções emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM e Legisla&ccedil;&atilde;o em vigor, foi considerado(a) aprovado(a) na(s) seguinte(s) disciplina(s): </p></td>
   </tr>
@@ -196,12 +196,10 @@ Manaus/Amazonas </h4>
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
 <font style="color:#FF0000;font-size:15px"><b>
-Disciplinas pendentes (
-<?php
-	echo @implode(",",$array_disciplinas);
+Disciplinas pendentes (<?php
+	echo @implode(", ",trim($array_disciplinas));
 
-?>
-)
+?>)
 <?php
 }else{
 ?>

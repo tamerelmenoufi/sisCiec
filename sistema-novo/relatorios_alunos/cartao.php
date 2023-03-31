@@ -147,7 +147,7 @@ for($i=$len;$i<11;$i++){
       <tr>
         <td ><table width="100%"  border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td><table width="700" cellpadding="0" cellspacing="0" class="borda_tabela" style="background:url(../img/ciecbgcinza.png) no-repeat  center;background-size:90%;">
+            <td><table width="700" cellpadding="0" cellspacing="0" class="borda_tabela" style="background:url(../img/ciecbgcinza1.png) no-repeat  center;background-size:90%;">
               <tr>
                 <td height="50" colspan="5" class="borda_tabela"><table width="700" height="19"  border="0" cellpadding="0" cellspacing="0">
                     <tr>
@@ -214,7 +214,7 @@ for($i=$len;$i<11;$i++){
                       <td class="arial11">&nbsp;&nbsp;Nascimento</td>
                     </tr>
                     <tr>
-                      <td class="arial11">&nbsp;
+                      <td class="arial12">&nbsp;
                           <?=data_formata($dados->data_nascimento)?>
                       </td>
                     </tr>
@@ -334,7 +334,7 @@ $sqlm = "select a.*,
                       <td width="68%" class="borda_right" valign="top"><div align="justify" class="arial11" style="font-size:9px">
                           <span class="arial16">Instru&ccedil;&otilde;es: </span><span class="style1">IDADE M&Iacute;NIMA EXIGIDA - 15 anos Ens. Fund. / 18 anos Ens. M&eacute;dio</span><span class="arial16">.<br>
                             </span><strong>1</strong>. Comparecer ao local do exame na hora marcada. Ap&oacute;s esta s&oacute; com a autoriza&ccedil;&atilde;o pr&eacute;via.<br>
-                            <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>documentos de identidade original</strong>. <strong><br>
+                            <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>DOCUMENTOS DE IDENTIDADE ORIGINAL</strong>. <strong><br>
                               3</strong>. Durante o exame &eacute; proibido o uso de aparelho celular. <strong><br>
                                 4</strong>. Ser&aacute; automaticamente eliminado o candidato que deixar de comparecer ao exame. <strong><br>
                                   5</strong>. N&atilde;o informamos notas por telefone.<br>
@@ -347,13 +347,13 @@ $sqlm = "select a.*,
                             <br>
                             <b style="font-size:12px">Assinatura</b>: .................................................................................................................................... <br>
                         </div></td>
-                      <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
-  Para solicitar declara&ccedil;&otilde;es, atestado e certificado&eacute; necess&aacute;rio c&oacute;pia de:<br>
+                      <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11"><b>IMPORTANTE - LEIA</b><br>
+  Para solicitar declara&ccedil;&otilde;es, atestado e certificado �  necess&aacute;rio c&oacute;pia de:<br>
   a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                                 b) Taxa / prazo de entrega<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pelo coordenador.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordena��o.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
@@ -565,13 +565,18 @@ $sqlm = "select a.*,
                       <br>
                       <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
+<<<<<<< HEAD
                     <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
                       Para solicitar declara&ccedil;&otilde;es, atestado e certificado � necess&aacute;rio c&oacute;pia de:<br>
+=======
+                    <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11"><b>IMPORTANTE - LEIA</b><br>
+                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado � necess&aacute;rio c&oacute;pia de:<br>
+>>>>>>> 74c7531c976d6f964071227c00908cf9b2a4d0fb
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pelo coordenador.</p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordena��o.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
