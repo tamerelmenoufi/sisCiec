@@ -388,7 +388,7 @@ $sqlm = "select a.*,
                       <td width="50" height="60"><div align="center" class="arial16">E</div></td>
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
                       <td>
-                        <div align="center"><span class="arial16">Fone: 3023-1242<br>
+                        <div align="center">
                         <table border="0">
                             <tr class="arial16">
                               <td>Fone:</td>
