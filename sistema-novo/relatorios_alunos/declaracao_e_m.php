@@ -93,7 +93,7 @@ Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times25">DECLARA&Ccedil;&Atilde;O </p>
 <p align="center">
-<p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que
+<p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que
   <?=$dados->nome?>
 , portador(a) <?=$linha1?>, est&aacute; matriculado(a) no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos &ndash; EJA, n&iacute;vel de
 <?=$dados->descricao?>
@@ -117,11 +117,11 @@ nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;
 if(count($array_disciplinas_concluidas_des)){
 ?>
 <p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:
 </p>
 <?php
 
-echo "&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
+echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
 
 ?>
 
