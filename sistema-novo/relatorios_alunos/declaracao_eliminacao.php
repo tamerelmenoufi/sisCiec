@@ -142,7 +142,7 @@ Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
 Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
 Manaus – Amazonas </h4>
 <p align="center">&nbsp; </p>
-<p align="center" class="times30"><span class="times16">DECLARA&Ccedil;&Atilde;O DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
+<p align="center" class="times30"><span class="times16" style="font-weight:bold;font-size:20px">DECLARA&Ccedil;&Atilde;O DE ELIMINA&Ccedil;&Atilde;O DE DISCIPLINAS</span><br>
 <span class="times16">(N&atilde;o vale como Certificado de Conclus&atilde;o)</span></p>
 <p align="center"><span class="times16"><br>
 </span><span class="times16">DECLARAMOS PARA OS DEVIDOS FINS QUE </span></p>
@@ -212,7 +212,7 @@ Manaus – Amazonas </h4>
 <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td class="times18" align="justify"><p class="times16">PRESTOU EXAME SUPLETIVO DO <span class="times16"><span class="times25">
-      <?=$dados->descricao?></span></span>, TENDO OBTIDO AS SEGUINTES NOTAS DE APROVA&Ccedil;&Atilde;O DE ACORDO A LEGISLA&Ccedil;&Atilde;O VIGENTE: </p></td>
+      <?=$dados->descricao?></span></span>, TENDO OBTIDO AS SEGUINTES NOTAS DE APROVA&Ccedil;&Atilde;O DE ACORDO COM A LEGISLA&Ccedil;&Atilde;O VIGENTE: </p></td>
   </tr>
 </table>
 <br>
