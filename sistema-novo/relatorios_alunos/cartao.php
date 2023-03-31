@@ -119,13 +119,13 @@ $sql = "select a.*,
 			   f.data_inscricao,
 			   f.rg,
 			   f.data_nascimento,
-			   f.telefone        
-		from turmas a 
+			   f.telefone
+		from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
-		left join cadastro_cursos e on a.codigo_curso=e.codigo 
-		left join cadastro_aluno f on c.codigo_aluno=f.codigo 
+		left join cadastro_cursos e on a.codigo_curso=e.codigo
+		left join cadastro_aluno f on c.codigo_aluno=f.codigo
 				where c.codigo='$cod'";
 $sql_result = mysql_query($sql);
 
@@ -155,9 +155,22 @@ for($i=$len;$i<11;$i++){
                       <td width="166" align="center"><img src="../img/logo_pp.gif" /></td>
                       <td width="50" height="60"><div align="center" class="arial16">E</div></td>
                       <td width="100"><img src="../img/logo_ciec.gif" width="192" height="55"></td>
-                      <td><div align="center"><span class="arial16">Fone: 3023-1242<br>
+                      <td>
+                        <div align="center">
+                          <table border="0">
+                            <tr class="arial16">
+                              <td>Fone:</td>
+                              <td>3023-1242<br>3346-0191</td>
+                            </tr>
+                            <tr class="arial16">
+                              <td>Wpp:</td>
+                              <td>99303-9416</td>
+                            </tr>
+                          </table>
+                          <!-- <span class="arial16"> <br>
                           </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
-                          <span class="arial16">&nbsp;&nbsp;Wpp: 99303-9416</span><br>
+                          <span class="arial16">&nbsp;&nbsp;Wpp: 99303-9416</span><br> -->
+                        </div>
                     </tr>
                 </table></td>
               </tr>
@@ -232,9 +245,9 @@ for($i=$len;$i<11;$i++){
               <tr>
                 <td height="100" colspan="5" valign="top" class="borda_tabela"><table width="700"  border="0" cellpadding="1" cellspacing="0">
                   <?php
-						  
-						  
-						  
+
+
+
 $sqlm = "select a.*,
 			   f.cci,
 			   b.nome,
@@ -248,16 +261,16 @@ $sqlm = "select a.*,
 			   f.data_inscricao,
 			   f.rg,
 			   f.data_nascimento,
-			   f.telefone        
-		from turmas a 
+			   f.telefone
+		from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
-		left join cadastro_cursos e on a.codigo_curso=e.codigo 
-		left join cadastro_aluno f on c.codigo_aluno=f.codigo 
+		left join cadastro_cursos e on a.codigo_curso=e.codigo
+		left join cadastro_aluno f on c.codigo_aluno=f.codigo
 				where c.codigo_aluno='$dados->cod_mat' and c.situacao='MT'";
-						  
-			//echo $sqlm;			  
+
+			//echo $sqlm;
 						  $sqlmr = mysql_query($sqlm);
 						  if(mysql_num_rows($sqlmr)){
 						  while($m = mysql_fetch_object($sqlmr)){
@@ -355,7 +368,7 @@ $sqlm = "select a.*,
               </tr>
             </table></td>
           </tr>
-          
+
           <tr>
             <td class="style3">&nbsp;</td>
           </tr>
@@ -451,9 +464,9 @@ $sqlm = "select a.*,
               <tr>
                 <td height="100" colspan="5" valign="top" class="borda_tabela"><table width="700"  border="0" cellpadding="1" cellspacing="0">
                   <?php
-						  
-						  
-						  
+
+
+
 $sqlm = "select a.*,
 			   f.cci,
 			   b.nome,
@@ -467,16 +480,16 @@ $sqlm = "select a.*,
 			   f.data_inscricao,
 			   f.rg,
 			   f.data_nascimento,
-			   f.telefone        
-		from turmas a 
+			   f.telefone
+		from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
-		left join cadastro_cursos e on a.codigo_curso=e.codigo 
-		left join cadastro_aluno f on c.codigo_aluno=f.codigo 
+		left join cadastro_cursos e on a.codigo_curso=e.codigo
+		left join cadastro_aluno f on c.codigo_aluno=f.codigo
 				where c.codigo_aluno='$dados->cod_mat' and c.situacao='MT'";
-						  
-						  
+
+
 						  $sqlmr = mysql_query($sqlm);
 						  if(mysql_num_rows($sqlmr)){
 						  while($m = mysql_fetch_object($sqlmr)){
@@ -553,7 +566,7 @@ $sqlm = "select a.*,
                       <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
                     <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
-                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
+                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado ï¿½ necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
