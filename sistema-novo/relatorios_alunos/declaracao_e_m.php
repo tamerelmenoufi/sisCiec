@@ -7,7 +7,7 @@ include("../includes/data_ext.inc.php");
 //echo $data;
 
 if($_POST[guardar_documento]){
-	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[d]."', data='".date("Y-m-d")."', tipo='declaracao_e_m', observacao='".$_POST[observacao]."'");	
+	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[d]."', data='".date("Y-m-d")."', tipo='declaracao_e_m', observacao='".$_POST[observacao]."'");
 }
 
 if($_POST[observacao]){
@@ -15,7 +15,7 @@ if($_POST[observacao]){
 }
 
 
-	$query = "select a.*, b.descricao, b.codigo as cursos, c.data_exame from cadastro_aluno a " 
+	$query = "select a.*, b.descricao, b.codigo as cursos, c.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
@@ -29,7 +29,7 @@ if($_POST[observacao]){
   if($dados->rg){
       $linha1 = "da carteira de identidade n&ordm; ".$dados->rg." ".$dados->rg_orgao;
   }elseif($dados->certidao_nascimento){
-      $linha1 = "da certid&atilde;o de nascimento n&ordm; ".$dados->certidao_nascimento." Livro/Folha: ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;     
+      $linha1 = "da certid&atilde;o de nascimento n&ordm; ".$dados->certidao_nascimento." Livro/Folha: ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;
   }elseif($dados->rne){
   	  $linha1 = "da RNE n&ordm; ".$dados->rne." ".$dados->nacionalidade;
   }elseif($dados->passaporte){
@@ -38,13 +38,13 @@ if($_POST[observacao]){
 
 
 
-	
+
 	if(!mysql_num_rows($result)){
                 list($nome_curso) = mysql_fetch_row(mysql_query("select concat(descricao,' (',tipo,')') from cadastro_cursos where codigo='$d'"));
 		echo "<br><br><br><br><br><br><center>Aluno Não esta matriculado para o ".$nome_curso."<br><br><a href='javascript:window.close()'>Voltar</a></center>"; exit();
 	}
-	
-	
+
+
 ?>
 <style type="text/css">
 
@@ -93,10 +93,10 @@ Manaus/Amazonas </b></h4>
 <p align="center">&nbsp; </p>
 <p align="center" class="times25">DECLARA&Ccedil;&Atilde;O </p>
 <p align="center">
-<p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que  
+<p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que
   <?=$dados->nome?>
-, portador(a) <?=$linha1?>, est&aacute; matriculado(a) no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos &ndash; EJA, n&iacute;vel de 
-<?=$dados->descricao?> 
+, portador(a) <?=$linha1?>, est&aacute; matriculado(a) no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos &ndash; EJA, n&iacute;vel de
+<?=$dados->descricao?>
 nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor.<br>
 
 <?php
@@ -109,16 +109,18 @@ nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;
 	  $sqlr = mysql_query($sql);
 	  $array_disciplinas_concluidas = false;
 	  while($dados1 = mysql_fetch_object($sqlr)){
-	  
+
 	  	$array_disciplinas_concluidas_cod[] = $dados1->cod_disciplina;
 	    $array_disciplinas_concluidas_des[] = $dados1->descricao;
 	}
 
 if(count($array_disciplinas_concluidas_des)){
 ?>
+<p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 <?php
-	
+
 echo "&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
 
 ?>
@@ -134,14 +136,14 @@ echo "<br><br>";
 	$result = mysql_query($query);
 	$array_disciplinas = false;
 	while($d = mysql_fetch_object($result)){
-		$array_disciplinas[] = trim($d->descricao);	
+		$array_disciplinas[] = trim($d->descricao);
 	}
-	
+
 	//echo "count: ".count($array_disciplinas);
-	
+
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restando&nbsp; a(s) disciplina(s) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restando&nbsp; a(s) disciplina(s)
 <?php
 echo @implode(", ",$array_disciplinas);
 
@@ -149,7 +151,7 @@ echo @implode(", ",$array_disciplinas);
 <?php
 if($data and $data!= 'undefined'){
 ?>
-, com previs&atilde;o de t&eacute;rmino em 
+, com previs&atilde;o de t&eacute;rmino em
 <?php
 
 //echo $data;
