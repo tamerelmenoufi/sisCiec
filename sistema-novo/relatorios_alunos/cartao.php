@@ -321,7 +321,7 @@ $sqlm = "select a.*,
                       <td width="68%" class="borda_right" valign="top"><div align="justify" class="arial11" style="font-size:9px">
                           <span class="arial16">Instru&ccedil;&otilde;es: </span><span class="style1">IDADE M&Iacute;NIMA EXIGIDA - 15 anos Ens. Fund. / 18 anos Ens. M&eacute;dio</span><span class="arial16">.<br>
                             </span><strong>1</strong>. Comparecer ao local do exame na hora marcada. Ap&oacute;s esta s&oacute; com a autoriza&ccedil;&atilde;o pr&eacute;via.<br>
-                            <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>documentos de identidade original</strong>. <strong><br>
+                            <strong>2</strong>. S&oacute; ser&atilde;o admitidos no recinto de exame os candidatos que estiverem munidos de <strong>DOCUMENTOS DE IDENTIDADE ORIGINAL</strong>. <strong><br>
                               3</strong>. Durante o exame &eacute; proibido o uso de aparelho celular. <strong><br>
                                 4</strong>. Ser&aacute; automaticamente eliminado o candidato que deixar de comparecer ao exame. <strong><br>
                                   5</strong>. N&atilde;o informamos notas por telefone.<br>
