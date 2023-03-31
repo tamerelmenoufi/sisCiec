@@ -577,13 +577,8 @@ $sqlm = "select a.*,
                       <br>
                       <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
-<<<<<<< HEAD
                     <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
                       Para solicitar declara&ccedil;&otilde;es, atestado e certificado � necess&aacute;rio c&oacute;pia de:<br>
-=======
-                    <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11"><b>IMPORTANTE - LEIA</b><br>
-                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado � necess&aacute;rio c&oacute;pia de:<br>
->>>>>>> 74c7531c976d6f964071227c00908cf9b2a4d0fb
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
