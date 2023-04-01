@@ -348,12 +348,12 @@ $sqlm = "select a.*,
                             <b style="font-size:12px">Assinatura</b>: .................................................................................................................................... <br>
                         </div></td>
                       <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11"><b>IMPORTANTE - LEIA</b><br>
-  Para solicitar declara&ccedil;&otilde;es, atestado e certificado é  necess&aacute;rio c&oacute;pia de:<br>
+  Para solicitar declara&ccedil;&otilde;es, atestado e certificado ï¿½  necess&aacute;rio c&oacute;pia de:<br>
   a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                                 b) Taxa / prazo de entrega<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
 &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenação.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenaï¿½ï¿½o.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
@@ -445,7 +445,7 @@ $sqlm = "select a.*,
                       <td class="arial11">&nbsp;&nbsp;Nascimento</td>
                     </tr>
                     <tr>
-                      <td class="arial11">&nbsp;
+                      <td class="arial12">&nbsp;
                           <?=data_formata($dados->data_nascimento)?>
                       </td>
                     </tr>
@@ -577,13 +577,13 @@ $sqlm = "select a.*,
                       <br>
                       <b style="font-size:12px">Assinatura</b>: .................................................................................................................... <br>
                     </div></td>
-                    <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11">IMPORTANTE - LEIA<br>
-                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
+                    <td width="32%" align="left" valign="top" class="borda_left"><p class="arial11"><b>IMPORTANTE - LEIA</b><br>
+                      Para solicitar declara&ccedil;&otilde;es, atestado e certificado ï¿½ necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenação.</p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenaï¿½ï¿½o.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
