@@ -179,7 +179,7 @@ $i++;
 <span style="margin-left:95px;">Seu Certificado de Conclusão encontra-se em processo de registro e expedição.</span>
 </p>
 <p><?=(($observacoes)?'Observa&ccedil;&otilde;es:<br>'.$observacoes:'&nbsp;')?></p>
-<p align="right" class="times16">
+<p align="right" style="padding-right:30px" class="times16">
   <?=data()?>
 . </p>
 </fieldset>
