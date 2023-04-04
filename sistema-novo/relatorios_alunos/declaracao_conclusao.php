@@ -143,10 +143,10 @@ Manaus/Amazonas </b></h4>
 <?=$dados->descricao?>, 
 nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor, estando apto a prosseguir seus estudos.
 <br>
-<table style="margin:10px;" width="100%" class="borda_tabela" cellpadding="5" cellspacing="0">
+<table style="margin:10px;text-align:center" width="100%" class="borda_tabela" cellpadding="5" cellspacing="0">
 	<tr>
-    	<td class="borda_tabela"><span class="times16" style="font-weight:bold;text-align:center">Disciplinas</span></td>
-        <td class="borda_tabela"><span class="times16" style="font-weight:bold;text-align:center">Nota Obtida</span></td>
+    	<td class="borda_tabela"><span class="times16" style="font-weight:bold;">Disciplinas</span></td>
+        <td class="borda_tabela"><span class="times16" style="font-weight:bold;">Nota Obtida</span></td>
 	</tr>
 <?php
 	  $query = "select b.codigo as cod_disciplina, concat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
