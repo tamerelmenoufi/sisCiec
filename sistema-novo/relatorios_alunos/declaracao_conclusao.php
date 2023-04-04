@@ -145,8 +145,8 @@ nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;
 <br>
 <table style="margin:10px;" width="100%" class="borda_tabela" cellpadding="5" cellspacing="0">
 	<tr>
-    	<td class="borda_tabela"><span class="times16">Disciplinas</span></td>
-        <td class="borda_tabela"><span class="times16">Nota Obtida</span></td>
+    	<td class="borda_tabela"><span class="times16" style="font-weight:bold;text-align:center">Disciplinas</span></td>
+        <td class="borda_tabela"><span class="times16" style="font-weight:bold;text-align:center">Nota Obtida</span></td>
 	</tr>
 <?php
 	  $query = "select b.codigo as cod_disciplina, concat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
