@@ -258,7 +258,7 @@ Manaus/Amazonas </b></h4>
     </table></td>
   </tr>
 </table>
-<br>
+
 <p>&nbsp;</p>
 <p align="center">&nbsp;
 <?php
