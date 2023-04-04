@@ -258,8 +258,8 @@ Manaus/Amazonas </b></h4>
     </table></td>
   </tr>
 </table>
+<br>
 
-<p>&nbsp;</p>
 <p align="center">&nbsp;
 <?php
 	
@@ -291,7 +291,7 @@ Sem pend&ecirc;ncia de disciplinas
 }
 ?>
 </b></font></p>
-<br>
+
 <p><?=(($observacoes)?'Observa&ccedil;&otilde;es:<br>'.$observacoes:'&nbsp;')?></p>
 <p align="center" class="times16">
   <?=(($_POST[data])?data_ext($_POST[data]):data())?>
