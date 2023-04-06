@@ -6,16 +6,16 @@ include("../includes/data.inc.php");
 include("../includes/data_ext.inc.php");
 
 
-	$query = "select a.*,b.codigo as curso,b.descricao,d.data_exame from cadastro_aluno a " 
+	$query = "select a.*,b.codigo as curso,b.descricao,d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
 		   . " where a.codigo = '$cod' and d.codigo_turma=c.codigo order by c.data_exame desc limit 0,1";
 	$result = mysql_query($query);
-	
+
 	$dados = mysql_fetch_object($result);
 	$curso = $dados->curso;
-	
+
 
   if($dados->rg){
       $linha1 = "DOC. IDENT.: ".$dados->rg;
@@ -25,7 +25,7 @@ include("../includes/data_ext.inc.php");
       $linha5 = "UF:  ".$dados->estado;
   }elseif($dados->certidao_nascimento){
       $linha1 = "CERT. NASC.: ".$dados->certidao_nascimento;
-      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;     
+      $linha2 = "Livro/Folha: ".$dados->livro."/".$dados->folha;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
       $linha5 = "UF:  ".$dados->estado;
@@ -37,7 +37,7 @@ include("../includes/data_ext.inc.php");
       $linha5 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
-      $linha2 = "Nascionalidade: ".$dados->nacionalidade;    
+      $linha2 = "Nascionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
       $linha5 = false;
@@ -159,7 +159,7 @@ Manaus/Amazonas </b> </h4>
   <tr>
     <td><table width="100%"  border="0" cellspacing="0" cellpadding="2" class="borda1">
       <tr>
-        <td><span class="times18">PAI: 
+        <td><span class="times18">PAI:
           <?=$dados->nome_pai?>
 </span> </td>
       </tr>
@@ -213,7 +213,7 @@ Manaus/Amazonas </b> </h4>
 <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td >
-	
+
 	<table width="100%"   border="0" cellspacing="0" cellpadding="2">
       <tr>
         <td align="center" class="borda1"><div align="center" class="times12"><strong>ESCOLA</strong></div></td>
@@ -272,8 +272,8 @@ Manaus/Amazonas </b> </h4>
 		}
 	?>
     </table>
-	
-	
+
+
 
 
 
@@ -282,37 +282,34 @@ Manaus/Amazonas </b> </h4>
 <p align="center">&nbsp;
 <?php
 
-foreach($_Curso as $key => $val){	
+foreach($_Curso as $key => $val){
 
 $query3 = "select * from cadastro_disciplinas where codigo_curso='$val'".(is_array($_Disciplinas[$val]) ? " and codigo not in('".@implode("', '",$_Disciplinas[$val])."')" : false);
 	//echo $query3;
 	$result3 = mysql_query($query3);
 	$array_disciplinas = false;
-	
+
 	//print_r($Nomes);
-	
+
 	while($d3 = mysql_fetch_object($result3)){
 		if(!@in_array(trim($d3->descricao), $Nomes[$val])){
-		$array_disciplinas[] = trim($d3->descricao);	
+		$array_disciplinas[] = trim($d3->descricao);
 		}
 	}
-	
+
 	//echo "count: ".count($array_disciplinas);
-	
+
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
 <font color="#FF0000"><b>
-Disciplinas pendentes curso <?=$_CursoNome[$val]?> (
-<?php
+Disciplinas pendentes curso <?=$_CursoNome[$val]?> (<?php
 	echo @implode(", ",$array_disciplinas);
-	
-?>
-) 
+?>)
 <?php
 }else{
 ?>
 <font style="text-align:center" color="#006600"><b>
-Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?> 
+Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?>
 
 </b></font><font color="#006600"><b>
 <?php
@@ -324,7 +321,7 @@ Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?>
 }
 ?>
 
-	
+
 	</td>
   </tr>
 </table>
