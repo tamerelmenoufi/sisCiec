@@ -294,6 +294,10 @@ Sem pend&ecirc;ncia de disciplinas
 
 <p><?=(($observacoes)?'Observa&ccedil;&otilde;es:<br>'.$observacoes:'&nbsp;')?></p>
 <p align="center" class="times16">
+<br>
+<br>
+<br>
+<br>
   <?=(($_POST[data])?data_ext($_POST[data]):data())?>
 . </p>
 <p>&nbsp; </p>
