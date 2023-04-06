@@ -131,10 +131,10 @@ border-bottom: solid 0px #000000;
 <?php include("../includes/topoDoc.php"); ?>
 
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-Autorizado pela <?=$conf[resolucao]?> 
+<b style="font-weight:100!important">Amparado pela <?=$conf[resolucao]?>
 Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
 Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-Manaus - Amazonas </h4>
+Manaus/Amazonas </b> </h4>
 <p align="center"><span class="times26">ESPELHO</span><br>
 </p>
 <table width="620" border="0" align="center" cellpadding="0" cellspacing="0">

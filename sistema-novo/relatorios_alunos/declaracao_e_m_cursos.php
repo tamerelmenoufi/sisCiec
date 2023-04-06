@@ -34,7 +34,7 @@ echo "<table width='100%' border='0' cellpadding='0' cellspacing='10'>";
 echo "<tr><td height='332' valign='top'>";
 echo "<table width='100%' border='0' cellpadding='2' cellspacing='2'>";
 echo "  <tr>";
-echo "    <td colspan='5' class='titulos_modelos'>DeclaraÃ§Ã£o de MatrÃ­cula";
+echo "    <td colspan='5' class='titulos_modelos'>Declaração de Matrí­cula";
 echo "         <td  align='right'>&nbsp;";
 echo "      <tr><td colspan='6'  align='left'><table border='0'  cellpadding='0' cellspacing='0' width='100%'>";
 echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' cellpadding='10' width='100%' height='180' bgcolor='#DDDDDF'><tr><td valign='top'>";
