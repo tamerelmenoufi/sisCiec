@@ -327,6 +327,9 @@ Sem pend&ecirc;ncia de disciplinas no curso <?=$_CursoNome[$val]?>
 </table>
 <br>
 <br>
+<br>
+<br>
+<br>
 <p align="center" class="times20">
   <?=data()?>
 . </p>
