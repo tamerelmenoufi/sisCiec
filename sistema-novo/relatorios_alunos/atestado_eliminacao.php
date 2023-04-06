@@ -191,7 +191,7 @@ Manaus/Amazonas </b></h4>
 		$array_disciplinas[] = $d->descricao;
 	}
 
-	echo "count: ".count($array_disciplinas);
+	echo "count: ".var_dump($array_disciplinas);
 
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
