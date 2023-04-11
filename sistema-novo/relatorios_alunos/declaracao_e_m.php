@@ -118,10 +118,11 @@ if(count($array_disciplinas_concluidas_des)){
 ?>
 <p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;O aluno concluiu as disciplinas abaixo relacionadas:
-</p>
+<br>
+<br>
 <?php
 
-echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
+echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".@implode("<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$array_disciplinas_concluidas_des);
 
 ?>
 
@@ -164,6 +165,7 @@ if($data and $data!= 'undefined'){
 }
 ?>
 .</p>
+</p>
 </p>
 <p><?=(($observacoes)?'Observa&ccedil;&otilde;es:<br>'.$observacoes:'&nbsp;')?></p>
 <p align="center" class="times16">

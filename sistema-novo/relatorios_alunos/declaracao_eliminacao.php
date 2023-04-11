@@ -7,7 +7,7 @@ include("../includes/data_ext.inc.php");
 
 
 if($_POST[guardar_documento]){
-	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[curso]."', data='".date("Y-m-d")."', tipo='declaracao_eliminacao', observacao='".$_POST[observacao]."'");	
+	mysql_query("insert into docs set codigo_aluno = '".$_POST[cod]."', codigo_curso='".$_POST[curso]."', data='".date("Y-m-d")."', tipo='declaracao_eliminacao', observacao='".$_POST[observacao]."'");
 }
 
 if($_POST[observacao]){
@@ -15,13 +15,13 @@ if($_POST[observacao]){
 }
 
 
-	$query = "select a.*,d.data_exame, b.descricao from cadastro_aluno a " 
+	$query = "select a.*,d.data_exame, b.descricao from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
 		   . " where a.codigo = '$cod' and b.codigo='$curso' order by c.data_exame desc limit 0,1";
 	$result = mysql_query($query);
-	
+
 	$dados = mysql_fetch_object($result);
 
 
@@ -32,7 +32,7 @@ if($_POST[observacao]){
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->certidao_nascimento){
       $linha1 = "CERT. NASC.: ".$dados->certidao_nascimento;
-      $linha2 = "Livro/Folha: ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;     
+      $linha2 = "Livro/Folha: ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;
       $linha3 = "CIDADE: ".$dados->cidade;
       $linha4 = "NASCIMENTO: ".data_formata($dados->data_nascimento);
   }elseif($dados->rne){
@@ -42,12 +42,12 @@ if($_POST[observacao]){
       $linha4 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
-      $linha2 = "Nascionalidade: ".$dados->nacionalidade;    
+      $linha2 = "Nascionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
   }
 
-	
+
 ?>
 <style type="text/css">
 
@@ -168,7 +168,7 @@ Manaus/Amazonas </b></h4>
   <tr>
     <td><table width="100%"  border="0" cellspacing="0" cellpadding="2" class="borda1x">
       <tr>
-        <td><span class="times16">PAI: 
+        <td><span class="times16">PAI:
           <?=$dados->nome_pai?>
 </span> </td>
       </tr>
@@ -234,9 +234,9 @@ Manaus/Amazonas </b></h4>
 	  $result = mysql_query($query);
 	  $array_disciplinas_concluidas = false;
 	  while($dados = mysql_fetch_object($result)){
-	  
+
 	  	$array_disciplinas_concluidas[] = $dados->cod_disciplina;
-	  
+
 	?>
       <tr>
         <td class="borda1x"><div align="center" class="times16">
@@ -262,22 +262,22 @@ Manaus/Amazonas </b></h4>
 
 <p align="center">&nbsp;
 <?php
-	
+
 	$query = "select * from cadastro_disciplinas where codigo_curso='$curso'".(is_array($array_disciplinas_concluidas) ? " and codigo not in('".@implode("', '",$array_disciplinas_concluidas)."')" : false);
 	//echo $query;
 	$result = mysql_query($query);
 	$array_disciplinas = false;
 	while($d = mysql_fetch_object($result)){
-		$array_disciplinas[] = $d->descricao;	
+		$array_disciplinas[] = $d->descricao;
 	}
-	
+
 	//echo "count: ".count($array_disciplinas);
-	
+
 	if(count($array_disciplinas) and trim($array_disciplinas[0])){
 ?>
 <font style="color:#FF0000;font-size:15px"><b>
 Disciplinas pendentes (<?php
-	echo @implode(",",trim($array_disciplinas));
+	echo @implode(",",$array_disciplinas);
 
 ?>)
 <?php
@@ -294,6 +294,10 @@ Sem pend&ecirc;ncia de disciplinas
 
 <p><?=(($observacoes)?'Observa&ccedil;&otilde;es:<br>'.$observacoes:'&nbsp;')?></p>
 <p align="center" class="times16">
+<br>
+<br>
+<br>
+<br>
   <?=(($_POST[data])?data_ext($_POST[data]):data())?>
 . </p>
 <p>&nbsp; </p>
