@@ -145,7 +145,7 @@ white-space:nowrap;
       </tr>
       <tr>
         <td><img src="../img/canto5_borda_certificado.gif" width="29" height="610"></td>
-        <td><table style="background:url(../img/ciecbg.png) no-repeat  center;background-size:100%;"
+        <td><table style="background:url(../img/ciecbg2.png) no-repeat  center;background-size:100%;"
          width="900"  border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -274,7 +274,7 @@ white-space:nowrap;
 	<?php //aqui entra a quebra de página ?>
         <p>&nbsp;</p>
 
-    <div style="background:url(../img/ciecbg.png) no-repeat  center;background-size:90%;">
+    <div style="background:url(../img/ciecbg2.png) no-repeat  center;background-size:90%;">
 
         <table width="100%" cellspacing="0" cellpadding="0" class="borda1">
 	  <tr>
@@ -468,7 +468,7 @@ white-space:nowrap;
 
   </div>
 
-  <div style="background:url(../img/ciecbg.png) no-repeat  center;background-size:90%;">
+  <div style="background:url(../img/ciecbg2.png) no-repeat  center;background-size:90%;">
 
     <table width="100%" cellspacing="0" cellpadding="0">
 	  <tr>
