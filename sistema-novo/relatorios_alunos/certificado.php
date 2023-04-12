@@ -512,10 +512,10 @@ white-space:nowrap;
                     <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->rg_orgao?></td>
                 <tr>
                 <tr style="font-size:12px;font-weight:100">
-                    <td class="times12">N&iacute;vel de ensino:</td>
+                    <td class="times12">N&iacute;vel de Ensino:</td>
                     <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educação de Jovens e Adultos/EJA - <d>Etapa única</d></td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA - <d>Etapa Única</d></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -527,7 +527,7 @@ white-space:nowrap;
 	    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="borda1">
           <tr>
           <tr>
-            <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
+            <td height="25" class="times12" style="border-bottom: 1px solid #000000;text-align:center">Disciplinas</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Origem</td>
@@ -628,7 +628,7 @@ Observações
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
+Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
        <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   Não há exigência de carga horária.
