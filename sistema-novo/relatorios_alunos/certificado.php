@@ -423,7 +423,7 @@ white-space:nowrap;
                 <?php
                 if($complemento){
                 ?>
-                <br><?=$complemento?>
+                .<?=$complemento?>
                 <?php
                 }
                 ?>
