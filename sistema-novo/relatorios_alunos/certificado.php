@@ -398,7 +398,7 @@ white-space:nowrap;
         ?>
         <div id="carimbo" style="font-size:12px">
         <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
-		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado
+		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado<br>
 		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,
  		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div></p>
         </div>
@@ -410,12 +410,12 @@ white-space:nowrap;
         <td valign="middle" align="center"><div align="center">
           <table width="320" height="70"  border="0" cellpadding="0" cellspacing="0">
             <tr >
-              <td height="33%" class="borda2"><div align="center"><span class="style3">CERTIFICADO REGISTRADO NO <br />
+              <td height="33%" class="borda2"><div align="center"><span class="style3">CERTIFICADO REGISTRADO NO 
                 LIVRO
                 <?=$livro?>
                 FOLHA N&ordm;
                 <?=$folha?>
-                <br />
+               
                 EM
                 <?=data_formata($data_doc)?>
                   </span><br />
