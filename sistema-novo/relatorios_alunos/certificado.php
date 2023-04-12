@@ -600,7 +600,7 @@ white-space:nowrap;
 
       <tr>
         <td height="17" class="times12" colspan="5" align="right" style="border:0; font-weight:bold; padding-top:15px;">Total de Pontos</td>
-        <td class="times12" align="center" style="border:0; font-weight:bold;"><?=number_format($total_pontos, 2, ',', false)?></td>
+        <td class="times12" align="center" style="border:0; font-weight:bold; padding-top:15px;"><?=number_format($total_pontos, 2, ',', false)?></td>
         <td class="times12" style="border:0;"></td>
       </tr>
 
