@@ -77,7 +77,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
 	text-decoration: none;
 }
 .corpo {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Times New Roman", Times, serif;
 	font-size: 14px;
 	font-weight: none;
 	text-decoration: none;
