@@ -302,9 +302,9 @@ white-space:nowrap;
 
       <tr>
         <td height="35" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
-        <td align="center" style="border-bottom: 1px solid #000000;">Data</td>
+        <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-        <td align="center" style="border-bottom: 1px solid #000000;">Nota</td>
+        <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Nota</td>
       </tr>
 	<?php
 
