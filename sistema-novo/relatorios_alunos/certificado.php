@@ -667,7 +667,7 @@ Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 
 	<p>&nbsp;</p> -->
 
 
-  <div style="border-bottom: 1px solid #000;padding:1px;margin-top:90px">
+  <!--<div style="border-bottom: 1px solid #000;padding:1px;margin-top:90px">-->
 </div>
 
 
