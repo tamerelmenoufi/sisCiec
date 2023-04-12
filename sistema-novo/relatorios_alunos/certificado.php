@@ -629,7 +629,7 @@ Observações
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-Média Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
+Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
        </div>
        <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   Não há exigência de carga horária.
@@ -668,7 +668,7 @@ Média Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde ao
 	<p>&nbsp;</p> -->
 
 
-  <div style="border-bottom: 1px solid #000;padding:1px;margin-top:70px">
+  <div style="border-bottom: 1px solid #000;padding:1px;margin-top:90px">
 </div>
 
 
