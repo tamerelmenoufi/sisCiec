@@ -394,7 +394,7 @@ white-space:nowrap;
 
 		</style>
        <?php
-        if($validar_curso == 'ensino mï¿½dio'){
+        if($validar_curso == 'ensino médio'){
         ?>
         <div id="carimbo" style="font-size:12px">
         <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br />
