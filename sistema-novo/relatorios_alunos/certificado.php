@@ -484,7 +484,7 @@ white-space:nowrap;
                         <span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-top:15px;margin-right:-100px">
                             CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
                             EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
-			    Av. Djalma Batista, n° 98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+			    Av. Djalma Batista, n° 98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 			    Amparado pela <?=$conf[resolucao]?>
           Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
     Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
