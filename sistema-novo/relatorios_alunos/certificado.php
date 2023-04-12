@@ -302,7 +302,7 @@ white-space:nowrap;
 	    </tr>
 
       <tr>
-        <td height="35" class="times12" style="border-bottom: 1px solid #000000;font-align:center">Disciplinas</td>
+        <td height="35" class="times12" style="border-bottom: 1px solid #000000;text-align:center">Disciplinas</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Nota</td>
