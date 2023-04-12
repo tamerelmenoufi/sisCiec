@@ -410,7 +410,7 @@ white-space:nowrap;
         <td valign="middle" align="center"><div align="center">
           <table width="320" height="70"  border="0" cellpadding="0" cellspacing="0">
             <tr >
-              <td height="33%" class="borda2"><div align="center"><span class="style3">CERTIFICADO REGISTRADO NO 
+              <td height="33%" class="borda2" style="padding:4px"><div align="center"><span class="style3">CERTIFICADO REGISTRADO NO 
                 LIVRO
                 <?=$livro?>
                 FOLHA N&ordm;
