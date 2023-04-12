@@ -599,18 +599,15 @@ white-space:nowrap;
 
 
       <tr>
-        <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
-
-        <td width="413" class="times12" align="center" colspan="4" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
+        <td height="17" class="times12" colspan="4" align="right" style="border:0; font-weight:bold">Total de Pontos</td>
+        <td class="times12" colspan="4" style="border:0;font-weight:100;"><?=number_format($total_pontos, 2, ',', false)?></td>
+        <td class="times12" align="center" style="border:0;"></td>
       </tr>
 
       <tr>
-        <td width="150" height="17" class="times12" style="font-weight:100">Coeficiente </td>
-
-        <td width="413" class="times12" align="center" colspan="4"
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:100;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
+        <td height="17" class="times12" colspan="4" style="font-weight:100" align="right" style="border:0;">Coeficiente </td>
+        <td class="times12" style="border:0;font-weight:100;" align="center"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></td>
+        <td class="times12" align="center" style="border:0;"></td>
       </tr>
 
     </table>
@@ -646,7 +643,7 @@ Observações
 
     	<div class="times12" style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
-  
+
 	<div style="padding:5px"></div>
       <table class="">
     <tr>
