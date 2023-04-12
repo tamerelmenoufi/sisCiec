@@ -419,11 +419,11 @@ white-space:nowrap;
                 EM
                 <?=data_formata($data_doc)?>
                   </span><br />
-                No. <?=$unidade?>.<?=$livro?>.<?=$folha?>.<?=$ordem?>
+                No. <?=$unidade?>.<?=$livro?>.<?=$folha?>.<?=$ordem?>.
                 <?php
                 if($complemento){
                 ?>
-                .<?=$complemento?>
+                <?=$complemento?>
                 <?php
                 }
                 ?>
