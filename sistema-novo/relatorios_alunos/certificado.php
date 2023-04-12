@@ -301,10 +301,10 @@ white-space:nowrap;
 	    </tr>
 
       <tr>
-        <td height="35" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
+        <td height="35" class="times12" style="border-bottom: 1px solid #000000;font-weight:100px">Disciplinas</td>
         <td align="center" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-        <td align="center" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
+        <td align="center" style="border-bottom: 1px solid #000000;font-weight:100px"><strong>Nota</strong></td>
       </tr>
 	<?php
 
