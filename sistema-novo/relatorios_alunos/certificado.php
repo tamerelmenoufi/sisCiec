@@ -154,7 +154,7 @@ white-space:nowrap;
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td width="73"><img src="../img/logo_ciec.gif" width="120" ></td>
+                  <td width="73"><img src="../img/logo_ciec.gif" width="160" style="margin-right:-100px" ></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACÃO E CIDADANIA - CIEC </span><br>
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
@@ -285,7 +285,7 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
 		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
@@ -480,7 +480,7 @@ white-space:nowrap;
                 <tr>
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
-                        <span class="times12"><img src="../img/logo_ciec.gif" width="75" align="left" />
+                        <span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-top:15px;margin-right:-100px">
                             CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
                             EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 			    Av. Djalma Batista, nº 98 A, salas 200/201/202/218, 2º andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
