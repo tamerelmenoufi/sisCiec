@@ -157,12 +157,12 @@ white-space:nowrap;
                   <td width="73"><img src="../img/logo_ciec.gif" width="160" style="margin-right:-100px" ></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACï¿½O E CIDADANIA - CIEC </span><br>
-	      EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br>
+	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
-		 Av. Djalma Batista, nï¿½ 98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+		 Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 		Amparado pela <?=$conf[resolucao]?>
-    Curso Reconhecido pela Resoluï¿½ï¿½o nï¿½ 49/2016 de 30.03.2016 CEE/AM.<br>
-    Exames Autorizados pela Resoluï¿½ï¿½o 214/2017, de 20.12.2017 e Resoluï¿½ï¿½o 211/2022, de 06.12.2022<br>
+    Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               Manaus-Amazonas </span></div></td>
                 </tr>
               </table>
@@ -187,7 +187,7 @@ white-space:nowrap;
               <?=trim(data_ext($dados->data_exame,''))?>,
               o
               <?=trim($dados->descricao)?>,
-               conforme prescreve a legisla&ccedil;&atilde;o em vigor.</td>
+               conforme prescreve a legislação em vigor.</td>
           </tr>
           <tr>
             <td style="font-size:14px" align="left"><b>&nbsp;<?=$segunda?></b></td>
@@ -240,7 +240,8 @@ white-space:nowrap;
 <?php
 	//if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento estï¿½ condicionada ï¿½ publicaï¿½ï¿½o do nome do aluno concluinte no Diï¿½rio Oficial do Estado do Amazonas, pela instituiï¿½ï¿½o de ensino.</div>
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.
+</div>
 <?php
 	//}
 ?>
@@ -286,12 +287,12 @@ white-space:nowrap;
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
               <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
-		EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br />
-		Av. Djalma Batista, nï¿½ 98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
+		Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
                 <?=$conf[resolucao]?>
-                Curso Reconhecido pela Resoluï¿½ï¿½o nï¿½ 49/2016 de 30.03.2016 CEE/AM.<br>
-      Exames Autorizados pela Resoluï¿½ï¿½o 214/2017, de 20.12.2017 e Resoluï¿½ï¿½o 211/2022, de 06.12.2022<br>
+                Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+      Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
               </div></td>
             </tr>
         </table></td>
@@ -396,7 +397,7 @@ white-space:nowrap;
         if($validar_curso == 'ensino mï¿½dio'){
         ?>
         <div id="carimbo" style="font-size:12px">
-        <span>CENTRO INTEGRADO DE EDUCACï¿½O E CIDADANIA - CIEC<br />
+        <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br />
 		CIEC SUL - UNIDADE DESCENTRALIZADA<br /></span>
 		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</div>
 		<div>do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,</div>
@@ -481,12 +482,12 @@ white-space:nowrap;
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
                         <span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-top:15px;margin-right:-100px">
-                            CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
-                            EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br />
-			    Av. Djalma Batista, nï¿½ 98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+                            CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+                            EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
+			    Av. Djalma Batista, n° 98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
 			    Amparado pela <?=$conf[resolucao]?>
-          Curso Reconhecido pela Resoluï¿½ï¿½o nï¿½ 49/2016 de 30.03.2016 CEE/AM.<br>
-    Exames Autorizados pela Resoluï¿½ï¿½o 214/2017, de 20.12.2017 e Resoluï¿½ï¿½o 211/2022, de 06.12.2022<br>
+          Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
+    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
                       </div>
                   </td>
                 </tr>
@@ -515,7 +516,7 @@ white-space:nowrap;
                     <td class="times12">N&iacute;vel de ensino:</td>
                     <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educaï¿½ï¿½o de Jovens e Adultos/EJA - <d>Etapa ï¿½nica</d></td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA - <d>Etapa única</d></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -623,21 +624,21 @@ Observaï¿½ï¿½es
 
 
     <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:1px">
-     <d>Resoluï¿½ï¿½o de autorizaï¿½ï¿½o para Exames de EJA emanadas pelo Conselho Estadual de Educaï¿½ï¿½o do Estado do Amazonas - CEE/AM </d> :
-  Resoluï¿½ï¿½o nï¿½ 38/05, de 26.04.2005/ Resoluï¿½ï¿½o 96/06 de 19.09.2006/ Resoluï¿½ï¿½o 71/07, de 02.07.2007/ Resoluï¿½ï¿½o 92/07, de 08.08.2007/ Resoluï¿½ï¿½o 145/07, de 11.12.2007/ Resoluï¿½ï¿½o 179/2011, de 20.12.2011/ Resoluï¿½ï¿½o 213/2013 de 20.09.2013/ Resoluï¿½ï¿½o 49/2016, de 30.03.2016/ Resoluï¿½ï¿½o 159/2016, de 16.11.2016/ Resoluï¿½ï¿½o 245/2015, de 17.12.2015/ Resoluï¿½ï¿½o 214/2017, de 20.12.2017/ Resoluï¿½ï¿½o 211/2022, de 06.12.2022.
+     <d>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </d> :
+     Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-  Mï¿½dia Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
+Média Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
        </div>
        <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
-  Nï¿½o hï¿½ exigï¿½ncia de carga horï¿½ria.
+  Não há exigência de carga horária.
        </div>
 
 
     <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   <d>
-    Considera-se aprovado o estudante que obtiver Mï¿½dia Final igual ou superior a 5.0 (cinco) em cada disciplina.
+    Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
   </d>
     </div>
 
@@ -648,7 +649,7 @@ Observaï¿½ï¿½es
       <table class="">
     <tr>
     <td width="170"  ></th>
-    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretï¿½rio(a)
+    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretário(a)
     </td>
 
     <td width="170"  ></th>
