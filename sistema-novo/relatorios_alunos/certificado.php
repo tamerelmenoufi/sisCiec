@@ -515,7 +515,7 @@ white-space:nowrap;
                     <td class="times12">N&iacute;vel de ensino:</td>
                     <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educação de Jovens e Adultos/EJA | <d>Etapa Única</d></td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA - <d>Etapa Única</d></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -626,7 +626,7 @@ Observações
 
 
     <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:3px">
-     <b>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </b> :
+     <d>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </d> :
   Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
 
@@ -639,20 +639,10 @@ Observações
 
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-  <b>
+  <d>
     Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
-  </b>
+  </d>
     </div>
-
-    <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-  Regimento aprovado pelo CEE/AM.
-       </div>
-
-       <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-  Documentação Isenta de Autenticação conforme Artigo 70 da Resolução n° 99/97 - CEE/AM.
-       </div>
-
-
 
     	<div style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
