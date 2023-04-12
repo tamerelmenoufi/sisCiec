@@ -156,7 +156,7 @@ white-space:nowrap;
                 <tr>
                   <td width="73"><img src="../img/logo_ciec.gif" width="160" style="margin-right:-100px" ></td>
                   <td>
-                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCACï¿½O E CIDADANIA - CIEC </span><br>
+                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC </span><br>
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
 		 Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
@@ -183,7 +183,7 @@ white-space:nowrap;
               <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
-               tendo em vista os resultados obtidos no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA concluiu em
+               tendo em vista os resultados obtidos no Exame de Educação de Jovens e Adultos - EJA concluiu em
               <?=trim(data_ext($dados->data_exame,''))?>,
               o
               <?=trim($dados->descricao)?>,
@@ -619,7 +619,7 @@ white-space:nowrap;
 
     <div style="padding:3px;border-bottom: 1px solid #000; border-top:1px solid #000;
 text-align:center;font-weight:100;margin-top:5px">
-Observaï¿½ï¿½es
+Observações
 </div>
 
 
