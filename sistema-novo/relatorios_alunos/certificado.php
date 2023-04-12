@@ -372,10 +372,10 @@ white-space:nowrap;
           <div align="center" style="border:#000000 solid 1px; width:98%; margin-left:20px;">
             <table width="100%" border="0" cellpadding="3" cellspacing="0">
               <tr>
-                <td valign="top" align="left" style="font-family:Times New Roman, Times, serif; font-size:13px; font-weight:bold;">Observa&ccedil;&otilde;es</td>
+                <td valign="top" align="left" style="font-family:Times New Roman, Times, serif; font-size:13px; font-weight:100;">Observa&ccedil;&otilde;es</td>
               </tr>
               <tr>
-                <td valign="top" align="left" style="font-family:Times New Roman, Times, serif; font-size:10px; font-weight:normal; white-space:normal;"><?=$observacao?></td>
+                <td valign="top" align="left" style="font-family:Times New Roman, Times, serif; font-size:10px; font-weight:100; white-space:normal;"><?=$observacao?></td>
               </tr>
             </table>
           </div>
@@ -499,21 +499,21 @@ white-space:nowrap;
                 <!-- <tr>
                   <td colspan="4">&nbsp;</td>
                 </tr> -->
-                <tr style="font-size:10px; font-weight:bold">
+                <tr style="font-size:10px; font-weight:100">
                     <td width="12%"  class="times12">Nome:</td>
-                  <td width="32%" class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->nome?></td>
-                  <td width="18%" class="times12" style="font-size:10px; font-weight:bold">Data de Nascimento:</td>
-                  <td width="38%" class="corpo" style="font-size:10px; font-weight:bold"><?=data_formata($dados->data_nascimento)?></td>
+                  <td width="32%" class="corpo" style="font-size:10px; font-weight:100"><?=$dados->nome?></td>
+                  <td width="18%" class="times12" style="font-size:10px; font-weight:100">Data de Nascimento:</td>
+                  <td width="38%" class="corpo" style="font-size:10px; font-weight:100"><?=data_formata($dados->data_nascimento)?></td>
               <tr>
-                <tr style="font-size:12px;font-weight:bold">
+                <tr style="font-size:12px;font-weight:100">
                     <td class="times12">RG:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->rg?></td>
-                    <td class="times12" style="font-size:10px; font-weight:bold">&Oacute;rg&atilde;o Expedidor:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->rg_orgao?></td>
+                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->rg?></td>
+                    <td class="times12" style="font-size:10px; font-weight:100">&Oacute;rg&atilde;o Expedidor:</td>
+                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->rg_orgao?></td>
                 <tr>
-                <tr style="font-size:12px;font-weight:bold">
+                <tr style="font-size:12px;font-weight:100">
                     <td class="times12">N&iacute;vel de ensino:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:bold"><?=$dados->descricao?></td>
+                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
                     <td class="corpo">Educação de Jovens e Adultos/EJA | <b>Etapa Única</b></td>
                 <tr>
@@ -602,15 +602,15 @@ white-space:nowrap;
         <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
 
         <td width="413" class="times12" align="center" colspan="4" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:bold;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
+        <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
       </tr>
 
       <tr>
-        <td width="150" height="17" class="times12" style="font-weight:bold">Coeficiente </td>
+        <td width="150" height="17" class="times12" style="font-weight:100">Coeficiente </td>
 
         <td width="413" class="times12" align="center" colspan="4"
         style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:bold;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
+        <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:100;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
       </tr>
 
     </table>
@@ -620,7 +620,7 @@ white-space:nowrap;
     </table>
 
     <div style="padding:3px;border-bottom: 1px solid #000; border-top:1px solid #000;
-text-align:center;font-weight:bold;margin-top:5px">
+text-align:center;font-weight:100;margin-top:5px">
 Observações
 </div>
 
