@@ -600,14 +600,14 @@ white-space:nowrap;
 
       <tr>
         <td height="17" class="times12" colspan="5" align="right" style="border:0; font-weight:bold">Total de Pontos</td>
-        <td class="times12" style="border:0;font-weight:100;"><?=number_format($total_pontos, 2, ',', false)?></td>
-        <td class="times12" align="center" style="border:0;"></td>
+        <td class="times12" align="center" style="border:0; font-weight:100;"><?=number_format($total_pontos, 2, ',', false)?></td>
+        <td class="times12" style="border:0;"></td>
       </tr>
 
       <tr>
         <td height="17" class="times12" colspan="5" style="font-weight:100" align="right" style="border:0;">Coeficiente </td>
         <td class="times12" style="border:0;font-weight:100;" align="center"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></td>
-        <td class="times12" align="center" style="border:0;"></td>
+        <td class="times12" style="border:0;"></td>
       </tr>
 
     </table>
