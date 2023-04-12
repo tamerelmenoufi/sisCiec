@@ -286,7 +286,7 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
 		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
