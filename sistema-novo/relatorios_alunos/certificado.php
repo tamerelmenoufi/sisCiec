@@ -625,7 +625,7 @@ Observações
 </div>
 
 
-    <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:3px">
+    <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:1px">
      <d>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </d> :
   Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
     </div>
@@ -633,12 +633,12 @@ Observações
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
   Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
-       <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
+       <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   Não há exigência de carga horária.
        </div>
 
 
-    <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
+    <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   <d>
     Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
   </d>
