@@ -302,7 +302,7 @@ white-space:nowrap;
 	    </tr>
 
       <tr>
-        <td height="35" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
+        <td height="35" class="times12" style="border-bottom: 1px solid #000000;font-align:center">Disciplinas</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
         <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Nota</td>
@@ -397,11 +397,10 @@ white-space:nowrap;
         if($validar_curso == 'ensino médio'){
         ?>
         <div id="carimbo" style="font-size:12px">
-        <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br />
-		CIEC SUL - UNIDADE DESCENTRALIZADA<br /></span>
-		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</div>
-		<div>do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,</div>
- 		<div>de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div></p>
+        <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
+		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado
+		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,
+ 		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div></p>
         </div>
         <?php
          }
