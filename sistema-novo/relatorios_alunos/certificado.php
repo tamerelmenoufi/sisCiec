@@ -288,7 +288,7 @@ white-space:nowrap;
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
               <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
 		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
-		Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2ï¿½ andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
+		Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
                 Amparado pela
                 <?=$conf[resolucao]?>
                 Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
@@ -531,9 +531,9 @@ white-space:nowrap;
             <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">C.H.</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Origem</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Nota</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">C.H.</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
           </tr>
           </tr>
@@ -585,9 +585,9 @@ white-space:nowrap;
 
            <td width="104" class="times12"><div align="center" class="times12"><?=$data_exame?></div></td>
         <td width="413" class="times12" align="center"><?=$escola?> </td>
-        <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
         <td width="72" class="times12" align="center"><?=(($carga_horaria) ? 'Curso' : 'Exame')?></td>
         <td width="72" class="times12"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
+        <td width="72" class="times12"><div align="center" class="times12"><?=$carga_horaria?></div></td>
         <td width="72" class="times12" align="center">Aprovado</td>
 
         <!--<td width="72" class="times12"><div align="center" class="times12"><?//=$carga_horaria?></div></td>-->
