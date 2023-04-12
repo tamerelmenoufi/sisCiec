@@ -499,23 +499,23 @@ white-space:nowrap;
                 <!-- <tr>
                   <td colspan="4">&nbsp;</td>
                 </tr> -->
-                <tr style="font-size:10px; font-weight:100">
+                <tr style="font-size:13px; font-weight:100">
                     <td width="12%"  class="times12">Nome:</td>
-                  <td width="32%" class="corpo" style="font-size:10px; font-weight:100"><?=$dados->nome?></td>
-                  <td width="18%" class="times12" style="font-size:10px; font-weight:100">Data de Nascimento:</td>
-                  <td width="38%" class="corpo" style="font-size:10px; font-weight:100"><?=data_formata($dados->data_nascimento)?></td>
+                  <td width="32%" class="corpo" style="font-size:13px; font-weight:100"><?=$dados->nome?></td>
+                  <td width="18%" class="times12" style="font-size:13px; font-weight:100">Data de Nascimento:</td>
+                  <td width="38%" class="corpo" style="font-size:13px; font-weight:100"><?=data_formata($dados->data_nascimento)?></td>
               <tr>
                 <tr style="font-size:12px;font-weight:100">
                     <td class="times12">RG:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->rg?></td>
-                    <td class="times12" style="font-size:10px; font-weight:100">&Oacute;rg&atilde;o Expedidor:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->rg_orgao?></td>
+                    <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->rg?></td>
+                    <td class="times12" style="font-size:13px; font-weight:100">&Oacute;rg&atilde;o Expedidor:</td>
+                    <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->rg_orgao?></td>
                 <tr>
                 <tr style="font-size:12px;font-weight:100">
                     <td class="times12">N&iacute;vel de ensino:</td>
-                    <td class="corpo" style="font-size:10px; font-weight:100"><?=$dados->descricao?></td>
+                    <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educação de Jovens e Adultos/EJA | <b>Etapa Única</b></td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA | <d>Etapa Única</d></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -528,12 +528,12 @@ white-space:nowrap;
           <tr>
           <tr>
             <td height="25" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Data</td>
             <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>C.H.</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Origem</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
-            <td align="center" class="times12" style="border-bottom: 1px solid #000000;"><strong>Resultado</strong></td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">C.H.</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Origem</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Nota</td>
+            <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Resultado</td>
           </tr>
           </tr>
 	<?php
