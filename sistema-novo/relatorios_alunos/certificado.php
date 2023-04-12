@@ -387,7 +387,7 @@ white-space:nowrap;
       <tr>
         <td width="403" height="130" align="left">
         <style>
-			#carimbo {font-family:Arial, Helvetica, sans-serif; widows:400px; text-align:center}
+			#carimbo {font-family:"Times New Roman", Times, serif; widows:400px; text-align:center}
 			#carimbo span { color:#999; font-size:12px; font-weight:bold; }
 			#carimbo div { color:#999; font-size:11px; font-weight:normal; margin-top:10px; }
 
