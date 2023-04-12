@@ -598,20 +598,17 @@ white-space:nowrap;
 	?>
 
 
-      <tr>
-        <td width="150" height="17" class="times12" style="border-bottom: 1px solid #000;border-top: 1px solid #000;font-weight:bold">Total de Pontos  </td>
+<tr>
+        <td width="150" height="17" class="times12" style="border-top: 1px solid #000;font-weight:bold" colspan="3"></td>
 
-        <td width="413" class="times12" align="center" colspan="4" style="border: solid 1px #000; border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center"  class="times12"><?=number_format($total_pontos, 2, ',', false)?></div></td>
+        <td width="103" class="times12" align="center" style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px">Total de Pontos:</td>
+        
+
+<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style="">30,50</div></td>
+<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12">Coeficiente:</div></td><td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style="">6,21</div></td>
       </tr>
 
-      <tr>
-        <td width="150" height="17" class="times12" style="font-weight:100">Coeficiente </td>
-
-        <td width="413" class="times12" align="center" colspan="4"
-        style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px"></td>
-        <td width="104" class="times12" colspan="4" style="border: solid 1px #000; border-right: 0px;font-weight:100;border-bottom:0px"><div align="center" class="times12"><?=number_format($total_pontos/$quantidade_pontos, 2, ',', false)?></div></td>
-      </tr>
+      
 
     </table>
     </td>
