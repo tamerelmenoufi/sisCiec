@@ -647,7 +647,7 @@ Observações
     	<div class="times12" style="margin-top:5px;text-align:right;padding:4px;margin-bottom:15px;"><?=data()?>.</div>
 
   
-	<p>&nbsp;</p>
+	<div style="padding:5px"></div>
       <table class="">
     <tr>
     <td width="170"  ></th>
@@ -670,7 +670,7 @@ Observações
 	<p>&nbsp;</p> -->
 
 
-  <div style="border-bottom: 1px solid #000;padding:1px;margin-top:100px">
+  <div style="border-bottom: 1px solid #000;padding:1px;margin-top:70px">
 </div>
 
 
