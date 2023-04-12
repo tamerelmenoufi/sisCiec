@@ -84,14 +84,14 @@ if(!$fec){ // condição para forçar a emissão do certificado
 }
 
 .dauphin {
-	font-family:Dauphin;
+	font-family:"Times New Roman", Times, serif;
 	font-size: 88px;
 	font-weight: none;
 	text-decoration: none;
 	text-align:center;
 }
 .dauphin16{
-	font-family:Dauphin;
+	font-family:"Times New Roman", Times, serif;
 	font-size: 24px;
 	font-weight: none;
 	text-decoration: none;
@@ -99,7 +99,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
 }
 
 .dauphin12{
-	font-family:Dauphin;
+	font-family:"Times New Roman", Times, serif;
 	font-size: 18px;
 	font-weight: none;
 	text-decoration: none;
@@ -107,7 +107,7 @@ if(!$fec){ // condição para forçar a emissão do certificado
 }
 
 .nota{
-	font-family:Dauphin;
+	font-family:"Times New Roman", Times, serif;
 	font-size: 9px;
 	font-weight: none;
 	text-decoration: none;
