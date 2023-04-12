@@ -303,8 +303,8 @@ white-space:nowrap;
       <tr>
         <td height="35" class="times12" style="border-bottom: 1px solid #000000;">Disciplinas</td>
         <td align="center" style="border-bottom: 1px solid #000000;"><strong>Data</strong></td>
-        <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Unidade Federada</td>
-        <td align="center" style="border-bottom: 1px solid #000000;"><strong>Registros e Observações</strong></td>
+        <td align="center" class="times12" style="border-bottom: 1px solid #000000;">Escola</td>
+        <td align="center" style="border-bottom: 1px solid #000000;"><strong>Nota</strong></td>
       </tr>
 	<?php
 
@@ -354,8 +354,8 @@ white-space:nowrap;
 
 
         <td width="104"><div align="center" class="times12"><?=$data_exame?></div></td>
-        <td width="72" class="times12" align="center"><?=$unidade_federada?> </td>
-        <td width="413"><div align="center" class="times12"><?//=number_format($nota,1,',',false)?></div></td>
+        <td width="413" class="times12" align="center"><?=$escola?> </td>
+        <td width="72"><div align="center" class="times12"><?=number_format($nota,1,',',false)?></div></td>
       </tr>
 	<?php
           $qb++;
