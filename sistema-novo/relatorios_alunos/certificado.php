@@ -1,4 +1,4 @@
-<?php
+<?phpdata_doc
 include("../includes/sessoes.inc.php");
 include("../includes/connect.inc.php");
 include("../includes/data.inc.php");
@@ -400,7 +400,7 @@ white-space:nowrap;
         <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
 		<div style="margin-top:3px"><d>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</d><br>
     <div  style="padding:0px"></div>
-		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,
+		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno
  		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div>
         </div>
         <?php
