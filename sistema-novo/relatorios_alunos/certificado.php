@@ -398,7 +398,8 @@ white-space:nowrap;
         ?>
         <div id="carimbo" style="font-size:12px">
         <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
-		<div><d style="margin-bottom:1px">Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</d><br>
+		<div style="margin-top:3px"><d>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</d><br>
+    <b  style="padding:10px"></b>
 		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,
  		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div>
         </div>
