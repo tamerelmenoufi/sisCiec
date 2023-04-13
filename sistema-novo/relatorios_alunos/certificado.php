@@ -1,4 +1,4 @@
-<?phpdata_doc
+<?php
 include("../includes/sessoes.inc.php");
 include("../includes/connect.inc.php");
 include("../includes/data.inc.php");
