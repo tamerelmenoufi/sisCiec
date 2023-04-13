@@ -370,7 +370,7 @@ white-space:nowrap;
 		?>
         <br />
 
-          <div align="center" style="border:#000000 solid 1px; width:98%; margin-left:20px;">
+          <div align="center" style="border:#000000 solid 1px;">
             <table width="100%" border="0" cellpadding="3" cellspacing="0">
               <tr>
                 <td valign="top" align="left" style="font-family:Times New Roman, Times, serif; font-size:13px; font-weight:100;">Observa&ccedil;&otilde;es</td>
