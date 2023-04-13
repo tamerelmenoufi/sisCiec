@@ -440,6 +440,9 @@ white-space:nowrap;
   </tr>
 </table>
 
+<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
 	<?php //aqui entra a 2� quebra de p�gina
 	if ($dados->descricao == 'Ensino Fundamental'){
 	?>
