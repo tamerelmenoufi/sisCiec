@@ -386,7 +386,7 @@ white-space:nowrap;
 
     <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="403" height="130" align="left">
+        <td width="403" height="95" align="left">
         <style>
 			#carimbo {font-family:"Times New Roman", Times, serif; widows:400px; text-align:center}
 			#carimbo span { color:#999; font-size:12px; font-weight:bold; }
@@ -410,7 +410,8 @@ white-space:nowrap;
         <td valign="middle" align="center"><div align="center">
           <table width="320" height="70"  border="0" cellpadding="0" cellspacing="0">
             <tr >
-              <td height="33%" class="borda2" style="padding:4px"><div align="center"><span class="style3">CERTIFICADO REGISTRADO NO 
+              <td height="33%" class="borda2" style="padding:4px"><div align="center">
+                <span style="font-size:12px;margin-top:-20px" class="style3" >CERTIFICADO REGISTRADO NO 
                 LIVRO
                 <?=$livro?>
                 FOLHA N&ordm;
