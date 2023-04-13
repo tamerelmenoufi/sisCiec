@@ -398,9 +398,9 @@ white-space:nowrap;
         ?>
         <div id="carimbo" style="font-size:12px">
         <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
-		<p><div>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado<br>
+		<div><d style="margin-bottom:1px">Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</d><br>
 		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno,
- 		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div></p>
+ 		de Publica&ccedil;&otilde;es Diversas, P&aacute;gina ______.</div>
         </div>
         <?php
          }
