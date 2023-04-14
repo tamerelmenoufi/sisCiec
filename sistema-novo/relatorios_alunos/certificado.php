@@ -412,12 +412,12 @@ white-space:nowrap;
           <table width="320" height="70"  border="0" cellpadding="0" cellspacing="0">
             <tr >
               <td height="33%" class="borda2" style="padding:4px"><div align="center">
-                <span style="font-size:12px;margin-top:-20px" class="style3" >CERTIFICADO REGISTRADO NO 
+                <span style="font-size:12px;margin-top:-20px" class="style3" >CERTIFICADO REGISTRADO NO
                 LIVRO
                 <?=$livro?>
                 FOLHA N&ordm;
                 <?=$folha?>
-               
+
                 EM
                 <?=data_formata($data_doc)?>
                   </span><br />
@@ -607,13 +607,12 @@ white-space:nowrap;
         <td width="150" height="17" class="times12" style="border-top: 1px solid #000;font-weight:bold" colspan="3"></td>
 
         <td width="103" class="times12" align="center" style="border: solid 1px #000;border-left:0px;border-bottom:0px;border-right:0px">Total de Pontos:</td>
-        
 
-<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style="">30,50</div></td>
-<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12">Coeficiente:</div></td><td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style="">6,21</div></td>
+<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style=""><?=number_format($total_pontos,1,',',false)?></div></td>
+<td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12">Coeficiente:</div></td><td width="104" class="times12" style="border-top: solid 1px #000;font-weight:100;border-bottom:0px;border-right: 0px"><div align="center" class="times12" style=""><?=number_format(($total_pontos/$quantidade_pontos),1,',',false)?></div></td>
       </tr>
 
-      
+
 
     </table>
     </td>
