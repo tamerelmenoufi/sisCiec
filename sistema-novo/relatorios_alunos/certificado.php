@@ -183,7 +183,7 @@ white-space:nowrap;
               <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
-               tendo em vista os resultados obtidos no Exame de Educação de Jovens e Adultos - EJA concluiu em
+               tendo em vista os resultados obtidos nos Exames de Educação de Jovens e Adultos - EJA, concluiu, em
               <?=trim(data_ext($dados->data_exame,''))?>,
               o
               <?=trim($dados->descricao)?>,
