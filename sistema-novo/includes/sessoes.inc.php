@@ -28,11 +28,13 @@ switch($_GET['escola']){
 	}
 }
 
+echo "<br>Escola: ".$_GET['escola'];
+
 if($_COOKIE['confUnidade']){
 	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
 }else{
-	echo "http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s";
-	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s'</script>";
+	echo "<br>Cooke: ".$_COOKIE['confUnidade'];
+	// echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s'</script>";
 	exit();
 }
 /////////////////////////////////////////////////////////////////
