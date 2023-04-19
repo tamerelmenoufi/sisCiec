@@ -11,22 +11,22 @@ include("../includes/topo.inc.php");
 <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="350">
-		
+
 
 		<table width="100%" border="0" align="center" cellpadding="10" cellspacing="0">
 		 <tr>
 		  <td align="center" valign="center">
-			   <a href="../cadastro_aluno/cadastro_aluno.php">
+			   <a href="../cadastro_aluno/cadastro_aluno.php?Dic=<?=$_SESSION['confUnidade']?>">
                <img src="../img/logo_matricula.gif" width="148" height="197" border="0"> </a>
 		  <td align="center" valign="center">
-			   <a href="../cadastros/index.php">
+			   <a href="../cadastros/index.php?Dic=<?=$_SESSION['confUnidade']?>">
                <img src="../img/logo_cadastros.gif" width="148" height="197" border="0"> </a>
 		 <tr>
 		  <td align="center" valign="center">
-			   <a href="../relatorios/index.php">
+			   <a href="../relatorios/index.php?Dic=<?=$_SESSION['confUnidade']?>">
                <img src="../img/logo_relatorios.gif" width="148" height="197" border="0"> </a>
 		  <td align="center" valign="center">
-			   <a href="../turmas/turmas.php">
+			   <a href="../turmas/turmas.php?Dic=<?=$_SESSION['confUnidade']?>">
                <img src="../img/logo_turmas.gif" width="148" height="197" border="0"> </a>
 		</table>
 
