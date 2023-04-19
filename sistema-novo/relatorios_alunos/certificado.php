@@ -21,7 +21,7 @@ include("../includes/data_ext.inc.php");
 	  return $retorno;
    }
 
-if(!$fec){ // condi��o para for�ar a emiss�o do certificado
+if(!$fec){
    $query = "select codigo from cadastro_disciplinas where codigo_curso='$curso'";
    $result = mysql_query($query);
     while($dados = mysql_fetch_object($result)){

@@ -3,7 +3,7 @@
 include("sessoes.inc.php");
 
 
-mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexï¿½o ".mysql_error());
+mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexção ".mysql_error());
 mysql_select_db( "cieceja_cnery" ) or die("Erro no banco ".mysql_error());
 
 
@@ -47,6 +47,37 @@ for($i=0;$i<count($AtualizaCod);$i++){
 
 
 include("../includes/funcoes_php.inc.php");
+
+switch($_GET['escola']){
+	case 'cnery':{
+		setcookie("confUnidade",'cnery');
+		break;
+	}
+	case 'leste':{
+		setcookie("confUnidade",'lest');
+		break;
+	}
+	case 'nacoes':{
+		setcookie("confUnidade",'nacoes');
+		break;
+	}
+	case 'sul':{
+		setcookie("confUnidade",'sul');
+		break;
+	}
+	default:{
+		$_SESSION['confUnidade'] = false;
+		setcookie("confUnidade",false);
+		break;
+	}
+}
+
+if($_COOKIE['confUnidade']){
+	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
+}else{
+	header("http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s");
+	exit();
+}
 
 
 ?>
