@@ -221,17 +221,13 @@ Sem pend&ecirc;ncia de disciplinas
 <table align="left" style="width:20cm; margin-top:-100px; margin-left:20px; border-top:#000 solid 1px;">
 	<tr>
     	<td align="center" class="arial10">
-			<?=$Dicionario['rodape_endereco1']?>
+			<?=$Dicionario['rodape_endereco_djalma']?>
         </td>
     	<td align="center" class="arial10">
-			Shopping São José<br>
-			2° Piso em frente a Marisa<br>
-            3342-3327/ 99984-8881
+		<?=$Dicionario['rodape_endereco_leste']?>
         </td>
     	<td align="center" class="arial10">
-			Parque das Nações<br>
-			R. Angola, n° 21. Quadra 23<br>
-            3654-2283 / 99434-6959
+		<?=$Dicionario['rodape_endereco_nacoes']?>
       </td>
     </tr>
     <tr>
