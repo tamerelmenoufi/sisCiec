@@ -164,7 +164,7 @@ for($i=$len;$i<11;$i++){
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
-                              <td>99303-9416</td>
+                              <td><?=$Dicionario['cartao_whatsapp']?></td>
                             </tr>
                           </table>
                           <!-- <span class="arial16"> <br>
@@ -392,11 +392,11 @@ $sqlm = "select a.*,
                         <table border="0">
                             <tr class="arial16">
                               <td>Fone:</td>
-                              <td>3023-1242<br>3346-0191</td>
+                              <td><?=$Dicionario['cartao_fone']?></td>
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
-                              <td>99303-9416</td>
+                              <td><?=$Dicionario['whatsapp']?></td>
                             </tr>
                           </table>
                           <!-- </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
