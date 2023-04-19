@@ -32,7 +32,7 @@ switch($_GET['escola']){
 if($_COOKIE['confUnidade']){
 	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
 }else{
-	header("http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s");
+	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s'</script>";
 	echo "http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s";
 	exit();
 }
