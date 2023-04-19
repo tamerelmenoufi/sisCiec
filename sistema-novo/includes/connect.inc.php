@@ -6,7 +6,6 @@ include("sessoes.inc.php");
 mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexção ".mysql_error());
 mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_error());
 
-echo "cieceja_".$_SESSION['Dic'];
 //mysql_connect("ciec-db","cieceja","S3nh@sb@nc0");
 //mysql_select_db( $_SESSION['cook_banco'] );
 
