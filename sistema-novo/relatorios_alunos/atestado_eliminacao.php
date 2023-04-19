@@ -221,9 +221,7 @@ Sem pend&ecirc;ncia de disciplinas
 <table align="left" style="width:20cm; margin-top:-100px; margin-left:20px; border-top:#000 solid 1px;">
 	<tr>
     	<td align="center" class="arial10">
-			Djalma Batista<br>
-			Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>
-             3023-1242 / 3346-0191 / 99303-9416
+			<?=$Dicionario['rodape_endereco1']?>
         </td>
     	<td align="center" class="arial10">
 			Shopping São José<br>
