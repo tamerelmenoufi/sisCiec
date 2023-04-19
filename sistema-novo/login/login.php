@@ -5,7 +5,7 @@ date_default_timezone_set('America/Manaus');
 $_SESSION['Dic'] = $_GET['Dic'];
 
 mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexão ".mysql_error());
-mysql_select_db( "cieceja_cnery" ) or die("Erro no banco ".mysql_error());
+mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_error());
 
 
 mysql_query("SET GLOBAL sql_mode = ''");
