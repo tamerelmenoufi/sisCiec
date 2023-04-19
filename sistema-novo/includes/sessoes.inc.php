@@ -39,6 +39,7 @@ if($_SESSION['confUnidade']){
 
 if($_GET['Dic']){
 	$_SESSION['confUnidade'] = $_GET['Dic'];
+	echo "SESSOES: ".$_SESSION['confUnidade'];
 }
 /////////////////////////////////////////////////////////////////
 
