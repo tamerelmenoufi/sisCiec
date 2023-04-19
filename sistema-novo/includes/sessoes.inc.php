@@ -36,6 +36,11 @@ if($_GET['escola']){
 if($_SESSION['confUnidade']){
 	include("../includes/dicionario_{$_SESSION['confUnidade']}.inc.php");
 }
+
+if($_GET['Dic']){
+	$_SESSION['confUnidade'] = $_GET['Dic'];
+	echo "DIC: Adicionado ".$_GET['Dic'];
+}
 /////////////////////////////////////////////////////////////////
 
 
