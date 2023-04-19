@@ -1,6 +1,6 @@
 <?php
 
-include("sessoes.inc.php");
+include("../includes/sessoes.inc.php");
 
 
 mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexção ".mysql_error());
