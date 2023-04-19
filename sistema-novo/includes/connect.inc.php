@@ -3,7 +3,7 @@
 include("sessoes.inc.php");
 
 
-mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexção ".mysql_error());
+mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexï¿½ï¿½o ".mysql_error());
 mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_error());
 
 //mysql_connect("ciec-db","cieceja","S3nh@sb@nc0");
@@ -12,8 +12,8 @@ mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_err
 
 //echo "<BR><BR><BR>BANCO DA HORA:".$_SESSION['cook_banco']."<BR><BR><BR>";
 
-$conf[resolucao]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.<br>';
-$conf[r]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.';
+$conf[resolucao]=$Dicionario['resolucao'];
+$conf[r]=$Dicionario['r'];
 
 $conf[unidade] = $Dicionario['unidade'];
 
