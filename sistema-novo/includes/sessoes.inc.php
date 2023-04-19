@@ -7,35 +7,37 @@ date_default_timezone_set('America/Manaus');
 ///////////////////DICIONÁRIOS////////////////////////////////
 switch($_GET['escola']){
 	case 'cnery':{
-		setcookie("confUnidade",'cnery');
+		$_SESSION['confUnidade'] = 'cnery';
+		// setcookie("confUnidade",'cnery');
 		break;
 	}
 	case 'leste':{
-		setcookie("confUnidade",'lest');
+		$_SESSION['confUnidade'] = 'lest';
+		// setcookie("confUnidade",'lest');
 		break;
 	}
 	case 'nacoes':{
-		setcookie("confUnidade",'nacoes');
+		$_SESSION['confUnidade'] = 'nacoes';
+		// setcookie("confUnidade",'nacoes');
 		break;
 	}
 	case 'sul':{
-		setcookie("confUnidade",'sul');
+		$_SESSION['confUnidade'] = 'sul';
+		// setcookie("confUnidade",'sul');
 		break;
 	}
 }
 
 if($_GET['escola']){
-	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/'</script>";
+	echo "<script>window.location.href='http://{$_SESSION['SERVER_NAME']}:8087/sistema-novo/'</script>";
 	exit();
 }
 
-if($_COOKIE['confUnidade']){
-	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
-	echo "COOKIE: ".$_COOKIE['confUnidade'];
+if($_SESSION['confUnidade']){
+	include("../includes/dicionario_{$_SESSION['confUnidade']}.inc.php");
+	echo "Escola: ".$_SESSION['confUnidade'];
 }
 /////////////////////////////////////////////////////////////////
-
-
 
 
 
