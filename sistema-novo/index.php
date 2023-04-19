@@ -6,4 +6,4 @@
       exit();
    }
 ?>
-<script>window.location.href='./login/index.php?banco=<?=$_GET['banco']?>';</script>
+<script>window.location.href='./login/index.php?escola=<?=$_GET['escola']?>';</script>
