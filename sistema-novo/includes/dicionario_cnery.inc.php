@@ -10,6 +10,8 @@
         'rodape_endereco_nacoes' => 'Parque das Nações<br>R. Angola, n° 21. Quadra 23<br>3654-2283 / 99434-6959',
         'cartao_fone' => '3023-1242<br>3346-0191',
         'cartao_whatsapp' => '99303-9416',
+        'cartao_local_prova' => 'Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping',
+        'cartao_obs_prova' => 'Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova',
       
 
 
