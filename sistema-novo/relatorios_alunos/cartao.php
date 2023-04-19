@@ -396,7 +396,7 @@ $sqlm = "select a.*,
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
-                              <td><?=$Dicionario['whatsapp']?></td>
+                              <td><?=$Dicionario['cartao_whatsapp']?></td>
                             </tr>
                           </table>
                           <!-- </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
