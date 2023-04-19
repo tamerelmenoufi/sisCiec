@@ -160,7 +160,7 @@ for($i=$len;$i<11;$i++){
                           <table border="0">
                             <tr class="arial16">
                               <td>Fone:</td>
-                              <td>3023-1242<br>3346-0191</td>
+                              <td><?=$Dicionario['cartao_fone']?> </td>
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
