@@ -2,8 +2,8 @@
 <!--
 function confirma_delete(cod,xid){
 <?php
-  //  mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexï¿½o ".mysql_error());
-  //  mysql_select_db( "cieceja_cnery" ) or die("Erro no banco ".mysql_error());
+   mysql_connect("ciec-db","root","S3nh@sb@nc0") or die("Erro na conexção ".mysql_error());
+   mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_error());
 
    list($sen) = mysql_fetch_row(mysql_query("select senha from usuarios where login='admincnery'"));
 ?>
