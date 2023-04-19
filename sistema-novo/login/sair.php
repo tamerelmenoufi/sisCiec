@@ -1,10 +1,12 @@
 <?php
 
 session_start();
-// Eliminar todas as variáveis de sessão.
+// Eliminar todas as variï¿½veis de sessï¿½o.
+if($_SESSION['confUnidade']) $escola = $_SESSION['confUnidade'];
 $_SESSION = array();
-// Finalmente, destruição da sessão.
-session_destroy();
+// Finalmente, destruiï¿½ï¿½o da sessï¿½o.
+$_SESSION['confUnidade'] = $escola;
+// session_destroy();
 
 echo "<script>window.location.href='index.php'</script>";
 
