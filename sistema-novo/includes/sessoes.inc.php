@@ -29,7 +29,7 @@ switch($_GET['escola']){
 }
 
 if($_GET['escola']){
-	echo "<script>window.location.href='http://{$_SESSION['SERVER_NAME']}:8087/sistema-novo/'</script>";
+	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/'</script>";
 	exit();
 }
 
