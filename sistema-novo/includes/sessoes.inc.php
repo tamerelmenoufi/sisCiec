@@ -22,10 +22,6 @@ switch($_GET['escola']){
 		setcookie("confUnidade",'sul');
 		break;
 	}
-	default:{
-		setcookie("confUnidade",false);
-		break;
-	}
 }
 
 if($_GET['escola']){
