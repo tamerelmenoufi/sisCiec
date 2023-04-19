@@ -30,7 +30,7 @@ if($_GET['escola']){
 }
 
 if($_COOKIE['confUnidade']){
-	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
+	include("../includes/dicionario_{$_COOKIE['confUnidade']}xx.inc.php");
 	echo "<br><br><br><br><br><br><br><br><br><br>ESTOU NA UNIDADE: ".$_COOKIE['confUnidade'];
 }
 /////////////////////////////////////////////////////////////////
