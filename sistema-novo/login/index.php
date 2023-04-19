@@ -3,7 +3,7 @@ include("../includes/sessoes.inc.php");
 if($_SESSION['cook_logado']){ include("./sair.php"); }
 include("../includes/estilos.inc.php");
 include("../includes/topo.inc.php");
-echo "<form action='login.php' method='post'>";
+echo "<form action='login.php?Dic={$_SESSION['confUnidade']}' method='post'>";
 ?>
 
 
