@@ -590,9 +590,9 @@ $sqlm = "select a.*,
 </td>
                   </tr>
                   <tr>
-                    <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
-                      </span>OBS: Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova</td>
-                    <td class="arial12 borda_left">&nbsp;</td>
+                  <td class="arial11">Local das provas - <?=$Dicionario['cartao_local_prova']?> <span class="arial14"> <br>
+                      </span>OBS: <?=$Dicionario['cartao_obs_prova']?> </td>
+                      <td class="arial12 borda_left">&nbsp;</td>
                   </tr>
                 </table></td>
               </tr>
