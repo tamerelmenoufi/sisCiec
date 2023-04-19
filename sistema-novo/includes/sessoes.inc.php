@@ -33,6 +33,7 @@ if($_COOKIE['confUnidade']){
 	include("../includes/dicionario_{$_COOKIE['confUnidade']}.inc.php");
 }else{
 	header("http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/?sair=s");
+	echo "TESTE";
 	exit();
 }
 /////////////////////////////////////////////////////////////////
