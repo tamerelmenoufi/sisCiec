@@ -10,6 +10,8 @@
         'rodape_endereco_nacoes' => 'Parque das Nações<br>R. Angola, n° 21. Quadra 23<br>3654-2283 / 99434-6959',
         'cartao_fone' => '3023-1242<br>3346-0191',
         'cartao_whatsapp' => '3023-1242<br>3346-0191',
+        'cartao_fone2' => '3023-1242<br>3346-0191',
+        'cartao_whatsapp2' => '3023-1242<br>3346-0191',
 
 
 
