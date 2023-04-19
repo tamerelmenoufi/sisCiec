@@ -35,7 +35,6 @@ if($_GET['escola']){
 
 if($_SESSION['confUnidade']){
 	include("../includes/dicionario_{$_SESSION['confUnidade']}.inc.php");
-	echo "Escola: ".$_SESSION['confUnidade'];
 }
 /////////////////////////////////////////////////////////////////
 
