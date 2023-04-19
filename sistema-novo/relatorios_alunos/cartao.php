@@ -351,9 +351,9 @@ $sqlm = "select a.*,
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
   a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                                 b) Taxa / prazo de entrega<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenação.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es <?=$Dicionario['cartao_declaracao_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o <?=$Dicionario['cartao_atestado_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado <?=$Dicionario['cartao_certificado_taxa']?>.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 

@@ -12,6 +12,10 @@
         'cartao_whatsapp' => '99303-9416',
         'cartao_local_prova' => 'Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping',
         'cartao_obs_prova' => 'Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova',
+        'cartao_declaracao_taxa' => ' ----R$ 15,00 - 10 dias úteis',
+        'cartao_atestado_taxa' => ' ---R$ 30,00 - 10 dias úteis',
+        'cartao_certificado_taxa' => ' ---R$ 50,00 - data estabelecida pela coordenação',
+
       
 
 
