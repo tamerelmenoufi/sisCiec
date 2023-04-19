@@ -16,7 +16,8 @@ mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_err
 $conf[resolucao]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.<br>';
 $conf[r]='Lei Federal n. 9394/96, de 20 de dezembro de 1996.';
 
-$conf[unidade] = $Dic['unidade'];
+$conf[unidade] = 'N_CN_';
+echo $Dic['unidade'];
 
 
 list($conf[codigo_curso],$conf[unidade]) = mysql_fetch_row(mysql_query("select codigo, descricao from cadastro_escola where op='1'"));
