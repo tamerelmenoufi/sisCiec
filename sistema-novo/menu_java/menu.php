@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("../includes/config.inc.php");
 ?>
 <script language="javascript">
@@ -16,39 +16,39 @@ var cmThemeOfficeBase = '<?=$servidor_url?>/menu_java/img/';
 		<script language="JavaScript" type="text/javascript">
 		var myMenu =
 		[
-				[null,':: Início','<?=$servidor_url?>/principal/index.php',null,'Painel de Controle'],
+				[null,':: Início','<?=$servidor_url?>/principal/index.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			_cmSplit,
-			[null,':: Matrícula','<?=$servidor_url?>/cadastro_aluno/cadastro_aluno.php',null,'Painel de Controle'],
+			[null,':: Matrícula','<?=$servidor_url?>/cadastro_aluno/cadastro_aluno.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			_cmSplit,
 			[null,':: Cadastros',null,null,'Painel de Controle',
-				[null,':: Cadastro de Professores','<?=$servidor_url?>/cadastro_professor/cadastro_professor.php',null,'Painel de Controle'],
-				[null,':: Cadastro de Disciplinas','<?=$servidor_url?>/cadastro_disciplinas/cadastro_disciplinas.php',null,'Painel de Controle'],
-				[null,':: Cadastro de cursos','<?=$servidor_url?>/cadastro_cursos/cadastro_cursos.php',null,'Painel de Controle'],
-				[null,':: Cadastro de escolas','<?=$servidor_url?>/cadastro_escola/cadastro_escola.php',null,'Painel de Controle'],
-				[null,':: Per&iacute;odos','<?=$servidor_url?>/periodos/periodos.php',null,'Painel de Controle'],
+				[null,':: Cadastro de Professores','<?=$servidor_url?>/cadastro_professor/cadastro_professor.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Cadastro de Disciplinas','<?=$servidor_url?>/cadastro_disciplinas/cadastro_disciplinas.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Cadastro de cursos','<?=$servidor_url?>/cadastro_cursos/cadastro_cursos.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Cadastro de escolas','<?=$servidor_url?>/cadastro_escola/cadastro_escola.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Per&iacute;odos','<?=$servidor_url?>/periodos/periodos.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
             ],
 			_cmSplit,
 			[null,':: Relatórios',null,null,'Painel de Controle',
-				[null,':: Alunos','<?=$servidor_url?>/relatorios_alunos/relatorios_alunos.php',null,'Painel de Controle'],
-				[null,':: Turmas','<?=$servidor_url?>/relatorios_turmas/relatorios_turmas.php',null,'Painel de Controle'],
-				[null,':: Matrículas','<?=$servidor_url?>/relatorios/matriculas.php',null,'Painel de Controle'],
-				[null,':: Per&iacute;odos','<?=$servidor_url?>/relatorios/periodos.php',null,'Painel de Controle'],
+				[null,':: Alunos','<?=$servidor_url?>/relatorios_alunos/relatorios_alunos.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Turmas','<?=$servidor_url?>/relatorios_turmas/relatorios_turmas.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Matrículas','<?=$servidor_url?>/relatorios/matriculas.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
+				[null,':: Per&iacute;odos','<?=$servidor_url?>/relatorios/periodos.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			],
 			_cmSplit,
-			[null,':: Turmas','<?=$servidor_url?>/turmas/turmas.php',null,'Painel de Controle'],
+			[null,':: Turmas','<?=$servidor_url?>/turmas/turmas.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			_cmSplit,
 			<?php if($_SESSION[cook_perfil] == 'a'){ ?>
-			[null,':: Usuários','<?=$servidor_url?>/usuarios/usuarios.php',null,'Painel de Controle'],
+			[null,':: Usuários','<?=$servidor_url?>/usuarios/usuarios.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			_cmSplit,
 			<?php } ?>
-			//[null,':: Atualizar dados','<?=$servidor_url?>/atualizacao/iniciar.php',null,'Painel de Controle'],
+			//[null,':: Atualizar dados','<?=$servidor_url?>/atualizacao/iniciar.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			//_cmSplit,
-			
-			[null,':: Sair','<?=$servidor_url?>/login/sair.php',null,'Painel de Controle'],
+
+			[null,':: Sair','<?=$servidor_url?>/login/sair.php?Dic=<?=$_SESSION['confUnidade']?>',null,'Painel de Controle'],
 			_cmSplit,
 
 
-			//[null,':: Desligar Servidor','<?=$servidor_url?>/index.php?desligar=1',null,'Desligar o servidor'],
+			//[null,':: Desligar Servidor','<?=$servidor_url?>/index.php?desligar=1&?Dic=<?=$_SESSION['confUnidade']?>',null,'Desligar o servidor'],
                         //_cmSplit
 
 

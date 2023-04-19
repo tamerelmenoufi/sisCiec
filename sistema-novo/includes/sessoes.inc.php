@@ -40,7 +40,6 @@ if($_SESSION['confUnidade']){
 
 
 
-
 //$Vetores = array($_POST, $_GET, $_SESSION, $_COOKIE);
 
 $Vetores = array($_COOKIE, $_SESSION, $_GET, $_POST);
