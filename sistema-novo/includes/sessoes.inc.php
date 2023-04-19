@@ -39,7 +39,6 @@ if($_SESSION['confUnidade']){
 
 if($_GET['Dic']){
 	$_SESSION['confUnidade'] = $_GET['Dic'];
-	echo "DIC: Adicionado ".$_GET['Dic'];
 }
 /////////////////////////////////////////////////////////////////
 
