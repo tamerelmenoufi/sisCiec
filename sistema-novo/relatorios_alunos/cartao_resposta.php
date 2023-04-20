@@ -159,7 +159,7 @@ $dados->cod_mat = $z.$dados->cod_mat;
             <td height="25" colspan="3" class="arial18"><div align="center"><strong>SUPLETIVO</strong></div></td>
           </tr>
           <tr>
-            <td height="25" colspan="3"><div align="center"><span class="style2"><?=$conf[resolucao]?></span></div></td>
+            <td height="25" colspan="3"><div align="center"><span class="style2"><?=$Dicionario['resolucao']?></span></div></td>
           </tr>
           <tr>
             <td height="15" colspan="3" class="arial12">CCI: 
