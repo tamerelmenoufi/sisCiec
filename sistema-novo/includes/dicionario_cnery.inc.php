@@ -19,8 +19,8 @@
         'cartao_declaracao_taxa' => 'R$ 15,00 - 10 dias úteis',
         'cartao_atestado_taxa' => 'R$ 30,00 - 10 dias úteis',
         'cartao_certificado_taxa' => 'R$ 50,00 - data estabele-cida pela coordenação',
-        //'ARQUIVO ATESTADO DE ELIMICAÇÃO',
-        'atestado_certificado_taxa' => 'R$ 50,00 - data estabele-cida pela coordenação',
+        //'ARQUIVO CERTIFICADO',
+        'certificado_local' => 'Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM',
 
 
       
