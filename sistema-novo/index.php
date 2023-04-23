@@ -7,8 +7,33 @@
       exit();
    }
 
-   if($_GET['escola']) {
-      $_SESSION['confUnidade'] = $_GET['escola'];
+///////////////////DICIONÁRIOS////////////////////////////////
+switch($_GET['escola']){
+	case 'cnery':{
+		$_SESSION['confUnidade'] = 'cnery';
+		// setcookie("confUnidade",'cnery');
+		break;
+	}
+	case 'leste':{
+		$_SESSION['confUnidade'] = 'lest';
+		// setcookie("confUnidade",'lest');
+		break;
+	}
+	case 'nacoes':{
+		$_SESSION['confUnidade'] = 'nacoes';
+		// setcookie("confUnidade",'nacoes');
+		break;
+	}
+	case 'sul':{
+		$_SESSION['confUnidade'] = 'sul';
+		// setcookie("confUnidade",'sul');
+		break;
+	}
+}
+
+
+
+   if($_SESSION['confUnidade']) {
 ?>
       <script>window.location.href='./login/index.php?escola=<?=$_GET['escola']?>';</script>
 <?php

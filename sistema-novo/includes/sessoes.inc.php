@@ -4,32 +4,9 @@
 @header("Content-Type: text/html; charset=iso-8859-1",true);
 date_default_timezone_set('America/Manaus');
 
-///////////////////DICIONÁRIOS////////////////////////////////
-switch($_GET['escola']){
-	case 'cnery':{
-		$_SESSION['confUnidade'] = 'cnery';
-		// setcookie("confUnidade",'cnery');
-		break;
-	}
-	case 'leste':{
-		$_SESSION['confUnidade'] = 'lest';
-		// setcookie("confUnidade",'lest');
-		break;
-	}
-	case 'nacoes':{
-		$_SESSION['confUnidade'] = 'nacoes';
-		// setcookie("confUnidade",'nacoes');
-		break;
-	}
-	case 'sul':{
-		$_SESSION['confUnidade'] = 'sul';
-		// setcookie("confUnidade",'sul');
-		break;
-	}
-}
 
-if($_GET['escola']){
-	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/sistema-novo/'</script>";
+if(!$_SESSION['confUnidade']){
+	echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/'</script>";
 	exit();
 }
 
