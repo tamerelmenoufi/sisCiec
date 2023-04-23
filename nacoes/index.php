@@ -6,4 +6,5 @@
       exit();
    }
 ?>
-<script>window.location.href='./login/index.php';</script>
+<!-- <script>window.location.href='./login/index.php';</script> -->
+<script>window.location.href='./sistema-novo/?escola=nacoes';</script>
