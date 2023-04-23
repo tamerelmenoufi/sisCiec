@@ -159,11 +159,8 @@ white-space:nowrap;
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC </span><br>
 	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
-		 Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-		Amparado pela <?=$conf[resolucao]?>
-    Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
-    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-              Manaus-Amazonas </span></div></td>
+        <?=$Dicionario['certificado_local']?><br>
+     <?=$Dicionario['resolucao']?> </span></div></td>
                 </tr>
               </table>
                 <div align="center"></div></td>
@@ -288,12 +285,8 @@ white-space:nowrap;
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
               <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
 		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
-		Av. Djalma Batista, n°98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-                Amparado pela
-                <?=$conf[resolucao]?>
-                Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
-      Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-              </div></td>
+		<?=$Dicionario['certificado_local']?><br>
+     <?=$Dicionario['resolucao']?> </span></div></td>
             </tr>
         </table></td>
 	    </tr>
@@ -488,12 +481,8 @@ white-space:nowrap;
                         <span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-top:15px;margin-right:-100px">
                             CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
                             EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
-			    Av. Djalma Batista, n° 98 A, salas 200/201/202/218, 2° andar, Parque Dez de Novembro. CEP 69055-038 Manaus/AM<br>
-			    Amparado pela <?=$conf[resolucao]?>
-          Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
-    Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-                      </div>
-                  </td>
+                            <?=$Dicionario['certificado_local']?><br>
+     <?=$Dicionario['resolucao']?> </span></div></td>
                 </tr>
                 <!-- <tr>
                   <td colspan="4">&nbsp;</td>
@@ -627,8 +616,7 @@ Observações
 
 
     <div style="border-bottom: 1px solid #000; border-top:1px solid #000;font-size:10px;padding:1px">
-     <d>Resolução de autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM </d> :
-     Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.
+    <?=$Dicionario['certificado_resolucoes']?>
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">

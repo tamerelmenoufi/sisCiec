@@ -160,11 +160,11 @@ for($i=$len;$i<11;$i++){
                           <table border="0">
                             <tr class="arial16">
                               <td>Fone:</td>
-                              <td>3023-1242<br>3346-0191</td>
+                              <td><?=$Dicionario['cartao_fone']?> </td>
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
-                              <td>99303-9416</td>
+                              <td><?=$Dicionario['cartao_whatsapp']?></td>
                             </tr>
                           </table>
                           <!-- <span class="arial16"> <br>
@@ -351,17 +351,17 @@ $sqlm = "select a.*,
   Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
   a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                                 b) Taxa / prazo de entrega<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-&nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenação.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es <?=$Dicionario['cartao_declaracao_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o <?=$Dicionario['cartao_atestado_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado <?=$Dicionario['cartao_certificado_taxa']?>.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
 </td>
                     </tr>
                     <tr>
-                      <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
-                      </span>OBS: Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova</td>
+                      <td class="arial11">Local das provas - <?=$Dicionario['cartao_local_prova']?> <span class="arial14"> <br>
+                      </span>OBS: <?=$Dicionario['cartao_obs_prova']?> </td>
                       <td class="arial12 borda_left">&nbsp;</td>
                     </tr>
                 </table></td>
@@ -392,11 +392,11 @@ $sqlm = "select a.*,
                         <table border="0">
                             <tr class="arial16">
                               <td>Fone:</td>
-                              <td>3023-1242<br>3346-0191</td>
+                              <td><?=$Dicionario['cartao_fone']?></td>
                             </tr>
                             <tr class="arial16">
                               <td>WhatsApp:</td>
-                              <td>99303-9416</td>
+                              <td><?=$Dicionario['cartao_whatsapp']?></td>
                             </tr>
                           </table>
                           <!-- </span><span class="arial16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3346-0191</span><br>
@@ -581,18 +581,18 @@ $sqlm = "select a.*,
                       Para solicitar declara&ccedil;&otilde;es, atestado e certificado é necess&aacute;rio c&oacute;pia de:<br>
                       a) Carteira de identidade, certid&atilde;o de nascimento, C.P.F. e comprovante de resid&ecirc;ncia.<br>
                       b) Taxa / prazo de entrega<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es R$ 15,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o R$ 30,00 - 10 dias &uacute;teis<br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;-Certificado R$ 50,00 - data estabelecida pela coordenação.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;-Declara&ccedil;&otilde;es <?=$Dicionario['cartao_declaracao_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Atestado de elimina&ccedil;&atilde;o <?=$Dicionario['cartao_atestado_taxa']?><br>
+&nbsp;&nbsp;&nbsp;&nbsp;-Certificado <?=$Dicionario['cartao_certificado_taxa']?>.</p>
 
 <p align='center' class="arial16">www.ciec-eja.com.br</p>
 
 </td>
                   </tr>
                   <tr>
-                    <td class="arial11">Local das provas -<span class="arial14"> Djalma Batista, Ed. Milhomem Center, Av. Djalma Batista, No 98A - ao lado do Manaus Plaza Shopping<br>
-                      </span>OBS: Resultado Oficial do Exame Somente 10 dias ap&oacute;s a prova</td>
-                    <td class="arial12 borda_left">&nbsp;</td>
+                  <td class="arial11">Local das provas - <?=$Dicionario['cartao_local_prova']?> <span class="arial14"> <br>
+                      </span>OBS: <?=$Dicionario['cartao_obs_prova']?> </td>
+                      <td class="arial12 borda_left">&nbsp;</td>
                   </tr>
                 </table></td>
               </tr>

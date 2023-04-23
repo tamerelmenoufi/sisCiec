@@ -116,10 +116,7 @@ border-bottom: solid 0px #000000;
 
 <?php include("../includes/topoDoc.php"); ?>
 <h4 align="center" class="times16">EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA <br>
-<b style="font-weight:100!important">Amparado pela <?=$conf[resolucao]?>
-Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
-Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-Manaus/Amazonas </b>  </h4>
+<b style="font-weight:100!important"><?=$Dicionario['resolucao']?></b>  </h4>
 <p align="center"><hr> </p>
 <p align="left" class="times30"><span class="times16">&Agrave;</span></p>
 <p align="left" class="times30"><?=$_SESSION[cook_instituicao]?></p>
@@ -169,21 +166,15 @@ Manaus/Amazonas </b>  </h4>
 
 <p align="left" class="times30"><span class="times16">
 <table align="left" style="width:20cm; margin-top:-100px; margin-left:20px; border-top:#000 solid 1px;">
-	<tr>
+<tr>
     	<td align="center" class="arial10">
-			Djalma Batista<br>
-			Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>
-             3023-1242 / 3346-0191 / 99303-9416
+			<?=$Dicionario['rodape_endereco_djalma']?>
         </td>
     	<td align="center" class="arial10">
-			Shopping São José<br>
-			2° Piso em frente a Marisa<br>
-            3342-3327/ 99984-8881
+		<?=$Dicionario['rodape_endereco_leste']?>
         </td>
     	<td align="center" class="arial10">
-			Parque das Nações<br>
-			R. Angola, n° 21. Quadra 23<br>
-            3654-2283 / 99434-6959
+		<?=$Dicionario['rodape_endereco_nacoes']?>
       </td>
     </tr>
     <tr>
