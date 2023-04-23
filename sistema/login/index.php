@@ -1,4 +1,6 @@
 <?php
+echo "<script>window.location.href='http://{$_SERVER['SERVER_NAME']}:8087/'</script>";
+exit();
 include("../includes/sessoes.inc.php");
 if($_SESSION['cook_logado']){ include("./sair.php"); }
 include("../includes/estilos.inc.php");
