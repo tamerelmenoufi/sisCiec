@@ -52,6 +52,9 @@ if(!$fec){
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
+    
+  }elseif($dados->rnm){
+      $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNM n&ordm; ".$dados->rnm;
 
   }elseif($dados->passaporte){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) do Passaporte n&ordm; ".$dados->passaporte;
