@@ -40,6 +40,11 @@ if($_POST[observacao]){
       $linha2 = "Nacionalidade: ".$dados->nacionalidade;
       $linha3 = false;
       $linha4 = false;
+    }elseif($dados->rnm){
+      $linha1 = "DOC. RNM: ".$dados->rnm;
+      $linha2 = "Nacionalidade: ".$dados->nacionalidade;
+      $linha3 = false;
+      $linha4 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
       $linha2 = "Nascionalidade: ".$dados->nacionalidade;
