@@ -294,7 +294,7 @@ white-space:nowrap;
         </table></td>
 	    </tr>
 	  <tr>
-        <td height="35" colspan="4" align="center" valign="top" class="times12" style="border-bottom: 1px solid #000000;">Histórico Escolar</td>
+   
 	    </tr>
 
       <tr>
