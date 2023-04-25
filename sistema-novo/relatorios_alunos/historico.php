@@ -35,6 +35,12 @@ include("../includes/data_ext.inc.php");
       $linha3 = false;
       $linha4 = false;
       $linha5 = false;
+    }elseif($dados->rnm){
+      $linha1 = "DOC. RRNMNE: ".$dados->rnm;
+      $linha2 = "Nacionalidade: ".$dados->nacionalidade;
+      $linha3 = false;
+      $linha4 = false;
+      $linha5 = false;
   }elseif($dados->passaporte){
       $linha1 = "No. Passaporte.: ".$dados->passaporte;
       $linha2 = "Nascionalidade: ".$dados->nacionalidade;
