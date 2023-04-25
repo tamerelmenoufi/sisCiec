@@ -134,7 +134,7 @@ border-bottom: solid 0px #000000;
 <p align="justify" class="times30">
 <span style="margin-left:50px;"></span>Pelo presente <strong>ratificamos</strong> que <strong><?=trim($dados->nome)?></strong> concluiu o Exame de Educa&ccedil;&atilde;o de Jovens e Adultos - EJA, do <?=trim($dados->descricao)?>, estando seu Certificado de Conclus&atilde;o do <?=trim($dados->descricao)?> registrado no Livro n° <?=$livro?>, folha <?=$folha?>, em <?=data_ext($data_doc,'')?>
 <?php
-	if($validar_curso == 'ensino medio'){
+	if($validar_curso == 'ensino médio'){
 ?>
 ; e seu nome publicado na Rela&ccedil;&atilde;o de Alunos Concludentes da EJA, no Di&aacute;rio Oficial do Estado do Amazonas, edi&ccedil;&atilde;o de <?=data_ext($_SESSION[cook_data_oficio],'')?>, Caderno de Publica&ccedil;&otilde;es Diversas, p&aacute;gina <?=$_SESSION[cook_pagina_oficio]?>. 
 
