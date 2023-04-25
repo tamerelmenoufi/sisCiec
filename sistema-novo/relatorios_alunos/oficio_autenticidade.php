@@ -123,7 +123,7 @@ border-bottom: solid 0px #000000;
 <p align="left" class="times30"><?=$_SESSION[cook_departamento]?></p>
 <p align="left" class="times30"><?=$_SESSION[cook_responsavel]?></p>
 <p align="left" class="times30"><?=$_SESSION[cook_cargo]?></p>
-<p align="left" class="times30">Nesta<span class="times16"></span></p>
+<!--<p align="left" class="times30">Nesta<span class="times16"></span></p>-->
 <p align="right"><span class="times16"><?=data()?>.</span></p>
 
 <p>&nbsp;</p>
