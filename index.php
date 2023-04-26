@@ -6,21 +6,32 @@
 		<h1 style="margin-top:200px;">ACESSO AO SISTEMA</h1>
 	<table width='100%' border='0'>
 		<tr>
+
 			<td width="25%" height="100" align="center" valign="middle">
-				<a href='./sistema-novo/?escola=cnery' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">DJALMA BATISTA</a>
+				<div style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">
+					<a href='./sistema-novo/?escola=cnery' >DJALMA BATISTA</a>
+				</div>
 			</td>
 
 			<td width="25%" height="100" align="center" valign="middle">
-				<a href='./sistema-novo/?escola=leste' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">SÃO JOSÉ</a>
+				<div style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">
+					<a href='./sistema-novo/?escola=leste' >SÃO JOSÉ</a>
+				</div>
 			</td>
 
 			<td width="25%" height="100" align="center" valign="middle">
-				<a href='./sistema-novo/?escola=sul' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">SUL</a>
+				<div style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">
+					<a href='./sistema-novo/?escola=sul' >SUL</a>
+				</div>
 			</td>
 
 			<td width="25%" height="100" align="center" valign="middle">
-				<a href='./sistema-novo/?nacoes' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">PARQUE DAS NAÇÕES</a>
+				<div style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none; width:95%;">
+					<a href='./sistema-novo/?escola=nacoes' >PARQUE DAS NAÇÕES</a>
+				</div>
 			</td>
+
+
 		</tr>
 
 	</table>
