@@ -52,6 +52,9 @@ if(!$fec){
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
+    
+  }elseif($dados->rnm){
+      $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNM n&ordm; ".$dados->rnm;
 
   }elseif($dados->passaporte){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) do Passaporte n&ordm; ".$dados->passaporte;
@@ -291,7 +294,7 @@ white-space:nowrap;
         </table></td>
 	    </tr>
 	  <tr>
-        <td height="35" colspan="4" align="center" valign="top" class="times12" style="border-bottom: 1px solid #000000;">Componentes Curriculares</td>
+   
 	    </tr>
 
       <tr>
