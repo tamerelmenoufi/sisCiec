@@ -15,6 +15,10 @@
 			</td>
 
 			<td width="33%" height="100" align="center" valign="middle">
+				<a href='./sistema-novo/?escola=sul' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none;">SUL</a>
+			</td>
+
+			<td width="33%" height="100" align="center" valign="middle">
 				<a href='./sistema-novo/?nacoes' style="padding:20px; background:blue; color:#fff; border-radius:20px; text-decoration:none;">PARQUE DAS NAÇÕES</a>
 			</td>
 		</tr>
