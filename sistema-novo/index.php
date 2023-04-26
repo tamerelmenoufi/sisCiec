@@ -15,7 +15,7 @@ switch($_GET['escola']){
 		break;
 	}
 	case 'leste':{
-		$_SESSION['confUnidade'] = 'lest';
+		$_SESSION['confUnidade'] = 'leste';
 		// setcookie("confUnidade",'lest');
 		break;
 	}
