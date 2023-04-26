@@ -19,7 +19,7 @@ switch($english_day)
 		break;
 	case "Thursday":
 		$portuguese_day = $cidade;
-		break;	
+		break;
 	case "Friday":
 		$portuguese_day = $cidade;
 		break;
@@ -42,7 +42,7 @@ switch($english_month)
 		$portuguese_month = "fevereiro";
 		break;
 	case "3":
-		$portuguese_month = "março";
+		$portuguese_month = "mar?o";
 		break;
 	case "4":
 		$portuguese_month = "abril";
@@ -81,7 +81,7 @@ print($dia);
 print(" de ");
 print($portuguese_month);
 print(" de ");
-print($ano); 
+print($ano);
 
 }
 
