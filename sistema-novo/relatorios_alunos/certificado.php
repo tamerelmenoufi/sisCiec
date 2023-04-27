@@ -213,7 +213,7 @@ white-space:nowrap;
           <tr>
             <td><table width="100%" height="19"  border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="300" height="19" class="dauphin12">SECRETARIA</td>
+                  <td width="300" height="19" class="dauphin12">SECRETÁRIA</td>
                   <td><div align="center">.........................................................................</div></td>
                   <td width="300" class="dauphin12">DIRETOR</td>
                 </tr>
