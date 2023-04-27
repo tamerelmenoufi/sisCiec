@@ -240,7 +240,7 @@ white-space:nowrap;
 <?php
 	//if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela Instituição de Ensino.
 </div>
 <?php
 	//}
