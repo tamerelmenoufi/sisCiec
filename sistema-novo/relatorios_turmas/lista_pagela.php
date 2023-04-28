@@ -143,7 +143,7 @@ font-weight:normal;
                     <td height="60" class="arial16">&nbsp;E&nbsp;&nbsp;</td>
                     <td><img src="../img/logo_ciec.gif" width="185" height="52"></td>
                     <td width="312"><div align="right"><span class="arial20">Supletivo - EJA </span><br>
-                            <span class="arial10"> <?=($Dicionario['resolucao'])?></span></div></td>
+                            <span class="arial10"> <?=utf8_encode($Dicionario['resolucao'])?></span></div></td>
                     <td width="20">&nbsp;</td>
                   </tr>
                 </table></td>
@@ -154,7 +154,7 @@ font-weight:normal;
                     <td width="400" align="left" valign="top"><table width="400"  border="0" cellspacing="0" cellpadding="2" class="borda_tabela">
                       <tr>
                         <td class="borda_tabela"><div class="arial13">Disciplina:
-                          <?=$dados->disc?>
+                          <?=utf8_encode($dados->disc)?>
                         </div></td>
                       </tr>
                     </table></td>
@@ -166,11 +166,11 @@ font-weight:normal;
                     <td width="400" align="left" valign="top"><table width="400"  border="0" cellspacing="0" cellpadding="2" class="borda_tabela">
                       <tr>
                         <td class="borda_tabela"><div class="arial13">Professor(a):
-                          <?=$dados->nome?>
+                          <?=utf8_encode($dados->nome)?>
                         </div></td>
                       </tr>
                     </table></td>
-                    <td align="left" valign="bottom" class="arial13"><?=$dados->curso?>&nbsp;-&nbsp;<?=$dados->turno?></td>
+                    <td align="left" valign="bottom" class="arial13"><?=utf8_encode($dados->curso)?>&nbsp;-&nbsp;<?=utf8_encode($dados->turno)?></td>
                   </tr>
                 </table>                  </td>
               </tr>
@@ -227,7 +227,7 @@ font-weight:normal;
 					  <tr>
                         <td width="25" align="center" class="borda_tabela">&nbsp;<?=$i?></td>
                         <td width="60" align="center" class="borda_tabela">&nbsp;<?=$dados->cci?></td>
-                        <td width="300" class="borda_tabela">&nbsp;<?=strtoupper($dados->nome)?> </td>
+                        <td width="300" class="borda_tabela">&nbsp;<?=strtoupper(utf8_encode($dados->nome))?> </td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
