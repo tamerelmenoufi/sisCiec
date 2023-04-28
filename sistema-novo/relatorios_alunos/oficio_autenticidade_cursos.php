@@ -185,7 +185,6 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 		echo "<br>Dados do Destinat&aacute;rio:<br>
 		<table>
 
-		<tr><td>Local(*):</td><td><input type='text' name='local' value='' style='width:300px'></td></tr>
 		<tr><td>Institui&ccedil;&atilde;o(*):</td><td><input type='text' name='instituicao' value='' style='width:300px'></td></tr>
 		<tr><td>Departamento:</td>
 		<td><input type='text' name='departamento' value='' style='width:300px'></td></tr>\n
@@ -193,7 +192,7 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 		<tr><td>Respons&aacute;vel:</td><td><input type='text' name='responsavel' value='' style='width:300px'></td></tr>\n
 
 		<tr><td>Cargo:</td><td><input type='text' name='cargo' value='' style='width:300px'></td></tr>
-
+		<tr><td>Local:</td><td><input type='text' name='local' value='' style='width:300px'></td></tr>
 		<tr><td>Observações:</td><td><textarea name='observacao' style='width:500px; height:150px;'></textarea></td></tr>
 
 		</table>\n
