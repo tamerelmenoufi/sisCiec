@@ -52,7 +52,7 @@ if(!$fec){
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
-    
+
   }elseif($dados->rnm){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNM n&ordm; ".$dados->rnm;
 
@@ -238,12 +238,13 @@ white-space:nowrap;
 
             </table>
 <?php
-	//if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
+  $EnsinoMedio = ['N_CN_2','N_CN_4','N_CN_5','N_CN_6','N_ZL_2','N_ZL_4','N_ZL_5','N_PN_3','N_PN_5','N_SL_2','N_SL_4'];
+	if(in_array($curso, $EnsinoMedio)){
 ?>
 <div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.
 </div>
 <?php
-	//}
+	}
 ?>
 
 
@@ -294,7 +295,7 @@ white-space:nowrap;
         </table></td>
 	    </tr>
 	  <tr>
-   
+
 	    </tr>
 
       <tr>
