@@ -52,7 +52,7 @@ if(!$fec){
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
-
+    
   }elseif($dados->rnm){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNM n&ordm; ".$dados->rnm;
 
@@ -115,7 +115,7 @@ if(!$fec){
 	font-weight: none;
 	text-decoration: none;
 	text-align:left;
-        margin-top:0px;
+        margin-top:13px;
         margin-left:5px;
         position:absolute;
 }
@@ -159,8 +159,8 @@ white-space:nowrap;
                 <tr>
                   <td width="73"><img src="../img/logo_ciec.gif" width="160" style="margin-right:-100px" ></td>
                   <td>
-                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC </span><br>
-	      EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br>
+                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC </span><br>
+	      EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br>
 	      <span class="times12">
         <?=$Dicionario['certificado_local']?><br>
      <?=$Dicionario['resolucao']?> </span></div></td>
@@ -183,11 +183,11 @@ white-space:nowrap;
               <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
-               tendo em vista os resultados obtidos nos Exames de Educaï¿½ï¿½o de Jovens e Adultos - EJA, concluiu, em
+               tendo em vista os resultados obtidos nos Exames de Educação de Jovens e Adultos - EJA, concluiu, em
               <?=trim(data_ext($dados->data_exame,''))?>,
               o
               <?=trim($dados->descricao)?>,
-               conforme prescreve a legislaï¿½ï¿½o em vigor.</td>
+               conforme prescreve a legislação em vigor.</td>
           </tr>
           <tr>
             <td style="font-size:14px" align="left"><b>&nbsp;<?=$segunda?></b></td>
@@ -213,7 +213,7 @@ white-space:nowrap;
           <tr>
             <td><table width="100%" height="19"  border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="300" height="19" class="dauphin12">SECRETï¿½RIA</td>
+                  <td width="300" height="19" class="dauphin12">SECRETÁRIA</td>
                   <td><div align="center">.........................................................................</div></td>
                   <td width="300" class="dauphin12">DIRETOR</td>
                 </tr>
@@ -238,13 +238,12 @@ white-space:nowrap;
 
             </table>
 <?php
-  $EnsinoMedio = ['N_CN_2','N_CN_4','N_CN_5','N_CN_6','N_ZL_2','N_ZL_4','N_ZL_5','N_PN_3','N_PN_5','N_SL_2','N_SL_4'];
-	if(in_array($curso, $EnsinoMedio)){
+	//if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
 ?>
-<div class="nota">NOTA: A validade deste documento estï¿½ condicionada ï¿½ publicaï¿½ï¿½o do nome do aluno concluinte no Diï¿½rio Oficial do Estado do Amazonas, pela Instituiï¿½ï¿½o de Ensino.
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela Instituição de Ensino.
 </div>
 <?php
-	}
+	//}
 ?>
 
 
@@ -287,15 +286,15 @@ white-space:nowrap;
             </tr>
             <tr>
               <td width="73" style="border-bottom: 1px solid #000000;">&nbsp;</td>
-              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
-		EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br />
+              <td align="left" style="border-bottom: 1px solid #000000;"><div align="center"><span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-left:-70px;margin-top:15px">CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+		EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
 		<?=$Dicionario['certificado_local']?><br>
      <?=$Dicionario['resolucao']?> </span></div></td>
             </tr>
         </table></td>
 	    </tr>
 	  <tr>
-
+   
 	    </tr>
 
       <tr>
@@ -391,10 +390,10 @@ white-space:nowrap;
 
 		</style>
        <?php
-        if($validar_curso == 'ensino mï¿½dio'){
+        if($validar_curso == 'ensino médio'){
         ?>
         <div id="carimbo" style="font-size:12px">
-        <span>CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC<br /></span>
+        <span>CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC<br /></span>
 		<div style="margin-top:3px"><d>Nome do Aluno Registrado na Listagem do Di&aacute;rio Oficial do Estado</d><br>
     <div  style="padding:0px"></div>
 		do Amazonas, Edi&ccedil;&atilde;o de ______/_____/_____, Caderno
@@ -483,8 +482,8 @@ white-space:nowrap;
                   <td colspan="4" align="center">
                       <div align="center" style="font-size:10px;margin-top:25">
                         <span class="times12"><img src="../img/logo_ciec.gif" width="150" align="left" style="margin-top:15px;margin-right:-100px">
-                            CENTRO INTEGRADO DE EDUCAï¿½ï¿½O E CIDADANIA - CIEC <br />
-                            EDUCAï¿½ï¿½O DE JOVENS E ADULTOS - EJA </span><br />
+                            CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA - CIEC <br />
+                            EDUCAÇÃO DE JOVENS E ADULTOS - EJA </span><br />
                             <?=$Dicionario['certificado_local']?><br>
      <?=$Dicionario['resolucao']?> </span></div></td>
                 </tr>
@@ -513,7 +512,7 @@ white-space:nowrap;
                     <td class="times12">N&iacute;vel de Ensino:</td>
                     <td class="corpo" style="font-size:13px; font-weight:100"><?=$dados->descricao?></td>
                     <td class="times12" >Modalidade:</td>
-                    <td class="corpo">Educaï¿½ï¿½o de Jovens e Adultos/EJA - <d>Etapa ï¿½nica</d></td>
+                    <td class="corpo">Educação de Jovens e Adultos/EJA - <d>Etapa Única</d></td>
                 <tr>
                 <div style="padding:3px"></div>
             </table>
@@ -615,7 +614,7 @@ white-space:nowrap;
 
     <div style="padding:3px;border-bottom: 1px solid #000; border-top:1px solid #000;
 text-align:center;font-weight:100;margin-top:5px">
-Observaï¿½ï¿½es
+Observações
 </div>
 
 
@@ -624,16 +623,16 @@ Observaï¿½ï¿½es
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-Mï¿½dia Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde aos 3 anos do Ensino Mï¿½dio.
+Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
        </div>
        <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
-  Nï¿½o hï¿½ exigï¿½ncia de carga horï¿½ria.
+  Não há exigência de carga horária.
        </div>
 
 
     <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   <d>
-    Considera-se aprovado o estudante que obtiver Mï¿½dia Final igual ou superior a 5.0 (cinco) em cada disciplina.
+    Considera-se aprovado o estudante que obtiver Média Final igual ou superior a 5.0 (cinco) em cada disciplina.
   </d>
     </div>
 
@@ -644,7 +643,7 @@ Mï¿½dia Final por Disciplina: A nota alcanï¿½ada em cada disciplina corresponde 
       <table class="">
     <tr>
     <td width="170"  ></th>
-    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretï¿½rio(a)
+    <td width="350" style="border-top:1px #000 solid;text-align:center;font-size:12px">Secretário(a)
     </td>
 
     <td width="170"  ></th>
