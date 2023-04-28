@@ -8,19 +8,19 @@ include("../includes/data_ext.inc.php");
 
 			     $query = "select unidade,livro,folha,data,ordem,observacao from certificados where codigo_curso='$curso' and codigo_aluno='$cod'";
 				 $result = mysql_query($query);
-				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao) = mysql_fetch_row($result);			  
+				 list($unidade,$livro,$folha,$data_doc,$ordem,$observacao) = mysql_fetch_row($result);
 
 
-	$query = "select a.nome,a.rg,a.rg_orgao,a.data_nascimento,a.cidade,a.estado,b.descricao,d.data_exame from cadastro_aluno a " 
+	$query = "select a.nome,a.rg,a.rg_orgao,a.data_nascimento,a.cidade,a.estado,b.descricao,d.data_exame from cadastro_aluno a "
 		   . " left join matricula d on a.codigo = d.codigo_aluno "
 		   . " left join cadastro_cursos b on d.codigo_curso = b.codigo "
 		   . " left join turmas c on d.codigo_turma = c.codigo "
 		   . " where a.codigo = '$cod' and d.codigo_curso='$curso' and d.situacao = 'AP' and d.codigo_turma=c.codigo order by d.data_exame desc limit 0,1";
 	$result = mysql_query($query);
 	$dados = mysql_fetch_object($result);
-	
+
 	$validar_curso = strtolower($dados->descricao);
-	
+
 
 if($_SESSION[cook_observacoes]){
 	$observacoes = str_replace("\n","<br>",$_SESSION[cook_observacoes]);
@@ -123,7 +123,7 @@ border-bottom: solid 0px #000000;
 <p align="left" class="times30"><?=$_SESSION[cook_departamento]?></p>
 <p align="left" class="times30"><?=$_SESSION[cook_responsavel]?></p>
 <p align="left" class="times30"><?=$_SESSION[cook_cargo]?></p>
-<!--<p align="left" class="times30">Nesta<span class="times16"></span></p>-->
+<p align="left" class="times30"><?=$_SESSION[cook_local]?><span class="times16"></span></p>
 <p align="right"><span class="times16"><?=data()?>.</span></p>
 
 <p>&nbsp;</p>
@@ -136,7 +136,7 @@ border-bottom: solid 0px #000000;
 <?php
 	if($validar_curso == 'ensino médio'){
 ?>
-; e seu nome publicado na Rela&ccedil;&atilde;o de Alunos Concludentes da EJA, no Di&aacute;rio Oficial do Estado do Amazonas, edi&ccedil;&atilde;o de <?=data_ext($_SESSION[cook_data_oficio],'')?>, Caderno de Publica&ccedil;&otilde;es Diversas, p&aacute;gina <?=$_SESSION[cook_pagina_oficio]?>. 
+; e seu nome publicado na Rela&ccedil;&atilde;o de Alunos Concludentes da EJA, no Di&aacute;rio Oficial do Estado do Amazonas, edi&ccedil;&atilde;o de <?=data_ext($_SESSION[cook_data_oficio],'')?>, Caderno de Publica&ccedil;&otilde;es Diversas, p&aacute;gina <?=$_SESSION[cook_pagina_oficio]?>.
 
 
 <?php
