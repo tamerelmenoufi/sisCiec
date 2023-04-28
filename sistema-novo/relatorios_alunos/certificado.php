@@ -213,7 +213,7 @@ white-space:nowrap;
           <tr>
             <td><table width="100%" height="19"  border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="300" height="19" class="dauphin12">SECRETARIA</td>
+                  <td width="300" height="19" class="dauphin12">SECRETÁRIA</td>
                   <td><div align="center">.........................................................................</div></td>
                   <td width="300" class="dauphin12">DIRETOR</td>
                 </tr>
@@ -241,7 +241,7 @@ white-space:nowrap;
   $EnsinoMedio = ['N_CN_2','N_CN_4','N_CN_5','N_CN_6','N_ZL_2','N_ZL_4','N_ZL_5','N_PN_3','N_PN_5','N_SL_2','N_SL_4'];
 	if(in_array($curso, $EnsinoMedio)){
 ?>
-<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela instituição de ensino.
+<div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela Instituição de Ensino.
 </div>
 <?php
 	}
