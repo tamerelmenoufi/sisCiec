@@ -1,7 +1,6 @@
 <?php
 //header("location:./sistema/");
 ?>
-
 <center>
 		<h1 style="margin-top:200px;">ACESSO AO SISTEMA</h1>
 	<table width='100%' border='0'>
