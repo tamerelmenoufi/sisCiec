@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="iso-8859-1">
 <title> </title>
 
 <style type="text/css">
