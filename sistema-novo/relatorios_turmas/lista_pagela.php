@@ -111,13 +111,13 @@ font-weight:normal;
         <td ><table width="640"  border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td>
-			
-			<?php
-			
-			   include("../includes/connect.inc.php");
-			   
 
-			   
+			<?php
+
+			   include("../includes/connect.inc.php");
+
+
+
 			   $query = "select a.*, b.descricao as disc,
 			                    c.nome,
 								d.descricao as curso,
@@ -131,9 +131,9 @@ font-weight:normal;
 
 				$result = mysql_query($query);
 				$dados = mysql_fetch_object($result);
-			
-			
-			?>			    
+
+
+			?>
 			<table width="640" cellpadding="0" cellspacing="0" class="borda_tabela">
               <tr>
                 <td height="50" class="borda_tabela"><table width="640" height="19"  border="0" align="center" cellpadding="0" cellspacing="0">
@@ -153,19 +153,19 @@ font-weight:normal;
                   <tr>
                     <td width="400" align="left" valign="top"><table width="400"  border="0" cellspacing="0" cellpadding="2" class="borda_tabela">
                       <tr>
-                        <td class="borda_tabela"><div class="arial13">Disciplina: 
+                        <td class="borda_tabela"><div class="arial13">Disciplina:
                           <?=$dados->disc?>
                         </div></td>
                       </tr>
                     </table></td>
-                    <td align="left" valign="bottom" class=""><div class="arial13">Data do exame: 
+                    <td align="left" valign="bottom" class=""><div class="arial13">Data do exame:
                       <?=data_formata($dados->data_exame)?>
                     </div></td>
                   </tr>
                   <tr>
                     <td width="400" align="left" valign="top"><table width="400"  border="0" cellspacing="0" cellpadding="2" class="borda_tabela">
                       <tr>
-                        <td class="borda_tabela"><div class="arial13">Professor(a): 
+                        <td class="borda_tabela"><div class="arial13">Professor(a):
                           <?=$dados->nome?>
                         </div></td>
                       </tr>
@@ -178,9 +178,9 @@ font-weight:normal;
                 <td class="borda_tabela"><table width="100%"  border="0" cellspacing="0" cellpadding="10">
                   <tr>
                     <td>
-					 
-					 
-					 
+
+
+
 					 <table width="640"  border="0" cellspacing="0" cellpadding="0" class="borda_tabela">
                       <tr>
                         <td width="25" rowspan="2" class="borda_tabela"><div class="arial13">
@@ -216,13 +216,13 @@ font-weight:normal;
 			   		   elseif($ord == 'cci'){ $com = " order by b.cci "; }
 			   		   elseif($ord == 'aln'){ $com = " order by b.nome "; }
 
-					   
+
 					   $query = "select a.codigo_turma,a.codigo_aluno,b.cci,b.nome from matricula a left join cadastro_aluno b on a.codigo_aluno=b.codigo where a.codigo_turma='$cod' and b.nome!='' and a.codigo_disciplina = '$dados->codigo_disciplina' group by a.codigo_aluno $com";
                                            //echo $query;
 					   $result = mysql_query($query);
 					   $n = mysql_num_rows($result);
 					   $i=1;
-					   while($dados=mysql_fetch_object($result)){					 
+					   while($dados=mysql_fetch_object($result)){
 					 ?>
 					  <tr>
                         <td width="25" align="center" class="borda_tabela">&nbsp;<?=$i?></td>
@@ -234,13 +234,13 @@ font-weight:normal;
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
-                   
+
                         <td width="70" class="borda_tabela">&nbsp;</td>
                       </tr>
                      <?php
 					    $i++;
 						}
-						
+
 						for($k=$n;$k<40;$k++){
 					 ?>
 					  <tr>
@@ -253,15 +253,15 @@ font-weight:normal;
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
                         <td width="30" class="borda_tabela">&nbsp;</td>
-                        
+
                         <td width="70" class="borda_tabela">&nbsp;</td>
                       </tr>
 					  <?php
 					    $i++;
-						}					  
+						}
 					  ?>
                     </table>
-					
+
                       <br>
                       <table width="640" height="126"  border="0" cellpadding="0" cellspacing="0" class="borda_tabela">
                         <tr>
