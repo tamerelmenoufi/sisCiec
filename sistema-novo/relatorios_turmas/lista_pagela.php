@@ -143,7 +143,7 @@ font-weight:normal;
                     <td height="60" class="arial16">&nbsp;E&nbsp;&nbsp;</td>
                     <td><img src="../img/logo_ciec.gif" width="185" height="52"></td>
                     <td width="312"><div align="right"><span class="arial20">Supletivo - EJA </span><br>
-                            <span class="arial10"> <?=utf8_encode($Dicionario['resolucao'])?></span></div></td>
+                            <span class="arial10"> <?=($Dicionario['resolucao'])?></span></div></td>
                     <td width="20">&nbsp;</td>
                   </tr>
                 </table></td>
