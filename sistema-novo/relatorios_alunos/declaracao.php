@@ -54,7 +54,7 @@ include("../includes/data_ext.inc.php");
 <p align="center">&nbsp; </p>
 <p align="center" class="times25">DECLARA&Ccedil;&Atilde;O </p>
 <p align="center">
-<p class="times16" align="justify" style="width:95%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que  
+<p class="times16" align="justify" style="padding:10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que  
   <?=$dados->nome?>
 , portador(a) da carteira de identidade n&ordm; 
 <?=$dados->rg?> 
