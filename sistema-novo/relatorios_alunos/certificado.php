@@ -52,7 +52,7 @@ if(!$fec){
 
   }elseif($dados->rne){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNE n&ordm; ".$dados->rne;
-    
+
   }elseif($dados->rnm){
       $linha1 = " nacionalidade ".$dados->nacionalidade.", portador(a) da RNM n&ordm; ".$dados->rnm;
 
@@ -294,7 +294,7 @@ white-space:nowrap;
         </table></td>
 	    </tr>
 	  <tr>
-   
+
 	    </tr>
 
       <tr>
