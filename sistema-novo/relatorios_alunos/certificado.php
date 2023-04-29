@@ -238,12 +238,13 @@ white-space:nowrap;
 
             </table>
 <?php
-	//if($curso == 'N_CN_2' or $curso == 'N_CN_4'){
+  $CurosNota = ['N_CN_2','N_CN_4','N_CN_5','N_CN_6','N_ZL_2','N_ZL_4','N_ZL_5','N_PN_3','N_PN_5','N_SL_2','N_SL_4'];
+	if(in_array($curso, $CurosNota)){
 ?>
 <div class="nota">NOTA: A validade deste documento está condicionada à publicação do nome do aluno concluinte no Diário Oficial do Estado do Amazonas, pela Instituição de Ensino.
 </div>
 <?php
-	//}
+	}
 ?>
 
 
