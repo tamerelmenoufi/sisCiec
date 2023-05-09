@@ -213,9 +213,9 @@ white-space:nowrap;
           <tr>
             <td><table width="100%" height="19"  border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td width="300" height="19" class="dauphin12">SECRETÁRIA</td>
+                  <td width="300" height="19" class="dauphin12" style="font-size:14px">SECRETÁRIA</td>
                   <td><div align="center">.........................................................................</div></td>
-                  <td width="300" class="dauphin12">DIRETOR</td>
+                  <td width="300" class="dauphin12" style="font-size:14px">DIRETOR</td>
                 </tr>
             </table></td>
           </tr>
@@ -228,7 +228,7 @@ white-space:nowrap;
                 </tr>
                 <tr>
                   <td width="300" height="19">&nbsp;</td>
-                  <td width="300" class="dauphin12">ALUNO</td>
+                  <td width="300" class="dauphin12" style="font-size:14px">ALUNO</td>
                   <td width="300">&nbsp;</td>
                 </tr>
 
