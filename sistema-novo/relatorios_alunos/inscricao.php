@@ -64,14 +64,14 @@ echo "<td><input type='image' src='../img/5.gif' title='Imprimir comprovante de 
 
 echo "<tr bgcolor='#cccccc'>";
 echo "<td><b>Turno</b>";
-echo "<td><b>Inï¿½cio</b>";
+echo "<td><b>Início</b>";
 echo "<td><b>Final</b>";
 echo "<td><b>Entada</b>";
-echo "<td><b>Saï¿½da</b>";
+echo "<td><b>Saída</b>";
 echo "<td><b>Exame</b>";
 echo "<td><b>Nota</b>";
 echo "<td><b>Freq.</b>";
-echo "<td><b>Situaï¿½ï¿½o:</b>";
+echo "<td><b>Situação:</b>";
 echo "<td>&nbsp;";
 
 
