@@ -24,14 +24,14 @@ include("../includes/config.inc.php");
 </script>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<table border='0'  cellpadding='0' cellspacing='0' width='100%'><tr><td width='18%' class='font_branca'>RELATÓRIOS</td><td width='90%'></td><tr><td colspan='2'  class='bg_busca_aluno' height='50'>&nbsp;&nbsp;COMPROVANTE DE MATRÍCULA</td></table>
+<table border='0'  cellpadding='0' cellspacing='0' width='100%'><tr><td width='18%' class='font_branca'>RELATï¿½RIOS</td><td width='90%'></td><tr><td colspan='2'  class='bg_busca_aluno' height='50'>&nbsp;&nbsp;COMPROVANTE DE MATRï¿½CULA</td></table>
 <?php
 
-$sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.frequencia,c.situacao,concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso from turmas a 
+echo $sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.frequencia,c.situacao,concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
-		left join cadastro_cursos e on a.codigo_curso=e.codigo 
+		left join cadastro_cursos e on a.codigo_curso=e.codigo
 				where c.codigo_aluno='$cod' and c.codigo_escola = '$conf[codigo_curso]' order by a.data_inicio desc,a.codigo";
 $sql_result = mysql_query($sql);
 
@@ -60,18 +60,18 @@ echo "<td colspan='3'>".$dados->disc_curso;
 echo "<td colspan='2'>".$dados->disc;
 echo "<td colspan='4'>".$dados->nome;
 
-echo "<td><input type='image' src='../img/5.gif' title='Imprimir comprovante de Matrícula' onclick=\"return imprimir_comprovante('$dados->cod_mat');\">";
+echo "<td><input type='image' src='../img/5.gif' title='Imprimir comprovante de Matrï¿½cula' onclick=\"return imprimir_comprovante('$dados->cod_mat');\">";
 
 echo "<tr bgcolor='#cccccc'>";
 echo "<td><b>Turno</b>";
-echo "<td><b>Início</b>";
+echo "<td><b>Inï¿½cio</b>";
 echo "<td><b>Final</b>";
 echo "<td><b>Entada</b>";
-echo "<td><b>Saída</b>";
+echo "<td><b>Saï¿½da</b>";
 echo "<td><b>Exame</b>";
 echo "<td><b>Nota</b>";
 echo "<td><b>Freq.</b>";
-echo "<td><b>Situação:</b>";
+echo "<td><b>Situaï¿½ï¿½o:</b>";
 echo "<td>&nbsp;";
 
 
@@ -88,7 +88,7 @@ echo "<td>".number_format($dados->nota,2,",",false);
 echo "<td>".$dados->frequencia;
 echo "<td>".$dados->situacao;
 
-echo "<td>"; //<input type='image' src='../img/6.gif' title='Imprimir declaração de Matrícula' onclick=\"return imprimir_declaracao('$dados->cod_mat');\">";
+echo "<td>"; //<input type='image' src='../img/6.gif' title='Imprimir declaraï¿½ï¿½o de Matrï¿½cula' onclick=\"return imprimir_declaracao('$dados->cod_mat');\">";
 
 echo "<tr bgcolor='#000000'><td colspan='10' height='2' bgcolor='#000000'>";
 
