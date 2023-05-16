@@ -145,7 +145,7 @@ font-weight:normal;
                     <td width="166"><img src="../img/logo_p.gif" width="150" height="50"></td>
                     <td height="60" class="arial16">&nbsp;E&nbsp;&nbsp;</td>
                     <td><img src="../img/logo_ciec.gif" width="185" height="52"></td>
-                    <td width="312"><div align="center"><span class="arial20">Supletivo</span><br>
+                    <td width="312"><div align="center"><span class="arial20">Supletivo - EJA</span><br>
                               <span class="arial10"><?=$conf[resolucao]?></span></div></td>
                     <td width="20">&nbsp;</td>
                   </tr>
