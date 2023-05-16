@@ -24,7 +24,7 @@ include("../includes/config.inc.php");
 </script>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<table border='0'  cellpadding='0' cellspacing='0' width='100%'><tr><td width='18%' class='font_branca'>RELATï¿½RIOS</td><td width='90%'></td><tr><td colspan='2'  class='bg_busca_aluno' height='50'>&nbsp;&nbsp;COMPROVANTE DE MATRï¿½CULA</td></table>
+<table border='0'  cellpadding='0' cellspacing='0' width='100%'><tr><td width='18%' class='font_branca'>RELATÓRIOS</td><td width='90%'></td><tr><td colspan='2'  class='bg_busca_aluno' height='50'>&nbsp;&nbsp;COMPROVANTE DE MATRÍCULA</td></table>
 <?php
 
 echo $sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.frequencia,c.situacao,concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso from turmas a
