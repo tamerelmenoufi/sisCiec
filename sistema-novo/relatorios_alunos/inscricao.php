@@ -27,7 +27,7 @@ include("../includes/config.inc.php");
 <table border='0'  cellpadding='0' cellspacing='0' width='100%'><tr><td width='18%' class='font_branca'>RELATÓRIOS</td><td width='90%'></td><tr><td colspan='2'  class='bg_busca_aluno' height='50'>&nbsp;&nbsp;COMPROVANTE DE MATRÍCULA</td></table>
 <?php
 
-echo $sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.frequencia,c.situacao,concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso from turmas a
+$sql = "select a.*,b.nome,c.codigo as cod_mat,c.nota,c.frequencia,c.situacao,concat(d.descricao,' ',c.observacao) as disc,concat(e.descricao,' (',e.tipo,')') as disc_curso from turmas a
         left join cadastro_professor b on a.codigo_professor = b.codigo
 		left join matricula c on a.codigo_curso=c.codigo_curso and a.codigo_disciplina=c.codigo_disciplina and a.codigo=c.codigo_turma
 		left join cadastro_disciplinas d on a.codigo_curso=d.codigo_curso and a.codigo_disciplina=d.codigo
