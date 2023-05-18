@@ -1,6 +1,6 @@
 <?php
 
-    $Dic = [
+    $Dicionario = [
         'unidade' => 'N_SL_',
         'resolucao' => 'Amparado pela Lei Federal n. 9394/96, de 20 de dezembro de 1996.<br>
         Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
