@@ -179,7 +179,7 @@ white-space:nowrap;
             <td class="dauphin16">&nbsp;</td>
           </tr>
           <tr>
-            <td class="dauphin16" style="white-space:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Certificamos que
+            <td class="dauphin16" style="white-space:normal"><span style="width:100px; height:3px; border:solid 1px red;"></span>Certificamos que
               <b><?=trim($dados->nome)?></b>,<?=$linha1?>,
                nascido(a) no dia
               <?=trim(data_ext($dados->data_nascimento,''))?>,
