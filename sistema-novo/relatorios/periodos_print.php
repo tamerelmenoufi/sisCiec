@@ -126,7 +126,7 @@ echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-s
 	left join cadastro_cursos c on a.codigo_curso = c.codigo
 	left join cadastro_disciplinas d on a.codigo_disciplina = d.codigo
 	left join turmas e on a.codigo_turma = e.codigo
-	left join cadastro_aluno f on a.codigo_aluno = f.codigo where ((e.data_inicio between  '".$d->data_inicial."' and  '".$d->data_final."') or (e.data_final between  '".$d->data_inicial."' and  '".$d->data_final."')) and f.nome != '' and a.situacao != 'MT' and c.descricao='".(($_GET[curso] == 'fundamental') ? 'Ensino Fundamental' : 'Ensino Medio')."' and a.codigo_escola='".$conf[unidade]."' order by f.nome, c.descricao, d.descricao";
+	left join cadastro_aluno f on a.codigo_aluno = f.codigo where ((e.data_inicio between  '".$d->data_inicial."' and  '".$d->data_final."') or (e.data_final between  '".$d->data_inicial."' and  '".$d->data_final."')) and f.nome != '' and a.situacao != 'MT' and c.descricao='".(($_GET[curso] == 'fundamental') ? 'Ensino Fundamental' : 'Ensino Medio')."' and a.codigo_escola='".$conf[codigo_curso]."' order by f.nome, c.descricao, d.descricao";
 	//echo $query;
 	$result = mysql_query($query);
 

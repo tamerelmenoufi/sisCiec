@@ -15,7 +15,7 @@ mysql_select_db( "cieceja_".$_SESSION['Dic'] ) or die("Erro no banco ".mysql_err
 $conf[resolucao]=$Dicionario['resolucao'];
 $conf[r]=$Dicionario['r'];
 
-$conf[unidade] = $Dicionario['unidade'];
+$conf[Unidade] = $Dicionario['unidade'];
 
 
 list($conf[codigo_curso],$conf[unidade]) = mysql_fetch_row(mysql_query("select codigo, descricao from cadastro_escola where op='1'"));
@@ -41,7 +41,7 @@ $AtualizaCod = array(	"cadastro_aluno",
 
 
 for($i=0;$i<count($AtualizaCod);$i++){
-	mysql_query("update ".$AtualizaCod[$i]." set codigo = concat('".$conf[unidade]."',id) where codigo = ''");
+	mysql_query("update ".$AtualizaCod[$i]." set codigo = concat('".$conf[Unidade]."',id) where codigo = ''");
 }
 
 
