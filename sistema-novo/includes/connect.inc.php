@@ -41,7 +41,7 @@ $AtualizaCod = array(	"cadastro_aluno",
 
 
 for($i=0;$i<count($AtualizaCod);$i++){
-	mysql_query("update ".$AtualizaCod[$i]." set codigo = concat('".$conf[Unidade]."',id) where codigo = ''");
+	mysql_query("update ".$AtualizaCod[$i]." set codigo = concat('".$conf[unidade]."',id) where codigo = ''");
 }
 
 
