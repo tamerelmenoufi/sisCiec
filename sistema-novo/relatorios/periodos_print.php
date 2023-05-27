@@ -109,7 +109,7 @@ echo '<table width="100%"  border="0" cellspacing="0" cellpadding="0">
                   <td width="73"><img src="../img/logo_ciec.jpg" width="97" height="110"></td>
                   <td>
                     <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
-              EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS – EJA </span><br>
+              EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA </span><br>
               <span class="times12">Autorizado pela '.$_GET[r].' <br>
               Manaus-Amazonas </span></div></td>
                 </tr>
@@ -120,8 +120,8 @@ echo "<h3>".$d->descricao." ( ".data_formata($d->data_inicial)." a ".data_format
 
 
 echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-space:normal;'>Ata dos resultados finais do ".$d->descricao." Exame de Educação de Jovens e Adultos - EJA / ".$d->ano.", realizado no período de ".data_formata($d->data_inicial)." a ".data_formata($d->data_final).", nível de Ensino ".ucwords($_GET[curso]).", conforme prescreve a legislação em vigor.</table></p>";
-	
-	$query = "select b.descricao as escola, c.descricao as curso, d.descricao as disciplina, e.data_inicio, e.data_final, e.data_exame, e.turno, f.nome, f.rg, a.nota, a.frequencia, a.situacao, a.observacao from matricula a 
+
+	echo $query = "select b.descricao as escola, c.descricao as curso, d.descricao as disciplina, e.data_inicio, e.data_final, e.data_exame, e.turno, f.nome, f.rg, a.nota, a.frequencia, a.situacao, a.observacao from matricula a
 	left join cadastro_escola b on a.codigo_escola = b.codigo
 	left join cadastro_cursos c on a.codigo_curso = c.codigo
 	left join cadastro_disciplinas d on a.codigo_disciplina = d.codigo
@@ -129,7 +129,7 @@ echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-s
 	left join cadastro_aluno f on a.codigo_aluno = f.codigo where ((e.data_inicio between  '".$d->data_inicial."' and  '".$d->data_final."') or (e.data_final between  '".$d->data_inicial."' and  '".$d->data_final."')) and f.nome != '' and a.situacao != 'MT' and c.descricao='".(($_GET[curso] == 'fundamental') ? 'Ensino Fundamental' : 'Ensino Medio')."' and a.codigo_escola='".$conf[Unidade]."4' order by f.nome, c.descricao, d.descricao";
 	//echo $query;
 	$result = mysql_query($query);
-	
+
 	echo "<table border='1' cellpadding='5' cellspacing='0'>\n";
 		echo "<tr>\n";
 		echo "<td><strong>ALUNO</strong>\n";
@@ -144,7 +144,7 @@ echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-s
 		echo "<td><strong>NOTA</strong>\n";
 		//echo "<td><strong>FREQUENCIA</strong>\n";
 		echo "<td><strong>RESULTADO</strong>\n";
-	
+
 	while($d = mysql_fetch_object($result)){
 		echo "<tr>\n";
 		echo "<td>&nbsp;".$d->nome."\n";
@@ -160,7 +160,7 @@ echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-s
 		//echo "<td>&nbsp;".$d->frquencia."\n";
 		echo "<td>&nbsp;".situacao($d->situacao)."\n";
 	}
-	
+
 	echo "</table>\n";
 
    echo "<p><table border = 0 width=100%><tr><td colspan=9 align=left height=100 valign=top>E para constar, eu _______________________________________________________________ lavrei a presente ata que vai por mim assinada e pelo(a) diretor(a);<tr><td colspan=9 align=right height=100 valign=top><div align'right' valign=top>Manaus, ______ de ____________________ de _________.</div><tr><td colspan=4 align=center height=50 valign=top><div align'center'>_____________________________________________<br>SECRETÁRIO(A)</div><td align=center height=50 colspan=5 valign=top><div align'center'>_____________________________________________<br>DIRETOR(A)</div></table></p>";
