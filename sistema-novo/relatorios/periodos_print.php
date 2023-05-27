@@ -121,7 +121,7 @@ echo "<h3>".$d->descricao." ( ".data_formata($d->data_inicial)." a ".data_format
 
 echo "<p><table><tr><td colspan=9 height=50 align=left valign=top style='white-space:normal;'>Ata dos resultados finais do ".$d->descricao." Exame de Educação de Jovens e Adultos - EJA / ".$d->ano.", realizado no período de ".data_formata($d->data_inicial)." a ".data_formata($d->data_final).", nível de Ensino ".ucwords($_GET[curso]).", conforme prescreve a legislação em vigor.</table></p>";
 
-	$query = "select b.descricao as escola, c.descricao as curso, d.descricao as disciplina, e.data_inicio, e.data_final, e.data_exame, e.turno, f.nome, f.rg, a.nota, a.frequencia, a.situacao, a.observacao from matricula a
+	echo $query = "select b.descricao as escola, c.descricao as curso, d.descricao as disciplina, e.data_inicio, e.data_final, e.data_exame, e.turno, f.nome, f.rg, a.nota, a.frequencia, a.situacao, a.observacao from matricula a
 	left join cadastro_escola b on a.codigo_escola = b.codigo
 	left join cadastro_cursos c on a.codigo_curso = c.codigo
 	left join cadastro_disciplinas d on a.codigo_disciplina = d.codigo
