@@ -24,8 +24,6 @@
         'certificado_resolucoes' => 'Resolução de Autorização para Exames de EJA emanadas pelo Conselho Estadual de Educação do Estado do Amazonas - CEE/AM : Resolução n° 38/05, de 26.04.2005/ Resolução 96/06 de 19.09.2006/ Resolução 71/07, de 02.07.2007/ Resolução 92/07, de 08.08.2007/ Resolução 145/07, de 11.12.2007/ Resolução 179/2011, de 20.12.2011/ Resolução 213/2013 de 20.09.2013/ Resolução 49/2016, de 30.03.2016/ Resolução 159/2016, de 16.11.2016/ Resolução 245/2015, de 17.12.2015/ Resolução 214/2017, de 20.12.2017/ Resolução 211/2022, de 06.12.2022.',
         'nome_escola_antigo' => 'CENTRO INTEGRADO DE EDUCAÇÃO CHRISTUS - CIEC',
         'nome_escola' => 'CENTRO INTEGRADO DE EDUCAÇÃO E CIDADANIA',
-
-
-
+        'certificado_unidade' => '04',
 
     ];
