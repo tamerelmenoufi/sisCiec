@@ -38,9 +38,7 @@ include("../calendario/calendar1.js");
 		   ?>
 		</select>
     <br />
-    <p id="modelo_anterior" style="cursor:pointer;">
-      <input type="checkbox" id="marcar_modelo" name="modelo_anterior" value="1" > Imprimir documento modelo anterior
-    </p>
+      <input type="checkbox" id="marcar_modelo" name="modelo_anterior" value="1" > <span id="modelo_anterior" style="cursor:pointer;">Imprimir documento modelo anterior</span>
     <br />
 		<input type="button" name="sb" value="Ensino Medio" onclick="enviar('medio')" />   <input type="button" name="sb" value="Ensino Fundamental" onclick="enviar('fundamental')" />
        </form>
