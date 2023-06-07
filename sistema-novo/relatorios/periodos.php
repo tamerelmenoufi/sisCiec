@@ -32,17 +32,35 @@ include("../calendario/calendar1.js");
 				while($d = mysql_fetch_object($result)){
 			?>
             		<option value="<?=$d->codigo?>"><?=$d->descricao.' ('.data_formata($d->data_inicial).' a '.data_formata($d->data_final).')'?></option>
-            <?php		
-					
+            <?php
+
 				}
 		   ?>
 		</select>
-        <br />
+    <br />
+    <p id="modelo_anterior">
+      <input type="checkbox" id="marcar_modelo" name="modelo_anterior" value="1" > Imprimir documento modelo anterior
+    </p>
+    <br />
 		<input type="button" name="sb" value="Ensino Medio" onclick="enviar('medio')" />   <input type="button" name="sb" value="Ensino Fundamental" onclick="enviar('fundamental')" />
        </form>
      </td>
    </tr>
  </table>
+
+<script>
+
+  document.getElementById('modelo_anterior').onclick = function()
+   {
+      if(document.getElementById('marcar_modelo')){
+        document.getElementById('marcar_modelo') = false;
+      }else{
+        document.getElementById('marcar_modelo') = true;
+      }
+   }
+
+</script>
+
 <?php
 
 include("../includes/rodape.inc.php");
