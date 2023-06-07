@@ -108,7 +108,7 @@ echo '<table width="100%"  border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td width="73"><img src="../img/logo_ciec.jpg" width="97" height="110"></td>
                   <td>
-                    <div align="center"><span class="times18"><span class="style1">CENTRO INTEGRADO DE EDUCA&Ccedil;&Atilde;O CHRISTUS - CIEC </span><br>
+                    <div align="center"><span class="times18"><span class="style1">'.(($_POST['modelo_anterior'])?$Dicionario['nome_escola_antigo']:$Dicionario['nome_escola']).'</span><br>
               EDUCA&Ccedil;&Atilde;O DE JOVENS E ADULTOS - EJA </span><br>
               <span class="times12">Autorizado pela '.$_GET[r].' <br>
               Manaus-Amazonas </span></div></td>
