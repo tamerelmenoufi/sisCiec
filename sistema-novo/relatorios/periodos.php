@@ -52,10 +52,11 @@ include("../calendario/calendar1.js");
 
   document.getElementById('modelo_anterior').onclick = function()
    {
-      if(document.getElementById('marcar_modelo')){
-        document.getElementById('marcar_modelo') = false;
+      console.log(document.getElementById('marcar_modelo').checked);
+      if(document.getElementById('marcar_modelo').checked){
+        document.getElementById('marcar_modelo').checked = false;
       }else{
-        document.getElementById('marcar_modelo') = true;
+        document.getElementById('marcar_modelo').checked = true;
       }
    }
 
