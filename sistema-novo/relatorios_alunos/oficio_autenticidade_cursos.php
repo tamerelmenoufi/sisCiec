@@ -167,7 +167,7 @@ echo "<tr><td colspan='2'  class='bg_busca_aluno' height='30'><table border='0' 
 			$sql_r = mysql_query($sql);
 			list($codigo,$livro,$folha,$data,$ordem,$observacao) = mysql_fetch_row($sql_r);
 		echo "Unidade: <select name='unidade[$dados->codigo]'>
-                                  <option value='01'>Unidade 01</option>
+                                  <option value='{$Dicionario['certificado_unidade']}'>Unidade {$Dicionario['certificado_unidade']}</option>
                                </select> \n";
 		echo "Livro: $livro &nbsp;&nbsp;&nbsp;\n";
 		echo "Folha: $folha &nbsp;&nbsp;&nbsp;\n";
