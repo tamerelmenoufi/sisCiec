@@ -41,7 +41,7 @@ if($_POST[observacao]){
 
 	if(!mysql_num_rows($result)){
                 list($nome_curso) = mysql_fetch_row(mysql_query("select concat(descricao,' (',tipo,')') from cadastro_cursos where codigo='$d'"));
-		echo "<br><br><br><br><br><br><center>Aluno Não esta matriculado para o ".$nome_curso."<br><br><a href='javascript:window.close()'>Voltar</a></center>"; exit();
+		echo "<br><br><br><br><br><br><center>Aluno N?o esta matriculado para o ".$nome_curso."<br><br><a href='javascript:window.close()'>Voltar</a></center>"; exit();
 	}
 
 
@@ -77,7 +77,7 @@ if($_POST[observacao]){
 </style>
 <html>
 <head>
-<title>DECLARAÇÃO DE MATRÍCULA</title>
+<title>DECLARA??O DE MATR?CULA</title>
 </head>
 
 <body>
@@ -97,7 +97,7 @@ if($_POST[observacao]){
 nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor.<br>
 
 <?php
-	  $sql = "select b.codigo as cod_disciplina, cdescricaooncat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
+	  $sql = "select b.codigo as cod_disciplina, concat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
 	            left join cadastro_disciplinas b on a.codigo_disciplina=b.codigo
 				left join turmas c on a.codigo_turma=c.codigo
 				where a.codigo_aluno='$cod' and a.situacao='AP' and a.codigo_curso='$dados->cursos'
