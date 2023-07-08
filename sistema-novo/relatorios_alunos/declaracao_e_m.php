@@ -93,11 +93,11 @@ if($_POST[observacao]){
 <p class="times16" align="justify" style="width:85%; margin-left:80px; border:0px solid #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaramos para os devidos fins que
   <?=$dados->nome?>
 , portador(a) <?=$linha1?>, est&aacute; matriculado(a) no Exame de Educa&ccedil;&atilde;o de Jovens e Adultos &ndash; EJA, n&iacute;vel de
-<?=$dados->descricao?>
+<?=$dados->descricao?> 
 nos termos do Artigo 38 da Lei Federal n&ordm; 9394/96 e Legisla&ccedil;&atilde;o em vigor.<br>
 
 <?php
-	  $sql = "select b.codigo as cod_disciplina, concat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
+	  $sql = "select b.codigo as cod_disciplina, cdescricaooncat(b.descricao,' ',a.observacao) as descricao,a.situacao,a.nota,a.data_exame from matricula a
 	            left join cadastro_disciplinas b on a.codigo_disciplina=b.codigo
 				left join turmas c on a.codigo_turma=c.codigo
 				where a.codigo_aluno='$cod' and a.situacao='AP' and a.codigo_curso='$dados->cursos'
