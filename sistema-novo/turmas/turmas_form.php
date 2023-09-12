@@ -520,6 +520,8 @@ hora_turmas("08:30:00","10:00:00",$hora_inicio,$hora_final);
 
 hora_turmas("09:00:00","10:00:00",$hora_inicio,$hora_final);
 hora_turmas("09:00:00","10:20:00",$hora_inicio,$hora_final);
+hora_turmas("09:00:00","10:30:00",$hora_inicio,$hora_final);
+
 
 hora_turmas("09:00:00","10:30:00",$hora_inicio,$hora_final);
 hora_turmas("09:00:00","11:00:00",$hora_inicio,$hora_final);
@@ -531,6 +533,8 @@ hora_turmas("09:45:00","11:00:00",$hora_inicio,$hora_final);
 
 hora_turmas("10:00:00","11:00:00",$hora_inicio,$hora_final);
 hora_turmas("10:00:00","11:30:00",$hora_inicio,$hora_final);
+hora_turmas("10:15:00","11:30:00",$hora_inicio,$hora_final);
+
 hora_turmas("10:00:00","12:00:00",$hora_inicio,$hora_final);
 hora_turmas("10:30:00","11:30:00",$hora_inicio,$hora_final);
 hora_turmas("10:30:00","11:50:00",$hora_inicio,$hora_final);
@@ -569,12 +573,15 @@ echo "<div id='DivNot' style='display:".$displayNot."'>";
 hora_turmas("17:45:00","19:00:00",$hora_inicio,$hora_final);
 
 hora_turmas("18:00:00","19:00:00",$hora_inicio,$hora_final);
+hora_turmas("18:00:00","19:15:00",$hora_inicio,$hora_final);
+
 hora_turmas("18:00:00","19:20:00",$hora_inicio,$hora_final);
 
 hora_turmas("18:00:00","19:30:00",$hora_inicio,$hora_final);
 
 hora_turmas("19:00:00","20:00:00",$hora_inicio,$hora_final);
 hora_turmas("19:00:00","20:15:00",$hora_inicio,$hora_final);
+hora_turmas("19:15:00","20:30:00",$hora_inicio,$hora_final);
 hora_turmas("19:30:00","20:30:00",$hora_inicio,$hora_final);
 hora_turmas("19:30:00","20:50:00",$hora_inicio,$hora_final);
 
