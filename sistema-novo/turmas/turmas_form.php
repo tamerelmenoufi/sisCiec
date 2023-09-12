@@ -519,6 +519,7 @@ hora_turmas("08:00:00","11:00:00",$hora_inicio,$hora_final);
 hora_turmas("08:30:00","10:00:00",$hora_inicio,$hora_final);
 
 hora_turmas("09:00:00","10:00:00",$hora_inicio,$hora_final);
+hora_turmas("09:00:00","10:15:00",$hora_inicio,$hora_final);
 hora_turmas("09:00:00","10:20:00",$hora_inicio,$hora_final);
 hora_turmas("09:00:00","10:30:00",$hora_inicio,$hora_final);
 
