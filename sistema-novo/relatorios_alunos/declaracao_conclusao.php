@@ -54,7 +54,7 @@ if($_POST[observacao]){
 		  $linha1 = "nacionalidade ".$dados->nacionalidade.", portador(a) do Passaporte n&ordm; ".$dados->passaporte;
 	
 }elseif($dados->certidao_nascimento){
-	$linha1 = " natural de ".$dados->cidade.", Unidade Federada ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Floha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;   
+	$linha1 = " natural de ".$dados->cidade.", Unidade Federada ".$dados->estado.", portador(a) da Certid&atilde;o de Nascimento n&ordm; ".$dados->certidao_nascimento.", Livro/Folha ".$dados->certidao_nascimento_livro."/".$dados->certidao_nascimento_folha;   
 }
 
     if(!mysql_num_rows($result)){
