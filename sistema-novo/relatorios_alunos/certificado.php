@@ -624,7 +624,17 @@ Observações
     </div>
 
     <div style="font-size:10px;padding:3px;border-bottom: 1px solid #000;">
-Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
+    <?php
+    if(strtolower(trim($dados->descricao)) == 'ensino médio'){
+    ?>
+    Média Final por Disciplina: A nota alcançada em cada disciplina corresponde aos 3 anos do Ensino Médio.
+    <?php
+    }else if(strtolower(trim($dados->descricao)) == 'ensino fundamental'){
+    ?>
+    A nota alcançada em cada disciplina corresponde aos 4 anos do 2° Segmento do Ensino Fundamental.
+    <?php
+    }
+    ?>
        </div>
        <div style="font-size:10px;padding:1px;border-bottom: 1px solid #000;">
   Não há exigência de carga horária.
