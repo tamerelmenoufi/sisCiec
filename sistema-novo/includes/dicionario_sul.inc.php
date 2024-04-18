@@ -3,9 +3,7 @@
     $Dicionario = [
         'unidade' => 'N_SL_',
         'resolucao' => 'Amparado pela Lei Federal n. 9394/96, de 20 de dezembro de 1996.<br>
-        Curso Reconhecido pela Resolução n° 49/2016 de 30.03.2016 CEE/AM.<br>
-        Exames Autorizados pela Resolução 214/2017, de 20.12.2017 e Resolução 211/2022, de 06.12.2022<br>
-        Manaus/Amazonas',
+        Curso e Exames Reconhecidos pela Resolução n.° 162/2023, de 05 de dezembro de 2023, CEE/AM',
         'r' => 'Lei Federal n. 9394/96, de 20 de dezembro de 1996.',
         'endereço' => 'Rua fulano de tal',
         'rodape_endereco_djalma' => 'Djalma Batista <br>Ed. Milhomem Center, Av. Djalma Batista, n° 98A<br>3023-1242 / 3346-0191 / 99303-9416',
